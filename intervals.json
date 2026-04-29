@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T18:46:57.246018",
+  "generated_at": "2026-04-29T19:23:44.837745",
   "version": "3.109",
   "script_hash": "f54c8dd00126",
   "scan_hours": 72,
@@ -1331,6 +1331,76 @@
           "zone": 1
         }
       ]
+    },
+    {
+      "activity_id": "i144146222",
+      "date": "2026-04-29",
+      "type": "Ride",
+      "name": "Base",
+      "interval_summary": null,
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 5215,
+          "avg_power": 171,
+          "max_power": 610,
+          "avg_hr": 125,
+          "max_hr": 142,
+          "avg_cadence": 88.584946,
+          "zone": 2,
+          "training_load": 57.284027,
+          "decoupling": -2.1005173,
+          "avg_dfa_a1": 1.1619086
+        }
+      ],
+      "dfa": {
+        "avg": 1.15,
+        "p25": 1.012,
+        "p50": 1.152,
+        "p75": 1.293,
+        "tiz_below_lt1": {
+          "secs": 3660,
+          "pct": 76.7,
+          "avg_hr": 126,
+          "avg_watts": 170
+        },
+        "tiz_lt1_transition": {
+          "secs": 999,
+          "pct": 20.9,
+          "avg_hr": 129,
+          "avg_watts": 174
+        },
+        "tiz_transition_lt2": {
+          "secs": 113,
+          "pct": 2.4,
+          "avg_hr": 131,
+          "avg_watts": 175
+        },
+        "tiz_above_lt2": null,
+        "drift": {
+          "first_third_avg": 1.18,
+          "last_third_avg": 1.186,
+          "delta": 0.006,
+          "interpretable": true
+        },
+        "lt1_crossing": {
+          "secs_in_band": 718,
+          "avg_hr": 129,
+          "avg_watts": 179
+        },
+        "lt2_crossing": {
+          "secs_in_band": 0,
+          "avg_hr": null,
+          "avg_watts": null
+        },
+        "quality": {
+          "valid_secs": 4772,
+          "total_secs": 4986,
+          "valid_pct": 95.7,
+          "artifact_rate_avg": 0.85,
+          "sufficient": true
+        }
+      }
     }
   ]
 }
