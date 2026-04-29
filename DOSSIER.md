@@ -125,6 +125,8 @@ Increase FTP from 275 → 300 W (~4.0 W/kg)
 
 ### Post-Exercise Carbohydrate Protocol
 
+Include this in every post session report
+
 **Consume within 10 minutes post-ride**
 
 | Duration | TSS/h | CHO (g/kg) |
