@@ -66,3 +66,17 @@ Post-workout response MUST follow this structure:
 * Be detailed when something is off (e.g. elevated RHR)
 
 Do not give generic advice.
+
+## WORKOUT GENERATION
+
+When asked to create a workout:
+1. Use DOSSIER.md for FTP and constraints
+2. Use latest.json for readiness and load
+3. Follow WORKOUTS.md structure
+4. Output structured workout (clear intervals)
+
+If user confirms:
+- Save workout as workout.json in repo
+- Trigger push workflow
+
+Never generate high intensity if readiness = modify (unless explicitly overridden)
