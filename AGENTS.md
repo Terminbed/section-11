@@ -148,6 +148,25 @@ When generating workouts:
 
 Do not generate high-intensity sessions under fatigue signals unless explicitly instructed.
 
+## Workout Output Format (MANDATORY)
+
+When generating any workout:
+
+1. ALWAYS include an Intervals.icu compatible text block
+2. This must be provided in a copy-paste ready code block
+3. Use the following structure:
+
+<Workout Title>
+
+Warm-up
+- ...
+
+Main Set
+- ...
+
+Cool-down
+- ...
+
 ---
 
 ## BEHAVIOUR
