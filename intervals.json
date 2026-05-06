@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T17:13:22.255859",
+  "generated_at": "2026-05-06T18:23:43.288180",
   "version": "3.109",
   "script_hash": "f54c8dd00126",
   "scan_hours": 72,
@@ -2435,6 +2435,93 @@
           "valid_pct": 56.5,
           "artifact_rate_avg": 0.54,
           "sufficient": false
+        }
+      }
+    },
+    {
+      "activity_id": "i146006311",
+      "date": "2026-05-06",
+      "type": "Ride",
+      "name": "Base",
+      "interval_summary": [
+        "1x 4m52s 137w",
+        "1x 1h47m 172w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "292s@137w88rpm",
+          "duration_secs": 292,
+          "avg_power": 137,
+          "max_power": 318,
+          "avg_hr": 112,
+          "max_hr": 129,
+          "avg_cadence": 87.737144,
+          "zone": 1,
+          "training_load": 1.774547,
+          "avg_dfa_a1": 1.1634774
+        },
+        {
+          "type": "WORK",
+          "label": "6479s@172w87rpm",
+          "duration_secs": 6479,
+          "avg_power": 172,
+          "max_power": 622,
+          "avg_hr": 119,
+          "max_hr": 134,
+          "avg_cadence": 87.15709,
+          "zone": 2,
+          "training_load": 72.89849,
+          "decoupling": -1.1936052,
+          "avg_dfa_a1": 1.2894287
+        }
+      ],
+      "dfa": {
+        "avg": 1.289,
+        "p25": 1.184,
+        "p50": 1.275,
+        "p75": 1.397,
+        "tiz_below_lt1": {
+          "secs": 5522,
+          "pct": 96.2,
+          "avg_hr": 120,
+          "avg_watts": 170
+        },
+        "tiz_lt1_transition": {
+          "secs": 214,
+          "pct": 3.7,
+          "avg_hr": 120,
+          "avg_watts": 174
+        },
+        "tiz_transition_lt2": {
+          "secs": 4,
+          "pct": 0.1,
+          "avg_hr": 75,
+          "avg_watts": 117
+        },
+        "tiz_above_lt2": null,
+        "drift": {
+          "first_third_avg": 1.267,
+          "last_third_avg": 1.395,
+          "delta": 0.128,
+          "interpretable": true
+        },
+        "lt1_crossing": {
+          "secs_in_band": 416,
+          "avg_hr": 122,
+          "avg_watts": 171
+        },
+        "lt2_crossing": {
+          "secs_in_band": 0,
+          "avg_hr": null,
+          "avg_watts": null
+        },
+        "quality": {
+          "valid_secs": 5740,
+          "total_secs": 6278,
+          "valid_pct": 91.4,
+          "artifact_rate_avg": 1.44,
+          "sufficient": true
         }
       }
     }
