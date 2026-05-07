@@ -103,26 +103,31 @@ If Saturday will be easy:
 - Sun: 2h Z2
 
 ## Week 3 (Extension) — 11 May → 17 May
+- Tue: 3x15 threshold
+- Thu: 3x15 tempo
+- Sun: 2h Z2
+
+## Week 4 (Deload) — 18 May → 24 May
 - Tue: 30 min continuous
 - Thu: 1x40 @ 88–90%
 - Sun: 2–2.5h Z2
 
-## Week 4 (Deload) — 18 May → 24 May
+## Week 5 (Durability) — 25 May → 31 May
 - Tue: 2x12 threshold
 - Thu: Z2 only
 - Sun: 90 min Z2
-
-## Week 5 (Durability) — 25 May → 31 May
+- 
+## Week 6 (Stabilisation) — 1 Jun → 7 Jun
 - Tue: 2x25 threshold
 - Thu: 2x20 tempo
 - Sun: 2.5h Z2
 
-## Week 6 (Stabilisation) — 1 Jun → 7 Jun
+- ## Week 6 (Stabilisation) — 8 Jun → 14 Jun
 - Tue: 3x12 threshold (high quality)
 - Thu: 1x30 @ 88–90%
 - Sun: 2h Z2
 
-## Test — Week of 8 Jun
+## Test — Week of 15 Jun
 - 40 min steady effort
 - Start at 95%
 - Build ONLY if stable
