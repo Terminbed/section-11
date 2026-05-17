@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-17T17:40:47.744550",
+    "last_updated": "2026-05-17T18:43:32.331276",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -100,46 +100,36 @@
     "years_on_platform": 2
   },
   "athlete_notes": null,
-  "alerts": [
-    {
-      "metric": "rhr",
-      "value": 48,
-      "severity": "warning",
-      "threshold": "\u2191\u22655bpm vs baseline (41.7)",
-      "context": "RHR 48 is 6.3bpm above baseline. Monitor \u2014 alarm if persists >2 days.",
-      "persistence_days": 2,
-      "tier": 1
-    }
-  ],
+  "alerts": [],
   "readiness_decision": {
-    "recommendation": "modify",
-    "priority": 2,
+    "recommendation": "go",
+    "priority": 3,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 106.7,
-        "delta_pct": null
+        "status": "green",
+        "value": 97.0,
+        "baseline_7d": 105.3,
+        "delta_pct": -7.9
       },
       "rhr": {
-        "status": "red",
-        "value": 48,
-        "baseline_7d": 41.7,
-        "delta_bpm": 6.3
+        "status": "green",
+        "value": 42,
+        "baseline_7d": 40.9,
+        "delta_bpm": 1.1
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "green",
+        "hours": 7.82,
+        "quality": 1
       },
       "acwr": {
         "status": "green",
         "value": 0.96
       },
       "ri": {
-        "status": "unavailable",
-        "value": null,
-        "value_yesterday": 0.92
+        "status": "green",
+        "value": 0.9,
+        "value_yesterday": 0.91
       },
       "tsb": {
         "status": "green",
@@ -147,10 +137,10 @@
       }
     },
     "signal_summary": {
-      "green": 2,
+      "green": 6,
       "amber": 0,
-      "red": 1,
-      "unavailable": 3
+      "red": 0,
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Base",
@@ -159,17 +149,8 @@
       "modifier_applied": "default"
     },
     "race_week_defers": false,
-    "modification": {
-      "triggers": [
-        "rhr"
-      ],
-      "suggested_adjustments": {
-        "intensity": "reduce",
-        "volume": "preserve",
-        "cap_zone": null
-      }
-    },
-    "reason": "P2 signal count. 1 red (rhr), 0 amber ().",
+    "modification": null,
+    "reason": "P3 green light. 6 green, 0 amber (threshold 2), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -296,12 +277,12 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 48,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_score": null,
+      "resting_hr": 42,
+      "hrv": 97.0,
+      "sleep_quality": 1,
+      "sleep_hours": 7.82,
+      "sleep_formatted": "7h49m",
+      "sleep_score": 91.0,
       "fatigue": null,
       "soreness": null,
       "stress": null,
@@ -318,7 +299,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 4704,
+      "steps": 5886,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -330,14 +311,14 @@
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "recovery_index_yesterday": 0.92,
-    "hrv_baseline_7d": 106.7,
-    "rhr_baseline_7d": 41.7,
-    "hrv_baseline_28d": 96.0,
-    "rhr_baseline_28d": 39.1,
-    "latest_hrv": null,
-    "latest_rhr": 48,
+    "recovery_index": 0.9,
+    "recovery_index_yesterday": 0.91,
+    "hrv_baseline_7d": 105.3,
+    "rhr_baseline_7d": 40.9,
+    "hrv_baseline_28d": 96.1,
+    "rhr_baseline_28d": 38.9,
+    "latest_hrv": 97.0,
+    "latest_rhr": 42,
     "acwr": 0.96,
     "acwr_interpretation": "optimal",
     "monotony": 1.97,
@@ -349,7 +330,7 @@
     "multi_sport_detected": true,
     "strain": 1164.0,
     "stress_tolerance": 5.9,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 6.6,
     "tss_7d_total": 591.0,
     "tss_28d_total": 2469.0,
     "zone_distribution_7d": {
@@ -722,9 +703,9 @@
           "current_week_hard_days_completed": 3,
           "current_week_hard_days_total": 5,
           "race_proximity": null,
-          "next_week_load": 1.83,
+          "next_week_load": 1.39,
           "plan_coverage_current_week": 0.15,
-          "plan_coverage_next_week": 1.0
+          "plan_coverage_next_week": 0.69
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -757,9 +738,9 @@
     "p_max": 1176,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-17T17:40:47.743258",
+    "calculation_timestamp": "2026-05-17T18:43:32.330001",
     "data_quality": {
-      "hrv_data_points": 6,
+      "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 17,
       "activities_28d": 56,
@@ -7168,13 +7149,13 @@
       "display": {
         "weight": null
       },
-      "resting_hr": 48,
-      "hrv_rmssd": null,
+      "resting_hr": 42,
+      "hrv_rmssd": 97.0,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 7.82,
+      "sleep_formatted": "7h49m",
+      "sleep_quality": 1,
+      "sleep_score": 91.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
@@ -7194,7 +7175,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 4704,
+      "steps": 5886,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -7247,43 +7228,17 @@
       "description": "- 1h 55-60% power=3s"
     },
     {
-      "id": 109752044,
-      "date": "2026-05-19",
-      "name": "Threshold 4x15",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 131,
-      "duration_hours": 1.85,
-      "duration_formatted": "1h51m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description": "Warmup\n- 10m 60%\n- 5m 70%\n- 3m 85%\n- 2m 95%\n- 5m 55%\n\nWork 4x\n- 5m 92%\n-10m 95%\n-4m 55%\n\nCooldown\n- 7m 55%\n- 3m 50%"
-    },
-    {
-      "id": 110213101,
-      "date": "2026-05-19",
-      "name": "FTP Builder 4x8",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 92,
-      "duration_hours": 1.25,
-      "duration_formatted": "1h15m",
-      "workout_summary": "5m @151W | 5m @186W | 3m @220W | 2m @151W | 1m @275W | 2m @151W | 30s @316W | 1m30s @151W | 1m @275W | 4\u00d78m @278W / 4m rec",
-      "has_terrain": false,
-      "description": "- 5m 55% FTP easy\n- 5m Ramp 60-75% FTP\n- 3m 80% FTP steady\n- 2m 55% FTP easy\n- 1m 100% FTP controlled\n- 2m 55% FTP recovery\n- 30s 115% FTP openers\n- 90s 55% FTP easy\n- 1m 100% FTP controlled\n- 8m 100-102% FTP\n- 4m 55% FTP recovery\n- 8m 100-102% FTP\n- 4m 55% FTP recovery\n- 8m 100-102% FTP\n- 4m 55% FTP recovery\n- 8m 100-102% FTP\n- 10m Ramp 70-45% FTP cooldown"
-    },
-    {
       "id": 110409540,
-      "date": "2026-05-19",
+      "date": "2026-05-18",
       "name": "FTP Build W1 - 4x8",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 45,
-      "duration_hours": 0.8,
-      "duration_formatted": "48m",
-      "workout_summary": null,
+      "planned_tss": 99,
+      "duration_hours": 1.43,
+      "duration_formatted": "1h26m",
+      "workout_summary": "15m @178W | 3m @220W | 2m @151W | 1m @275W | 2m @151W | 4\u00d78m @278W / 4m rec | 15m @158W",
       "has_terrain": false,
-      "description": "- 15m Ramp 55-75% FTP\n- 3m 80% FTP steady\n- 2m 55% FTP easy\n- 1m 100% FTP opener\n4x\n- 8m 100-102% FTP\n- 4m 55% FTP recovery\n- 15m Ramp 70-45% FTP cooldown"
+      "description": "- 15m Ramp 55-75% FTP\n- 3m 80% FTP steady\n- 2m 55% FTP easy\n- 1m 100% FTP opener\n- 2m 55% FTP easy\n\n4x\n- 8m 100-102% FTP\n- 4m 55% FTP recovery\n\n- 15m Ramp 70-45% FTP cooldown"
     },
     {
       "id": 109958241,
@@ -7299,43 +7254,17 @@
       "description": "- 10m ramp 50-65%\n- 60m 65%\n- 10m ramp 65-50%"
     },
     {
-      "id": 109754525,
-      "date": "2026-05-21",
-      "name": "Tempo 2x25",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 94,
-      "duration_hours": 1.63,
-      "duration_formatted": "1h38m",
-      "workout_summary": "10m @165W | 5m @192W | 3m @220W | 2m @233W | 5m @151W | 2\u00d725m @233W / 5m rec | 10m @151W | 3m @137W",
-      "has_terrain": false,
-      "description": "Warmup\n- 10m 60%\n- 5m 70%\n- 3m 80%\n- 2m 85%\n- 5m 55%\n\nWork\n2x\n- 25m 85%\n- 5m 55%\n\nCooldown\n- 10m 55%\n- 3m 50%"
-    },
-    {
       "id": 110213102,
       "date": "2026-05-21",
       "name": "Steady State 2x20",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 89,
-      "duration_hours": 1.3,
-      "duration_formatted": "1h18m",
-      "workout_summary": null,
+      "planned_tss": 92,
+      "duration_hours": 1.38,
+      "duration_formatted": "1h23m",
+      "workout_summary": "5m @151W | 5m @186W | 3m @220W | 2m @151W | 1m @261W | 2m @151W | 2\u00d720m @257W / 5m rec | 15m @158W",
       "has_terrain": false,
-      "description": "- 5m 55% FTP easy\n- 5m Ramp 60-75% FTP\n- 3m 80% FTP steady\n- 2m 55% FTP easy\n- 1m 95% FTP controlled\n- 2m 55% FTP recovery\n- 20m 92-95% FTP\n- 5m 55% FTP recovery\n- 20m 92-95% FTP\n- 15m Ramp 70-45% FTP cooldown"
-    },
-    {
-      "id": 110409541,
-      "date": "2026-05-21",
-      "name": "Steady State W1 - 2x20",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 57,
-      "duration_hours": 0.95,
-      "duration_formatted": "57m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description": "- 15m Ramp 55-75% FTP\n- 2m 55% FTP easy\n2x\n- 20m 92-95% FTP\n- 5m 55% FTP recovery\n- 15m Ramp 70-45% FTP cooldown"
+      "description": "- 5m 55% FTP easy\n- 5m Ramp 60-75% FTP\n- 3m 80% FTP steady\n- 2m 55% FTP easy\n- 1m 95% FTP controlled\n- 2m 55% FTP recovery\n\n2x\n- 20m 92-95% FTP\n- 5m 55% FTP recovery\n\n- 15m Ramp 70-45% FTP cooldown"
     },
     {
       "id": 109754227,
@@ -7369,12 +7298,12 @@
       "name": "Weekend FTP W1 - 3x15",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 82,
-      "duration_hours": 1.42,
-      "duration_formatted": "1h25m",
-      "workout_summary": null,
+      "planned_tss": 138,
+      "duration_hours": 2.08,
+      "duration_formatted": "2h5m",
+      "workout_summary": "20m @178W | 3\u00d715m @265W / 5m rec | 30m @206W | 15m @158W",
       "has_terrain": false,
-      "description": "- 20m Ramp 55-75% FTP\n3x\n- 15m 95-98% FTP\n- 5m 55% FTP recovery\n- 30m 72-78% FTP steady aerobic\n- 15m Ramp 70-45% FTP cooldown"
+      "description": "- 20m Ramp 55-75% FTP\n\n3x\n- 15m 95-98% FTP\n- 5m 55% FTP recovery\n\n- 30m 72-78% FTP steady aerobic\n\n- 15m Ramp 70-45% FTP cooldown"
     },
     {
       "id": 103521785,
@@ -7416,42 +7345,16 @@
       "description_preview": "- 1h 55-60% power=3s"
     },
     {
-      "id": 109752270,
-      "date": "2026-05-26",
-      "name": "Threshold 3x20",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 130,
-      "duration_hours": 1.83,
-      "duration_formatted": "1h50m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "Warmup\n- 10m 60%\n- 5m 70%"
-    },
-    {
       "id": 110213103,
       "date": "2026-05-26",
       "name": "Controlled Density 5x7",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 94,
-      "duration_hours": 1.3,
-      "duration_formatted": "1h18m",
-      "workout_summary": "5m @151W | 5m @186W | 3m @220W | 2m @151W | 1m @275W | 2m @151W | 30s @316W | 1m30s @151W | 1m @275W | 5\u00d77m @272W / 3m rec",
+      "planned_tss": 95,
+      "duration_hours": 1.33,
+      "duration_formatted": "1h20m",
+      "workout_summary": "5m @151W | 5m @186W | 3m @220W | 2m @151W | 1m @275W | 2m @151W | 30s @316W | 1m30s @151W | 5\u00d77m @272W / 3m rec | 10m @158W",
       "has_terrain": false
-    },
-    {
-      "id": 110409545,
-      "date": "2026-05-26",
-      "name": "FTP Build W2 - 5x7",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 36,
-      "duration_hours": 0.67,
-      "duration_formatted": "40m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "- 15m Ramp 55-75% FTP\n5x\n- 7m 98-100% FTP"
     },
     {
       "id": 109958243,
@@ -7467,42 +7370,16 @@
       "description_preview": "- 10m ramp 50-65%\n- 60m 65%\n- 10m ramp 65-50%"
     },
     {
-      "id": 109754526,
-      "date": "2026-05-28",
-      "name": "Tempo 3x20",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 110,
-      "duration_hours": 1.88,
-      "duration_formatted": "1h53m",
-      "workout_summary": "10m @165W | 5m @192W | 3m @220W | 2m @233W | 5m @151W | 3\u00d720m @233W / 5m rec | 10m @151W | 3m @137W",
-      "has_terrain": false
-    },
-    {
       "id": 110213104,
       "date": "2026-05-28",
       "name": "Steady State 3x15",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 97,
-      "duration_hours": 1.35,
-      "duration_formatted": "1h21m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "- 5m 55% FTP easy\n- 5m Ramp 60-75% FTP\n- 3m 80% FTP steady"
-    },
-    {
-      "id": 110409546,
-      "date": "2026-05-28",
-      "name": "Steady State W2 - 3x15",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 46,
-      "duration_hours": 0.77,
-      "duration_formatted": "46m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "- 15m Ramp 55-75% FTP\n3x\n- 15m 93-97% FTP"
+      "planned_tss": 96,
+      "duration_hours": 1.4,
+      "duration_formatted": "1h24m",
+      "workout_summary": "5m @151W | 5m @186W | 3m @220W | 2m @151W | 3\u00d715m @258W / 4m rec | 12m @158W",
+      "has_terrain": false
     },
     {
       "id": 109754240,
@@ -7536,12 +7413,11 @@
       "name": "Weekend FTP W2 - 4x10",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 69,
-      "duration_hours": 1.23,
-      "duration_formatted": "1h14m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "- 20m Ramp 55-75% FTP\n4x\n- 10m 98-100% FTP"
+      "planned_tss": 131,
+      "duration_hours": 1.93,
+      "duration_formatted": "1h56m",
+      "workout_summary": "20m @178W | 4\u00d710m @272W / 4m rec | 25m @206W | 15m @158W",
+      "has_terrain": false
     },
     {
       "id": 105883482,
@@ -7583,42 +7459,16 @@
       "description_preview": "- 1h 55-60% power=3s"
     },
     {
-      "id": 105882058,
-      "date": "2026-06-02",
-      "name": "Threshold 2x30",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 117,
-      "duration_hours": 1.7,
-      "duration_formatted": "1h42m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "Warmup\n- 10m 60%\n- 5m 70%"
-    },
-    {
       "id": 110213105,
       "date": "2026-06-02",
       "name": "FTP Extension 3x10",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 87,
-      "duration_hours": 1.22,
-      "duration_formatted": "1h13m",
-      "workout_summary": "5m @151W | 5m @186W | 3m @220W | 2m @151W | 1m @275W | 2m @151W | 30s @316W | 1m30s @151W | 1m @275W | 3\u00d710m @275W / 5m rec",
+      "planned_tss": 89,
+      "duration_hours": 1.28,
+      "duration_formatted": "1h17m",
+      "workout_summary": "5m @151W | 5m @186W | 3m @220W | 2m @151W | 1m @275W | 2m @151W | 30s @316W | 1m30s @151W | 3\u00d710m @275W / 5m rec | 12m @158W",
       "has_terrain": false
-    },
-    {
-      "id": 110409549,
-      "date": "2026-06-02",
-      "name": "FTP Build W3 - 3x10",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 44,
-      "duration_hours": 0.75,
-      "duration_formatted": "45m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "- 15m Ramp 55-75% FTP\n3x\n- 10m 100-102% FTP"
     },
     {
       "id": 109958244,
@@ -7634,19 +7484,6 @@
       "description_preview": "- 10m ramp 50-65%\n- 60m 65%\n- 10m ramp 65-50%"
     },
     {
-      "id": 109754527,
-      "date": "2026-06-04",
-      "name": "Tempo 1x50",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 89,
-      "duration_hours": 1.47,
-      "duration_formatted": "1h28m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "2026-05-07 \u2013 3x15 Tempo\nWarmup\n- 10m 60%"
-    },
-    {
       "id": 110213106,
       "date": "2026-06-04",
       "name": "Continuous Steady 1x40",
@@ -7658,19 +7495,6 @@
       "workout_summary": null,
       "has_terrain": false,
       "description_preview": "- 5m 55% FTP easy\n- 5m Ramp 60-75% FTP\n- 3m 80% FTP steady"
-    },
-    {
-      "id": 110409550,
-      "date": "2026-06-04",
-      "name": "Steady State W3 - 1x40",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 99,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "- 15m Ramp 55-75% FTP\n- 40m 90-94% FTP steady\n- 20m 72-75% FTP aerobic"
     },
     {
       "id": 106080561,
@@ -7751,42 +7575,16 @@
       "description_preview": "- 1h 55-60% power=3s"
     },
     {
-      "id": 106078641,
-      "date": "2026-06-09",
-      "name": "Threshold 2x15 - Deload",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 84,
-      "duration_hours": 1.33,
-      "duration_formatted": "1h20m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "2026-06-02 \u2013 3x12 Threshold\nWarmup\n- 10m 60%"
-    },
-    {
       "id": 110213107,
       "date": "2026-06-09",
       "name": "Deload Density 3x6",
       "type": "WORKOUT",
       "sport_type": "Ride",
       "planned_tss": 55,
-      "duration_hours": 0.87,
-      "duration_formatted": "52m",
-      "workout_summary": "5m @151W | 5m @186W | 3m @220W | 2m @151W | 1m @275W | 3\u00d76m @265W / 3m rec",
+      "duration_hours": 0.9,
+      "duration_formatted": "54m",
+      "workout_summary": "5m @151W | 5m @186W | 3m @220W | 2m @151W | 3\u00d76m @265W / 3m rec | 12m @150W",
       "has_terrain": false
-    },
-    {
-      "id": 110409553,
-      "date": "2026-06-09",
-      "name": "Deload W4 - 3x6",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 32,
-      "duration_hours": 0.65,
-      "duration_formatted": "39m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "- 15m Ramp 55-72% FTP\n3x\n- 6m 95-98% FTP"
     },
     {
       "id": 109958347,
@@ -7820,25 +7618,11 @@
       "name": "Deload Steady 2x15",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 62,
-      "duration_hours": 1.0,
-      "duration_formatted": "1h",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "- 5m 55% FTP easy\n- 5m Ramp 60-70% FTP\n- 15m 88-92% FTP"
-    },
-    {
-      "id": 110409554,
-      "date": "2026-06-11",
-      "name": "Deload Steady W4",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 44,
-      "duration_hours": 0.83,
-      "duration_formatted": "50m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description_preview": "- 15m Ramp 55-70% FTP\n2x\n- 15m 88-92% FTP"
+      "planned_tss": 65,
+      "duration_hours": 1.08,
+      "duration_formatted": "1h5m",
+      "workout_summary": "5m @151W | 5m @178W | 2\u00d715m @248W / 5m rec | 15m @150W",
+      "has_terrain": false
     },
     {
       "id": 109756194,
@@ -7907,20 +7691,20 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 54,
-    "success": 8,
-    "patternA": 4,
-    "patternB": 4,
+    "attempted": 39,
+    "success": 11,
+    "patternA": 11,
+    "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 46
+    "bail_no_match": 28
   },
   "weekly_summary": {
     "total_training_hours": 12.42,
     "total_training_formatted": "12h25m",
     "total_tss": 591,
     "activities_count": 17,
-    "avg_hrv": 106.7,
-    "avg_resting_hr": 41.7
+    "avg_hrv": 105.3,
+    "avg_resting_hr": 40.9
   },
   "race_calendar": {
     "next_race": null,
