@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T06:02:31.681960",
+  "generated_at": "2026-05-19T10:06:07.533425",
   "version": "3.109",
   "script_hash": "f54c8dd00126",
   "scan_hours": 72,
@@ -1850,6 +1850,76 @@
           "zone": 1
         }
       ]
+    },
+    {
+      "activity_id": "i149585097",
+      "date": "2026-05-19",
+      "type": "VirtualRide",
+      "name": "Base",
+      "interval_summary": null,
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 5441,
+          "avg_power": 174,
+          "max_power": 279,
+          "avg_hr": 115,
+          "max_hr": 132,
+          "avg_cadence": 89.11409,
+          "zone": 2,
+          "training_load": 60.811295,
+          "decoupling": 1.9862863,
+          "avg_dfa_a1": 1.055435
+        }
+      ],
+      "dfa": {
+        "avg": 1.055,
+        "p25": 0.938,
+        "p50": 1.046,
+        "p75": 1.157,
+        "tiz_below_lt1": {
+          "secs": 3265,
+          "pct": 60.4,
+          "avg_hr": 114,
+          "avg_watts": 172
+        },
+        "tiz_lt1_transition": {
+          "secs": 2142,
+          "pct": 39.6,
+          "avg_hr": 117,
+          "avg_watts": 178
+        },
+        "tiz_transition_lt2": {
+          "secs": 1,
+          "pct": 0.0,
+          "avg_hr": 117,
+          "avg_watts": 172
+        },
+        "tiz_above_lt2": null,
+        "drift": {
+          "first_third_avg": 1.051,
+          "last_third_avg": 1.094,
+          "delta": 0.043,
+          "interpretable": true
+        },
+        "lt1_crossing": {
+          "secs_in_band": 1264,
+          "avg_hr": 117,
+          "avg_watts": 176
+        },
+        "lt2_crossing": {
+          "secs_in_band": 0,
+          "avg_hr": null,
+          "avg_watts": null
+        },
+        "quality": {
+          "valid_secs": 5408,
+          "total_secs": 5408,
+          "valid_pct": 100.0,
+          "artifact_rate_avg": 0.16,
+          "sufficient": true
+        }
+      }
     }
   ]
 }
