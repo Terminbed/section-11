@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-22T11:40:53.777721",
+    "last_updated": "2026-05-22T14:01:03.055845",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -102,15 +102,6 @@
   "athlete_notes": null,
   "alerts": [
     {
-      "metric": "rhr",
-      "value": 50,
-      "severity": "warning",
-      "threshold": "\u2191\u22655bpm vs baseline (42.6)",
-      "context": "RHR 50 is 7.4bpm above baseline. Monitor \u2014 alarm if persists >2 days.",
-      "persistence_days": 2,
-      "tier": 1
-    },
-    {
       "metric": "tid_distribution",
       "value": "Polarized",
       "severity": "warning",
@@ -121,34 +112,34 @@
     }
   ],
   "readiness_decision": {
-    "recommendation": "modify",
-    "priority": 2,
+    "recommendation": "go",
+    "priority": 3,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 99.6,
-        "delta_pct": null
+        "status": "green",
+        "value": 100.0,
+        "baseline_7d": 99.7,
+        "delta_pct": 0.3
       },
       "rhr": {
-        "status": "red",
-        "value": 50,
-        "baseline_7d": 42.6,
-        "delta_bpm": 7.4
+        "status": "green",
+        "value": 37,
+        "baseline_7d": 39,
+        "delta_bpm": -2
       },
       "sleep": {
         "status": "green",
-        "hours": 8.21,
-        "quality": null
+        "hours": 8.25,
+        "quality": 2
       },
       "acwr": {
         "status": "green",
         "value": 0.92
       },
       "ri": {
-        "status": "unavailable",
-        "value": null,
-        "value_yesterday": 0.87
+        "status": "green",
+        "value": 1.06,
+        "value_yesterday": 1.06
       },
       "tsb": {
         "status": "green",
@@ -156,10 +147,10 @@
       }
     },
     "signal_summary": {
-      "green": 3,
+      "green": 6,
       "amber": 0,
-      "red": 1,
-      "unavailable": 2
+      "red": 0,
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -168,17 +159,8 @@
       "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
-    "modification": {
-      "triggers": [
-        "rhr"
-      ],
-      "suggested_adjustments": {
-        "intensity": "reduce",
-        "volume": "preserve",
-        "cap_zone": null
-      }
-    },
-    "reason": "P2 signal count. 1 red (rhr), 0 amber ().",
+    "modification": null,
+    "reason": "P3 green light. 6 green, 0 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -305,12 +287,12 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 50,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": 8.21,
-      "sleep_formatted": "8h12m",
-      "sleep_score": null,
+      "resting_hr": 37,
+      "hrv": 100.0,
+      "sleep_quality": 2,
+      "sleep_hours": 8.25,
+      "sleep_formatted": "8h15m",
+      "sleep_score": 83.0,
       "fatigue": null,
       "soreness": null,
       "stress": null,
@@ -327,7 +309,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 1015,
+      "steps": 2377,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -339,14 +321,14 @@
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "recovery_index_yesterday": 0.87,
-    "hrv_baseline_7d": 99.6,
-    "rhr_baseline_7d": 42.6,
-    "hrv_baseline_28d": 96.8,
-    "rhr_baseline_28d": 39.9,
-    "latest_hrv": null,
-    "latest_rhr": 50,
+    "recovery_index": 1.06,
+    "recovery_index_yesterday": 1.06,
+    "hrv_baseline_7d": 99.7,
+    "rhr_baseline_7d": 39,
+    "hrv_baseline_28d": 96.9,
+    "rhr_baseline_28d": 39.0,
+    "latest_hrv": 100.0,
+    "latest_rhr": 37,
     "acwr": 0.92,
     "acwr_interpretation": "optimal",
     "monotony": 1.49,
@@ -358,7 +340,7 @@
     "multi_sport_detected": true,
     "strain": 881.0,
     "stress_tolerance": 5.9,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 5.6,
     "tss_7d_total": 591.0,
     "tss_28d_total": 2576.0,
     "zone_distribution_7d": {
@@ -729,7 +711,7 @@
           "current_week_hard_days_completed": 2,
           "current_week_hard_days_total": 2,
           "race_proximity": null,
-          "next_week_load": 0.84,
+          "next_week_load": 0.79,
           "plan_coverage_current_week": 0.0,
           "plan_coverage_next_week": 0.36
         },
@@ -764,9 +746,9 @@
     "p_max": 1174,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-22T11:40:53.776432",
+    "calculation_timestamp": "2026-05-22T14:01:03.054490",
     "data_quality": {
-      "hrv_data_points": 5,
+      "hrv_data_points": 6,
       "rhr_data_points": 7,
       "activities_7d": 15,
       "activities_28d": 57,
@@ -7203,11 +7185,11 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 49,
+      "resting_hr": 37,
       "hrv_rmssd": 100.0,
       "hrv_sdnn": 76.0,
-      "sleep_hours": 8.01,
-      "sleep_formatted": "8h",
+      "sleep_hours": 8.02,
+      "sleep_formatted": "8h1m",
       "sleep_quality": 2,
       "sleep_score": 86.0,
       "mental_energy": null,
@@ -7248,13 +7230,13 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 50,
-      "hrv_rmssd": null,
+      "resting_hr": 37,
+      "hrv_rmssd": 100.0,
       "hrv_sdnn": null,
-      "sleep_hours": 8.21,
-      "sleep_formatted": "8h12m",
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 8.25,
+      "sleep_formatted": "8h15m",
+      "sleep_quality": 2,
+      "sleep_score": 83.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
@@ -7274,7 +7256,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 1015,
+      "steps": 2377,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -7300,17 +7282,17 @@
       "description": "Warmup\n- 10m ramp 50-70%\n\n3x\n- 1m 88% FTP @ 102rpm\n- 2m 55% FTP\n\n- 61m 72% FTP\n\nCooldown\n- 10m ramp 55-50%"
     },
     {
-      "id": 110680124,
+      "id": 111712436,
       "date": "2026-05-26",
-      "name": "Threshold Consolidation",
+      "name": "Threshold 2x20",
       "type": "WORKOUT",
       "sport_type": "VirtualRide",
-      "planned_tss": 107,
-      "duration_hours": 1.47,
-      "duration_formatted": "1h28m",
-      "workout_summary": "10m @165W | 5m @192W | 3m @220W | 2m @247W | 2m @151W | 2\u00d722m @269W / 5m rec | 8m @151W | 4m @137W",
+      "planned_tss": 114,
+      "duration_hours": 1.67,
+      "duration_formatted": "1h40m",
+      "workout_summary": "15m @186W | 10m @198W | 2\u00d720m @266W / 5m rec | 15m @198W | 10m @151W",
       "has_terrain": false,
-      "description": "# Threshold Consolidation\n\n- 10m 60%\n- 5m 70%\n- 3m 80%\n- 2m 90%\n- 2m 55%\n\n2x\n- 22m 98%\n- 5m 55%\n\n- 8m 55%\n- 4m 50%"
+      "description": "# Threshold Consolidation Extended\n\n- 15m ramp 55-80%\n\n- 10m 72% FTP\n\n2x\n- 20m 97% FTP\n- 5m 55% FTP\n\n- 15m 72% FTP\n\n- 10m 55% FTP"
     },
     {
       "id": 110872639,
@@ -7328,7 +7310,7 @@
     {
       "id": 110680125,
       "date": "2026-05-28",
-      "name": "Steady-State Expansion",
+      "name": "Sweetspot 2x30",
       "type": "WORKOUT",
       "sport_type": "VirtualRide",
       "planned_tss": 116,
@@ -7339,17 +7321,17 @@
       "description": "# Steady-State Expansion\n\n- 15m ramp 60%-88%\n- 5m 55%\n\n2x\n- 30m 90%\n- 5m 55%\n\n- 10m 55%\n- 5m 50%"
     },
     {
-      "id": 110872511,
+      "id": 111711404,
       "date": "2026-05-29",
       "name": "Aerobic durability",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 107,
-      "duration_hours": 2.0,
-      "duration_formatted": "2h",
-      "workout_summary": "15m @176W | 45m @200W | 2\u00d712m @231W / 8m rec | 10m @198W | 10m @144W",
+      "planned_tss": 72,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": "15m @176W | 45m @192W | 2\u00d76m @220W / 3m rec | 12m @144W",
       "has_terrain": false,
-      "description": "Warmup\n- 15m ramp 55-73%\n\n- 45m 73% FTP\n\n2x\n- 12m 84% FTP\n- 8m 70% FTP\n\n- 10m 72% FTP\n\nCooldown\n- 10m ramp 55-50%"
+      "description": "# Aerobic Durability 90min\n\n- Warmup 15m ramp 55-73%\n\n- 45m 70% FTP\n\n2x\n- 6m 80% FTP 100rpm\n- 3m 68% FTP\n\n- Cooldown 12m ramp 55-50%"
     },
     {
       "id": 110872230,
@@ -7364,17 +7346,17 @@
       "has_terrain": false
     },
     {
-      "id": 110680126,
+      "id": 111711304,
       "date": "2026-06-02",
-      "name": "Over-Under FTP",
+      "name": "Sustained over-unders",
       "type": "WORKOUT",
       "sport_type": "VirtualRide",
-      "planned_tss": 76,
-      "duration_hours": 1.17,
-      "duration_formatted": "1h10m",
+      "planned_tss": 111,
+      "duration_hours": 1.75,
+      "duration_formatted": "1h45m",
       "workout_summary": null,
       "has_terrain": false,
-      "description_preview": "# Over-Under FTP\n- 10m 60%\n- 5m 70%"
+      "description_preview": "# Sustained Over-Unders Extended\n- 15m ramp 55-75%\n- 10m 72%"
     },
     {
       "id": 110872653,
@@ -7390,28 +7372,28 @@
       "description_preview": "Warmup\n- 10m ramp 50-65%\n- 70m 65% FTP"
     },
     {
-      "id": 110680127,
+      "id": 111712439,
       "date": "2026-06-04",
-      "name": "Continuous Sweet Spot",
+      "name": "Sweetspot 50",
       "type": "WORKOUT",
       "sport_type": "VirtualRide",
-      "planned_tss": 97,
-      "duration_hours": 1.45,
-      "duration_formatted": "1h27m",
+      "planned_tss": 116,
+      "duration_hours": 1.75,
+      "duration_formatted": "1h45m",
       "workout_summary": null,
       "has_terrain": false,
-      "description_preview": "# Continuous Sweet Spot\n- 15m ramp 60%-88%\n- 5m 55%"
+      "description_preview": "# Continuous Sweet Spot Extended\n- 15m ramp 60-88%\n- 20m 72% FTP"
     },
     {
-      "id": 110872514,
+      "id": 111712744,
       "date": "2026-06-05",
       "name": "Aerobic durability",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 107,
-      "duration_hours": 2.0,
-      "duration_formatted": "2h",
-      "workout_summary": "15m @176W | 45m @200W | 2\u00d712m @231W / 8m rec | 10m @198W | 10m @144W",
+      "planned_tss": 72,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": "15m @176W | 45m @192W | 2\u00d76m @220W / 3m rec | 12m @144W",
       "has_terrain": false
     },
     {
@@ -7428,15 +7410,15 @@
       "description_preview": "Warmup\n- 10m ramp 50-65%\n- 45m 65% FTP"
     },
     {
-      "id": 110821341,
+      "id": 111711305,
       "date": "2026-06-09",
       "name": "Threshold maintenance",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 56,
-      "duration_hours": 1.0,
-      "duration_formatted": "1h",
-      "workout_summary": "5m @137W | 5m @178W | 5m @206W | 1m30s @151W | 2\u00d78m @261W / 5m rec | 3\u00d730s @288W / 2m rec | 10m @137W",
+      "planned_tss": 48,
+      "duration_hours": 0.89,
+      "duration_formatted": "53m30s",
+      "workout_summary": "5m @137W | 5m @178W | 5m @206W | 1m30s @151W | 2\u00d76m @261W / 5m rec | 2\u00d730s @288W / 2m rec | 10m @137W",
       "has_terrain": false
     },
     {
@@ -7492,8 +7474,8 @@
     "total_training_formatted": "12h35m",
     "total_tss": 591,
     "activities_count": 15,
-    "avg_hrv": 99.6,
-    "avg_resting_hr": 42.6
+    "avg_hrv": 99.7,
+    "avg_resting_hr": 39.0
   },
   "race_calendar": {
     "next_race": null,
