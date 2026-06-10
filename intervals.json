@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T16:06:53.978404",
+  "generated_at": "2026-06-10T18:41:22.277741",
   "version": "3.109",
   "script_hash": "f54c8dd00126",
   "scan_hours": 72,
@@ -3170,6 +3170,95 @@
           "duration_secs": 1687,
           "avg_hr": 113,
           "max_hr": 139,
+          "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i156156409",
+      "date": "2026-06-10",
+      "type": "VirtualRide",
+      "name": "Recovery",
+      "interval_summary": null,
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 3603,
+          "avg_power": 156,
+          "max_power": 236,
+          "avg_hr": 103,
+          "max_hr": 116,
+          "avg_cadence": 88.23702,
+          "zone": 2,
+          "training_load": 32.045753,
+          "decoupling": -0.7056344,
+          "avg_dfa_a1": 1.1552854
+        }
+      ],
+      "dfa": {
+        "avg": 1.155,
+        "p25": 1.094,
+        "p50": 1.171,
+        "p75": 1.226,
+        "tiz_below_lt1": {
+          "secs": 3347,
+          "pct": 92.9,
+          "avg_hr": 104,
+          "avg_watts": 156
+        },
+        "tiz_lt1_transition": {
+          "secs": 249,
+          "pct": 6.9,
+          "avg_hr": 105,
+          "avg_watts": 153
+        },
+        "tiz_transition_lt2": {
+          "secs": 7,
+          "pct": 0.2,
+          "avg_hr": 110,
+          "avg_watts": 157
+        },
+        "tiz_above_lt2": null,
+        "drift": {
+          "first_third_avg": 1.119,
+          "last_third_avg": 1.188,
+          "delta": 0.069,
+          "interpretable": true
+        },
+        "lt1_crossing": {
+          "secs_in_band": 347,
+          "avg_hr": 105,
+          "avg_watts": 155
+        },
+        "lt2_crossing": {
+          "secs_in_band": 1,
+          "avg_hr": null,
+          "avg_watts": null
+        },
+        "quality": {
+          "valid_secs": 3603,
+          "total_secs": 3603,
+          "valid_pct": 100.0,
+          "artifact_rate_avg": 0.34,
+          "sufficient": true
+        }
+      }
+    },
+    {
+      "activity_id": "i156130614",
+      "date": "2026-06-10",
+      "type": "Ride",
+      "name": "Stockport Cycling",
+      "interval_summary": [
+        "1x 22m 110bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "1320s@110bpm",
+          "duration_secs": 1320,
+          "avg_hr": 110,
+          "max_hr": 134,
           "zone": 1
         }
       ]
