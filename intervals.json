@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T17:33:53.673267",
+  "generated_at": "2026-06-16T20:31:13.591158",
   "version": "3.109",
   "script_hash": "f54c8dd00126",
   "scan_hours": 72,
@@ -3228,6 +3228,136 @@
           "total_secs": 4893,
           "valid_pct": 97.9,
           "artifact_rate_avg": 0.89,
+          "sufficient": true
+        }
+      }
+    },
+    {
+      "activity_id": "i157820052",
+      "date": "2026-06-16",
+      "type": "Run",
+      "name": "Manchester Running",
+      "interval_summary": [
+        "1x 8m44s 5:23",
+        "1x 4m57s 5:30"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 10,
+          "avg_power": 101,
+          "max_power": 365,
+          "avg_hr": 68,
+          "max_hr": 74,
+          "avg_cadence": 24.857143,
+          "zone": 1,
+          "decoupling": "-Infinity"
+        },
+        {
+          "type": "WORK",
+          "label": "524s@359w84rpm",
+          "duration_secs": 524,
+          "avg_power": 359,
+          "max_power": 410,
+          "avg_hr": 129,
+          "max_hr": 138,
+          "avg_cadence": 83.66031,
+          "zone": 2,
+          "training_load": 8.832759,
+          "decoupling": 5.7721305,
+          "avg_dfa_a1": 0.6598504
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 39,
+          "avg_power": 328,
+          "max_power": 353,
+          "avg_hr": 132,
+          "max_hr": 135,
+          "avg_cadence": 82.02564,
+          "zone": 2,
+          "training_load": 0.6138278,
+          "decoupling": 0.23194087,
+          "avg_dfa_a1": 0.4987725
+        },
+        {
+          "type": "WORK",
+          "label": "297s@350w82rpm",
+          "duration_secs": 297,
+          "avg_power": 350,
+          "max_power": 440,
+          "avg_hr": 134,
+          "max_hr": 140,
+          "avg_cadence": 81.915825,
+          "zone": 2,
+          "training_load": 4.8944836,
+          "decoupling": 4.4325395,
+          "avg_dfa_a1": 0.74222
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1242,
+          "avg_power": 328,
+          "max_power": 424,
+          "avg_hr": 135,
+          "max_hr": 141,
+          "avg_cadence": 80.44122,
+          "zone": 1,
+          "training_load": 17.880451,
+          "decoupling": 0.71688455,
+          "avg_dfa_a1": 0.5874662
+        }
+      ],
+      "dfa": {
+        "avg": 0.634,
+        "p25": 0.513,
+        "p50": 0.619,
+        "p75": 0.748,
+        "tiz_below_lt1": {
+          "secs": 34,
+          "pct": 1.6,
+          "avg_hr": 128,
+          "avg_watts": 357
+        },
+        "tiz_lt1_transition": {
+          "secs": 482,
+          "pct": 23.2,
+          "avg_hr": 134,
+          "avg_watts": 342
+        },
+        "tiz_transition_lt2": {
+          "secs": 1085,
+          "pct": 52.3,
+          "avg_hr": 134,
+          "avg_watts": 340
+        },
+        "tiz_above_lt2": {
+          "secs": 475,
+          "pct": 22.9,
+          "avg_hr": 134,
+          "avg_watts": 332
+        },
+        "drift": {
+          "first_third_avg": 0.677,
+          "last_third_avg": 0.533,
+          "delta": -0.144,
+          "interpretable": false
+        },
+        "lt1_crossing": {
+          "secs_in_band": 35,
+          "avg_hr": null,
+          "avg_watts": null
+        },
+        "lt2_crossing": {
+          "secs_in_band": 415,
+          "avg_hr": 135,
+          "avg_watts": 340
+        },
+        "quality": {
+          "valid_secs": 2076,
+          "total_secs": 2109,
+          "valid_pct": 98.4,
+          "artifact_rate_avg": 0.39,
           "sufficient": true
         }
       }
