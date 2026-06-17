@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-17T21:27:29.690166",
+    "last_updated": "2026-06-17T22:57:31.804978",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -102,8 +102,8 @@
   "athlete_notes": null,
   "alerts": [],
   "readiness_decision": {
-    "recommendation": "modify",
-    "priority": 2,
+    "recommendation": "go",
+    "priority": 3,
     "signals": {
       "hrv": {
         "status": "unavailable",
@@ -132,13 +132,13 @@
         "value_yesterday": 1.19
       },
       "tsb": {
-        "status": "amber",
-        "value": -19.5
+        "status": "green",
+        "value": -11.5
       }
     },
     "signal_summary": {
-      "green": 1,
-      "amber": 2,
+      "green": 2,
+      "amber": 1,
       "red": 0,
       "unavailable": 3
     },
@@ -149,18 +149,8 @@
       "modifier_applied": "default"
     },
     "race_week_defers": false,
-    "modification": {
-      "triggers": [
-        "rhr",
-        "tsb"
-      ],
-      "suggested_adjustments": {
-        "intensity": "reduce",
-        "volume": "reduce",
-        "cap_zone": null
-      }
-    },
-    "reason": "P2 signal count. 2 amber (rhr, tsb) >= threshold 2.",
+    "modification": null,
+    "reason": "P3 green light. 2 green, 1 amber (threshold 2), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -177,25 +167,25 @@
     "total_activities": 17,
     "by_activity_type": {
       "Ride": {
-        "duration_decimal_hours": 7.76,
-        "count": 7,
-        "tss": 457,
-        "distance_km": 207.4,
+        "duration_decimal_hours": 8.06,
+        "count": 8,
+        "tss": 535,
+        "distance_km": 214.4,
         "display": {
           "distance": {
-            "value": 207.4,
+            "value": 214.4,
             "unit": "km"
           }
         }
       },
       "Run": {
-        "duration_decimal_hours": 2.05,
-        "count": 4,
-        "tss": 181,
-        "distance_km": 25.8,
+        "duration_decimal_hours": 1.74,
+        "count": 3,
+        "tss": 103,
+        "distance_km": 18.7,
         "display": {
           "distance": {
-            "value": 25.8,
+            "value": 18.7,
             "unit": "km"
           }
         }
@@ -252,10 +242,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 96.49,
-      "atl": 116.01,
-      "tsb": -19.52,
-      "ramp_rate": 5.3,
+      "ctl": 94.78,
+      "atl": 106.29,
+      "tsb": -11.51,
+      "ramp_rate": 3.58,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -321,7 +311,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 12811,
+      "steps": 13102,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -344,11 +334,11 @@
     "acwr": 1.06,
     "acwr_interpretation": "optimal",
     "monotony": 1.81,
-    "monotony_interpretation": "normal (primary sport 1.19, total 1.81 inflated by multi-sport)",
+    "monotony_interpretation": "normal (primary sport 1.5, total 1.81 inflated by multi-sport)",
     "primary_sport": "cycling",
-    "primary_sport_monotony": 1.19,
-    "primary_sport_tss_7d": 586.0,
-    "effective_monotony": 1.19,
+    "primary_sport_monotony": 1.5,
+    "primary_sport_tss_7d": 664.0,
+    "effective_monotony": 1.5,
     "multi_sport_detected": true,
     "strain": 1441.0,
     "stress_tolerance": 8.0,
@@ -383,12 +373,12 @@
       "zone_basis": "mixed"
     },
     "seiler_tid_7d_primary": {
-      "z1_seconds": 22385,
-      "z2_seconds": 5371,
-      "z3_seconds": 7445,
-      "z1_pct": 63.6,
-      "z2_pct": 15.3,
-      "z3_pct": 21.1,
+      "z1_seconds": 23467,
+      "z2_seconds": 5387,
+      "z3_seconds": 7455,
+      "z1_pct": 64.6,
+      "z2_pct": 14.8,
+      "z3_pct": 20.5,
       "polarization_index": 1.95,
       "classification": "Pyramidal",
       "zone_basis": "mixed",
@@ -406,12 +396,12 @@
       "zone_basis": "mixed"
     },
     "seiler_tid_28d_primary": {
-      "z1_seconds": 94474,
-      "z2_seconds": 26136,
-      "z3_seconds": 31639,
-      "z1_pct": 62.1,
-      "z2_pct": 17.2,
-      "z3_pct": 20.8,
+      "z1_seconds": 95556,
+      "z2_seconds": 26152,
+      "z3_seconds": 31649,
+      "z1_pct": 62.3,
+      "z2_pct": 17.1,
+      "z3_pct": 20.6,
       "polarization_index": 1.88,
       "classification": "Pyramidal",
       "zone_basis": "mixed",
@@ -787,7 +777,7 @@
     "p_max": 1173,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-17T21:27:29.688805",
+    "calculation_timestamp": "2026-06-17T22:57:31.803719",
     "data_quality": {
       "hrv_data_points": 4,
       "rhr_data_points": 7,
@@ -935,8 +925,8 @@
     {
       "id": "i158126224",
       "date": "2026-06-17T17:13:33",
-      "type": "Run",
-      "name": "Afternoon Ride",
+      "type": "Ride",
+      "name": "Endurance",
       "duration_hours": 0.31,
       "distance_km": 7.04,
       "tss": 78,
@@ -959,7 +949,7 @@
       "wind_speed_unit": "KMH",
       "work_kj": 24.0,
       "calories": 154,
-      "carbs_used": null,
+      "carbs_used": 519,
       "carbs_ingested": null,
       "variability_index": 3.45,
       "decoupling": 70.586494,
@@ -8900,7 +8890,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 12811,
+      "steps": 13102,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
