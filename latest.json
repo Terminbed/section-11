@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-23T14:38:30.305185",
+    "last_updated": "2026-06-23T17:04:16.556275",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -143,7 +143,7 @@
       },
       "tsb": {
         "status": "amber",
-        "value": -21.2
+        "value": -16.5
       }
     },
     "signal_summary": {
@@ -153,10 +153,10 @@
       "unavailable": 0
     },
     "phase_context": {
-      "phase": "Build",
+      "phase": "Deload",
       "phase_week": 1,
-      "amber_threshold": 3,
-      "modifier_applied": "build_loosened"
+      "amber_threshold": 2,
+      "modifier_applied": "default"
     },
     "race_week_defers": false,
     "modification": {
@@ -226,10 +226,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 99.01,
-      "atl": 120.24,
-      "tsb": -21.23,
-      "ramp_rate": 5.08,
+      "ctl": 97.99,
+      "atl": 114.51,
+      "tsb": -16.52,
+      "ramp_rate": 4.07,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -295,7 +295,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 11832,
+      "steps": 12673,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -705,9 +705,11 @@
       ]
     },
     "phase_detection": {
-      "phase": "Build",
-      "confidence": "high",
-      "reason_codes": [],
+      "phase": "Deload",
+      "confidence": "medium",
+      "reason_codes": [
+        "PLAN_GAP_NEXT_WEEK"
+      ],
       "basis": {
         "stream_1": {
           "ctl_slope": 0.2,
@@ -717,12 +719,12 @@
         },
         "stream_2": {
           "planned_tss_delta": 0.54,
-          "hard_sessions_planned": 2,
+          "hard_sessions_planned": 1,
           "current_week_hard_days_completed": 2,
-          "current_week_hard_days_total": 4,
+          "current_week_hard_days_total": 3,
           "race_proximity": null,
           "next_week_load": 0.61,
-          "plan_coverage_current_week": 0.35,
+          "plan_coverage_current_week": 0.24,
           "plan_coverage_next_week": 0.29
         },
         "data_quality": "good",
@@ -733,8 +735,10 @@
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": "Build",
-    "phase_triggers": [],
+    "phase_detected": "Deload",
+    "phase_triggers": [
+      "PLAN_GAP_NEXT_WEEK"
+    ],
     "seasonal_context": "Build / Early Race Season",
     "benchmark_indoor": {
       "current_ftp": 280,
@@ -756,13 +760,13 @@
     "p_max": 1173,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 57.0,
-    "calculation_timestamp": "2026-06-23T14:38:30.303922",
+    "calculation_timestamp": "2026-06-23T17:04:16.554905",
     "data_quality": {
       "hrv_data_points": 4,
       "rhr_data_points": 7,
       "activities_7d": 15,
       "activities_28d": 67,
-      "planned_workouts_7d": 7,
+      "planned_workouts_7d": 6,
       "ftp_history_days": {
         "indoor": 55,
         "outdoor": 55
@@ -8728,8 +8732,8 @@
       "resting_hr": 32,
       "hrv_rmssd": 89.0,
       "hrv_sdnn": 69.0,
-      "sleep_hours": 8.62,
-      "sleep_formatted": "8h37m",
+      "sleep_hours": 8.61,
+      "sleep_formatted": "8h36m",
       "sleep_quality": 3,
       "sleep_score": 77.0,
       "mental_energy": null,
@@ -8751,7 +8755,7 @@
       "respiration": 12.514584,
       "body_fat_pct": 13.8,
       "abdomen_cm": null,
-      "steps": 18,
+      "steps": 12079,
       "hydration_volume_l": 1.7852137,
       "kcal_consumed": 4218,
       "carbohydrates_g": 584.38794,
@@ -8796,7 +8800,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 11832,
+      "steps": 12673,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -8822,20 +8826,6 @@
       "description": "6x\n-15m 70%"
     },
     {
-      "id": 117983925,
-      "date": "2026-06-23",
-      "name": "3 x 6:00 (heat-adj)",
-      "type": "WORKOUT",
-      "sport_type": "Run",
-      "planned_tss": 43,
-      "duration_hours": 0.67,
-      "duration_formatted": "40m",
-      "workout_summary": "10m | 2\u00d76m / 1m rec | 6m | 10m",
-      "has_terrain": false,
-      "start_time": "12:00",
-      "description": "- 10m 5:38-7:03/km Pace intensity=warmup\n\n2x\n- 6m 4:22/km Pace intensity=active\n- 1m 5:38-16:54/km Pace intensity=recovery\n\n- 6m 4:22/km Pace intensity=active\n\n- 10m 5:38-7:03/km Pace intensity=cooldown\n\nPaces adjusted +1.5% for heat & humidity (19\u00b0C, dew point 14\u00b0C).\n[NSM]"
-    },
-    {
       "id": 115503292,
       "date": "2026-06-24",
       "name": "Endurance",
@@ -8847,20 +8837,6 @@
       "workout_summary": null,
       "has_terrain": false,
       "description": "6x\n-15m 70%"
-    },
-    {
-      "id": 117585573,
-      "date": "2026-06-24",
-      "name": "Easy Run",
-      "type": "WORKOUT",
-      "sport_type": "Run",
-      "planned_tss": 33,
-      "duration_hours": 0.67,
-      "duration_formatted": "40m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "start_time": "12:00",
-      "description": "- 40m 55-70% HR hr=1s\n[NSM]"
     },
     {
       "id": 115502415,
@@ -9183,12 +9159,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 29,
-    "success": 9,
-    "patternA": 9,
+    "attempted": 27,
+    "success": 8,
+    "patternA": 8,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 20
+    "bail_no_match": 19
   },
   "weekly_summary": {
     "total_training_hours": 13.24,
