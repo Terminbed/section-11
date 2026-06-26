@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T11:43:25.851049",
+  "generated_at": "2026-06-26T13:49:51.735085",
   "version": "3.109",
   "script_hash": "f54c8dd00126",
   "scan_hours": 72,
@@ -2758,6 +2758,81 @@
           "total_secs": 7415,
           "valid_pct": 92.9,
           "artifact_rate_avg": 0.79,
+          "sufficient": true
+        }
+      }
+    },
+    {
+      "activity_id": "i160489458",
+      "date": "2026-06-26",
+      "type": "Run",
+      "name": "Easy",
+      "interval_summary": null,
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 2420,
+          "avg_power": 306,
+          "max_power": 438,
+          "avg_hr": 124,
+          "max_hr": 134,
+          "avg_cadence": 82.17445,
+          "zone": 1,
+          "training_load": 31.092993,
+          "decoupling": 5.044472,
+          "avg_dfa_a1": 0.72298133
+        }
+      ],
+      "dfa": {
+        "avg": 0.737,
+        "p25": 0.583,
+        "p50": 0.713,
+        "p75": 0.834,
+        "tiz_below_lt1": {
+          "secs": 267,
+          "pct": 11.3,
+          "avg_hr": 116,
+          "avg_watts": 295
+        },
+        "tiz_lt1_transition": {
+          "secs": 731,
+          "pct": 30.8,
+          "avg_hr": 126,
+          "avg_watts": 311
+        },
+        "tiz_transition_lt2": {
+          "secs": 1139,
+          "pct": 48.0,
+          "avg_hr": 127,
+          "avg_watts": 309
+        },
+        "tiz_above_lt2": {
+          "secs": 235,
+          "pct": 9.9,
+          "avg_hr": 129,
+          "avg_watts": 312
+        },
+        "drift": {
+          "first_third_avg": 0.902,
+          "last_third_avg": 0.66,
+          "delta": -0.242,
+          "interpretable": true
+        },
+        "lt1_crossing": {
+          "secs_in_band": 119,
+          "avg_hr": 123,
+          "avg_watts": 298
+        },
+        "lt2_crossing": {
+          "secs_in_band": 378,
+          "avg_hr": 129,
+          "avg_watts": 315
+        },
+        "quality": {
+          "valid_secs": 2372,
+          "total_secs": 2419,
+          "valid_pct": 98.1,
+          "artifact_rate_avg": 0.24,
           "sufficient": true
         }
       }
