@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-04T11:50:06.313846",
+    "last_updated": "2026-07-04T13:10:39.009546",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -100,20 +100,10 @@
     "years_on_platform": 2
   },
   "athlete_notes": null,
-  "alerts": [
-    {
-      "metric": "rhr",
-      "value": 46,
-      "severity": "warning",
-      "threshold": "\u2191\u22655bpm vs baseline (38.9)",
-      "context": "RHR 46 is 7.1bpm above baseline. Monitor \u2014 alarm if persists >2 days.",
-      "persistence_days": 1,
-      "tier": 1
-    }
-  ],
+  "alerts": [],
   "readiness_decision": {
-    "recommendation": "modify",
-    "priority": 2,
+    "recommendation": "go",
+    "priority": 3,
     "signals": {
       "hrv": {
         "status": "unavailable",
@@ -122,15 +112,15 @@
         "delta_pct": null
       },
       "rhr": {
-        "status": "red",
-        "value": 46,
-        "baseline_7d": 38.9,
-        "delta_bpm": 7.1
+        "status": "green",
+        "value": 32,
+        "baseline_7d": 36,
+        "delta_bpm": -4
       },
       "sleep": {
         "status": "green",
         "hours": 8.98,
-        "quality": null
+        "quality": 1
       },
       "acwr": {
         "status": "green",
@@ -147,9 +137,9 @@
       }
     },
     "signal_summary": {
-      "green": 2,
+      "green": 3,
       "amber": 1,
-      "red": 1,
+      "red": 0,
       "unavailable": 2
     },
     "phase_context": {
@@ -159,18 +149,8 @@
       "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
-    "modification": {
-      "triggers": [
-        "rhr",
-        "tsb"
-      ],
-      "suggested_adjustments": {
-        "intensity": "reduce",
-        "volume": "reduce",
-        "cap_zone": null
-      }
-    },
-    "reason": "P2 signal count. 1 red (rhr), 1 amber (tsb).",
+    "modification": null,
+    "reason": "P3 green light. 3 green, 1 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -273,12 +253,12 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 46,
+      "resting_hr": 32,
       "hrv": null,
-      "sleep_quality": null,
+      "sleep_quality": 1,
       "sleep_hours": 8.98,
-      "sleep_formatted": "8h58m",
-      "sleep_score": null,
+      "sleep_formatted": "8h59m",
+      "sleep_score": 91.0,
       "fatigue": null,
       "soreness": null,
       "stress": null,
@@ -310,11 +290,11 @@
     "recovery_index": null,
     "recovery_index_yesterday": null,
     "hrv_baseline_7d": 96.7,
-    "rhr_baseline_7d": 38.9,
+    "rhr_baseline_7d": 36,
     "hrv_baseline_28d": 91.7,
-    "rhr_baseline_28d": 37.6,
+    "rhr_baseline_28d": 36.9,
     "latest_hrv": null,
-    "latest_rhr": 46,
+    "latest_rhr": 32,
     "acwr": 1.13,
     "acwr_interpretation": "optimal",
     "monotony": 1.36,
@@ -757,7 +737,7 @@
     "p_max": 1173,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-07-04T11:50:06.312511",
+    "calculation_timestamp": "2026-07-04T13:10:39.008311",
     "data_quality": {
       "hrv_data_points": 3,
       "rhr_data_points": 7,
@@ -775,7 +755,7 @@
       "id": "i162606264",
       "date": "2026-07-04T08:07:59",
       "type": "Ride",
-      "name": "Manchester Road Cycling",
+      "name": "CV Sat fast one",
       "duration_hours": 3.82,
       "distance_km": 114.62,
       "tss": 267,
@@ -1060,7 +1040,8 @@
           }
         }
       },
-      "weather_status": "unavailable"
+      "weather_status": "unavailable",
+      "description": "Hanging on for dear life.\r\nOnly dropped 5 or 6 times"
     },
     {
       "id": "i162443449",
@@ -8399,11 +8380,11 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 40,
+      "resting_hr": 34,
       "hrv_rmssd": 97.0,
       "hrv_sdnn": 97.0,
       "sleep_hours": 7.88,
-      "sleep_formatted": "7h52m",
+      "sleep_formatted": "7h53m",
       "sleep_quality": 1,
       "sleep_score": 93.0,
       "mental_energy": null,
@@ -8425,7 +8406,7 @@
       "respiration": 12.376855,
       "body_fat_pct": 13.7,
       "abdomen_cm": null,
-      "steps": 9274,
+      "steps": 4949,
       "hydration_volume_l": 1.629046,
       "kcal_consumed": 4197,
       "carbohydrates_g": 708.699,
@@ -8470,7 +8451,7 @@
       "respiration": 12.927536,
       "body_fat_pct": 14.1,
       "abdomen_cm": null,
-      "steps": 16117,
+      "steps": 8147,
       "hydration_volume_l": 1.7534779,
       "kcal_consumed": 3332,
       "carbohydrates_g": 532.1264,
@@ -8489,13 +8470,13 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 46,
+      "resting_hr": 32,
       "hrv_rmssd": null,
       "hrv_sdnn": null,
       "sleep_hours": 8.98,
-      "sleep_formatted": "8h58m",
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_formatted": "8h59m",
+      "sleep_quality": 1,
+      "sleep_score": 91.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
@@ -8659,7 +8640,7 @@
     "total_tss": 854,
     "activities_count": 16,
     "avg_hrv": 96.7,
-    "avg_resting_hr": 38.9
+    "avg_resting_hr": 36.0
   },
   "race_calendar": {
     "next_race": null,
