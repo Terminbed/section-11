@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-14T09:15:46.926497",
+    "last_updated": "2026-07-14T11:04:05.703859",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -102,15 +102,6 @@
   "athlete_notes": null,
   "alerts": [
     {
-      "metric": "rhr",
-      "value": 47,
-      "severity": "warning",
-      "threshold": "\u2191\u22655bpm vs baseline (40.3)",
-      "context": "RHR 47 is 6.7bpm above baseline. Monitor \u2014 alarm if persists >2 days.",
-      "persistence_days": 1,
-      "tier": 1
-    },
-    {
       "metric": "tid_distribution",
       "value": "Polarized",
       "severity": "warning",
@@ -118,37 +109,46 @@
       "context": "TID shift: 7d Polarized vs 28d Pyramidal. Training distribution changing.",
       "persistence_days": null,
       "tier": 3
+    },
+    {
+      "metric": "race_week",
+      "value": 6,
+      "severity": "info",
+      "threshold": "RACE_A within 7 days",
+      "context": "Race week D-6 of '5K Race'. Today: Recovery, 0-31 TSS. Z1-Z2 only",
+      "persistence_days": null,
+      "tier": 1
     }
   ],
   "readiness_decision": {
-    "recommendation": "modify",
-    "priority": 2,
+    "recommendation": "go",
+    "priority": 3,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 76.7,
-        "delta_pct": null
+        "status": "green",
+        "value": 102.0,
+        "baseline_7d": 83.0,
+        "delta_pct": 22.9
       },
       "rhr": {
-        "status": "red",
-        "value": 47,
-        "baseline_7d": 40.3,
-        "delta_bpm": 6.7
+        "status": "green",
+        "value": 33,
+        "baseline_7d": 37.1,
+        "delta_bpm": -4.1
       },
       "sleep": {
         "status": "green",
-        "hours": 8.44,
-        "quality": null
+        "hours": 8.45,
+        "quality": 2
       },
       "acwr": {
         "status": "green",
         "value": 0.96
       },
       "ri": {
-        "status": "unavailable",
-        "value": null,
-        "value_yesterday": 1.17
+        "status": "green",
+        "value": 1.38,
+        "value_yesterday": 1.23
       },
       "tsb": {
         "status": "green",
@@ -156,29 +156,20 @@
       }
     },
     "signal_summary": {
-      "green": 3,
+      "green": 6,
       "amber": 0,
-      "red": 1,
-      "unavailable": 2
+      "red": 0,
+      "unavailable": 0
     },
     "phase_context": {
-      "phase": "Build",
+      "phase": "Taper",
       "phase_week": 1,
-      "amber_threshold": 3,
-      "modifier_applied": "build_loosened"
+      "amber_threshold": 1,
+      "modifier_applied": "race_week_tightened"
     },
     "race_week_defers": false,
-    "modification": {
-      "triggers": [
-        "rhr"
-      ],
-      "suggested_adjustments": {
-        "intensity": "reduce",
-        "volume": "preserve",
-        "cap_zone": null
-      }
-    },
-    "reason": "P2 signal count. 1 red (rhr), 0 amber ().",
+    "modification": null,
+    "reason": "P3 green light. 6 green, 0 amber (threshold 1), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -281,12 +272,12 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 47,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": 8.44,
-      "sleep_formatted": "8h26m",
-      "sleep_score": null,
+      "resting_hr": 33,
+      "hrv": 102.0,
+      "sleep_quality": 2,
+      "sleep_hours": 8.45,
+      "sleep_formatted": "8h27m",
+      "sleep_score": 88.0,
       "fatigue": null,
       "soreness": null,
       "stress": null,
@@ -315,14 +306,14 @@
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "recovery_index_yesterday": 1.17,
-    "hrv_baseline_7d": 76.7,
-    "rhr_baseline_7d": 40.3,
-    "hrv_baseline_28d": 89.2,
-    "rhr_baseline_28d": 37.0,
-    "latest_hrv": null,
-    "latest_rhr": 47,
+    "recovery_index": 1.38,
+    "recovery_index_yesterday": 1.23,
+    "hrv_baseline_7d": 83.0,
+    "rhr_baseline_7d": 37.1,
+    "hrv_baseline_28d": 89.9,
+    "rhr_baseline_28d": 36.2,
+    "latest_hrv": 102.0,
+    "latest_rhr": 33,
     "acwr": 0.96,
     "acwr_interpretation": "optimal",
     "monotony": 1.46,
@@ -334,7 +325,7 @@
     "multi_sport_detected": true,
     "strain": 1115.0,
     "stress_tolerance": 7.6,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 5.5,
     "tss_7d_total": 764.0,
     "tss_28d_total": 3175.0,
     "zone_distribution_7d": {
@@ -689,9 +680,11 @@
       ]
     },
     "phase_detection": {
-      "phase": "Build",
+      "phase": "Taper",
       "confidence": "high",
-      "reason_codes": [],
+      "reason_codes": [
+        "RACE_IMMINENT_VOLUME_REDUCING"
+      ],
       "basis": {
         "stream_1": {
           "ctl_slope": null,
@@ -704,10 +697,10 @@
           "hard_sessions_planned": 1,
           "current_week_hard_days_completed": 1,
           "current_week_hard_days_total": 2,
-          "race_proximity": null,
+          "race_proximity": 6,
           "next_week_load": 0.26,
           "plan_coverage_current_week": 0.2,
-          "plan_coverage_next_week": 0.13
+          "plan_coverage_next_week": 0.33
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -717,8 +710,10 @@
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": "Build",
-    "phase_triggers": [],
+    "phase_detected": "Taper",
+    "phase_triggers": [
+      "RACE_IMMINENT_VOLUME_REDUCING"
+    ],
     "seasonal_context": "Peak Race Season",
     "benchmark_indoor": {
       "current_ftp": 280,
@@ -740,9 +735,9 @@
     "p_max": 1173,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-07-14T09:15:46.925168",
+    "calculation_timestamp": "2026-07-14T11:04:05.702635",
     "data_quality": {
-      "hrv_data_points": 3,
+      "hrv_data_points": 4,
       "rhr_data_points": 7,
       "activities_7d": 14,
       "activities_28d": 59,
@@ -7885,13 +7880,13 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 41,
+      "resting_hr": 33,
       "hrv_rmssd": 91.0,
       "hrv_sdnn": 70.0,
-      "sleep_hours": 7.11,
-      "sleep_formatted": "7h6m",
+      "sleep_hours": 7.12,
+      "sleep_formatted": "7h7m",
       "sleep_quality": 3,
-      "sleep_score": 76.0,
+      "sleep_score": 79.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 62.0,
@@ -7911,7 +7906,7 @@
       "respiration": 12.391732,
       "body_fat_pct": 14.1,
       "abdomen_cm": null,
-      "steps": 12817,
+      "steps": 18780,
       "hydration_volume_l": 1.8092645,
       "kcal_consumed": 4514,
       "carbohydrates_g": 802.102,
@@ -7930,13 +7925,13 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 47,
-      "hrv_rmssd": null,
+      "resting_hr": 33,
+      "hrv_rmssd": 102.0,
       "hrv_sdnn": null,
-      "sleep_hours": 8.44,
-      "sleep_formatted": "8h26m",
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 8.45,
+      "sleep_formatted": "8h27m",
+      "sleep_quality": 2,
+      "sleep_score": 88.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
@@ -8010,6 +8005,20 @@
       "description": "- 48m 62-70% HR hr=1s\n[NSM]"
     },
     {
+      "id": 122772624,
+      "date": "2026-07-20",
+      "name": "5K Race",
+      "type": "RACE_A",
+      "sport_type": "Run",
+      "planned_tss": 38,
+      "duration_hours": 0.33,
+      "duration_formatted": "20m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description": "- 5km 3:59/km Pace intensity=active\n[NSM]"
+    },
+    {
       "id": 115502946,
       "date": "2026-07-21",
       "name": "VO2 Openers 3x3",
@@ -8023,6 +8032,20 @@
       "description": "Warm Up\n\n-10m 60%\n-3m 75%\n-2m 85%\n-1m 100%\n-2m 50%\n-30s 125%\n-90s 50%\n-30s 125%\n\n-3m 50%\n\nMain Set\n\n3x\n-3m 120%\n-3m 50%\n\nCool Down\n\n-10m 50%"
     },
     {
+      "id": 122772625,
+      "date": "2026-07-22",
+      "name": "Easy Run",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 32,
+      "duration_hours": 0.83,
+      "duration_formatted": "50m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description_preview": "- 50m 62-70% HR hr=1s\n[NSM]"
+    },
+    {
       "id": 115502975,
       "date": "2026-07-23",
       "name": "FTP Test",
@@ -8034,32 +8057,302 @@
       "workout_summary": null,
       "has_terrain": false,
       "description_preview": "Warm Up\n-2m 50%\n-2m 65%"
+    },
+    {
+      "id": 122772626,
+      "date": "2026-07-24",
+      "name": "Easy Run",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 32,
+      "duration_hours": 0.83,
+      "duration_formatted": "50m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description_preview": "- 50m 62-70% HR hr=1s\n[NSM]"
+    },
+    {
+      "id": 122771630,
+      "date": "2026-07-27",
+      "name": "VO2 Build W1 - 5x5",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 111,
+      "duration_hours": 1.68,
+      "duration_formatted": "1h41m",
+      "workout_summary": "10m @154W | 5m @196W | 3\u00d730s @336W / 1m30s rec | 3m @168W | 5\u00d75m @302W / 5m rec | 17m @182W | 10m @140W",
+      "has_terrain": false
+    },
+    {
+      "id": 122772042,
+      "date": "2026-07-28",
+      "name": "Aerobic Support W1",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 92,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description_preview": "- Warmup 15m ramp 55%-70%\n- Endurance 95m 68-72%\n- Cooldown 10m 50%"
+    },
+    {
+      "id": 122771632,
+      "date": "2026-07-30",
+      "name": "Threshold Builder W1 - 2x25",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 134,
+      "duration_hours": 2.03,
+      "duration_formatted": "2h2m",
+      "workout_summary": "10m @154W | 5m @203W | 5m @168W | 3\u00d71m @280W / 1m rec | 3m @154W | 2\u00d725m @268W / 8m rec | 17m @182W | 10m @140W",
+      "has_terrain": false
+    },
+    {
+      "id": 122771634,
+      "date": "2026-08-03",
+      "name": "VO2 Build W2 - 6x4",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 113,
+      "duration_hours": 1.68,
+      "duration_formatted": "1h41m",
+      "workout_summary": "10m @154W | 5m @196W | 3\u00d730s @336W / 1m30s rec | 3m @168W | 6\u00d74m @308W / 4m rec | 19m @182W | 10m @140W",
+      "has_terrain": false
+    },
+    {
+      "id": 122772043,
+      "date": "2026-08-04",
+      "name": "Aerobic Support W2",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 92,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description_preview": "- Warmup 15m ramp 55%-70%\n- Endurance 95m 68-72%\n- Cooldown 10m 50%"
+    },
+    {
+      "id": 122771636,
+      "date": "2026-08-06",
+      "name": "Threshold Builder W2 - 1x50",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 129,
+      "duration_hours": 1.9,
+      "duration_formatted": "1h54m",
+      "workout_summary": "10m @154W | 5m @203W | 5m @168W | 3\u00d71m @280W / 1m rec | 3m @154W | 50m @268W | 25m @182W | 10m @140W",
+      "has_terrain": false
+    },
+    {
+      "id": 122772044,
+      "date": "2026-08-10",
+      "name": "VO2 Build W3 - 3x10",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 122,
+      "duration_hours": 1.32,
+      "duration_formatted": "1h19m",
+      "workout_summary": "10m @154W | 5m @196W | 3\u00d730s @336W / 30s rec | 5m @168W | 3\u00d710m @336W / 5m rec | 11m @140W",
+      "has_terrain": false
+    },
+    {
+      "id": 122771638,
+      "date": "2026-08-11",
+      "name": "Aerobic Support W3",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 90,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description_preview": "- Warmup 15m 55%\n- Endurance 95m 68-72%\n- Cooldown 10m 50%"
+    },
+    {
+      "id": 122772045,
+      "date": "2026-08-13",
+      "name": "Threshold Builder W3 - 1x60",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 123,
+      "duration_hours": 1.65,
+      "duration_formatted": "1h39m",
+      "workout_summary": "10m @154W | 5m @203W | 5m @168W | 3\u00d71m @280W / 1m rec | 3m @154W | 1h @266W | 10m @140W",
+      "has_terrain": false
+    },
+    {
+      "id": 122771640,
+      "date": "2026-08-17",
+      "name": "VO2 Maintenance W4 - 4x3",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 85,
+      "duration_hours": 1.45,
+      "duration_formatted": "1h27m",
+      "workout_summary": "10m @154W | 5m @196W | 5m @168W | 4\u00d73m @322W / 4m rec | 29m @182W | 10m @140W",
+      "has_terrain": false
+    },
+    {
+      "id": 122771641,
+      "date": "2026-08-18",
+      "name": "Aerobic Endurance W4",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 92,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description_preview": "- Warmup 10m 55%\n- Endurance 100m 68-72%\n- Cooldown 10m 50%"
+    },
+    {
+      "id": 122772046,
+      "date": "2026-08-20",
+      "name": "Threshold Consolidation W4 - 2x20",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 115,
+      "duration_hours": 1.63,
+      "duration_formatted": "1h38m",
+      "workout_summary": "10m @154W | 5m @203W | 5m @168W | 3\u00d71m @280W / 2m rec | 3m @154W | 2\u00d720m @280W / 8m rec | 10m @140W",
+      "has_terrain": false
+    },
+    {
+      "id": 122772458,
+      "date": "2026-08-24",
+      "name": "VO2 Openers - 3x3",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 66,
+      "duration_hours": 1.1,
+      "duration_formatted": "1h6m",
+      "workout_summary": "15m @182W | 3\u00d73m @322W / 4m rec | 20m @189W | 10m @140W",
+      "has_terrain": false
+    },
+    {
+      "id": 122772459,
+      "date": "2026-08-25",
+      "name": "Aerobic Recovery",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 60,
+      "duration_hours": 1.42,
+      "duration_formatted": "1h25m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description_preview": "- Warmup 10m 55%\n- Endurance 65m 65-70%\n- Cooldown 10m 50%"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 5,
-    "success": 2,
-    "patternA": 2,
+    "attempted": 21,
+    "success": 11,
+    "patternA": 11,
     "patternB": 0,
-    "bail_no_workout_doc": 0,
-    "bail_no_match": 3
+    "bail_no_workout_doc": 1,
+    "bail_no_match": 10
   },
   "weekly_summary": {
     "total_training_hours": 13.59,
     "total_training_formatted": "13h35m",
     "total_tss": 764,
     "activities_count": 14,
-    "avg_hrv": 76.7,
-    "avg_resting_hr": 40.3
+    "avg_hrv": 83.0,
+    "avg_resting_hr": 37.1
   },
   "race_calendar": {
-    "next_race": null,
-    "all_races": [],
+    "next_race": {
+      "name": "5K Race",
+      "date": "2026-07-20",
+      "category": "RACE_A",
+      "type": "Run",
+      "days_until": 6,
+      "moving_time_seconds": 1200,
+      "distance_meters": 5000.0,
+      "display": {
+        "distance": {
+          "value": 5.0,
+          "unit": "km"
+        }
+      },
+      "has_terrain": false,
+      "start_time": "12:00"
+    },
+    "all_races": [
+      {
+        "name": "5K Race",
+        "date": "2026-07-20",
+        "category": "RACE_A",
+        "type": "Run",
+        "days_until": 6,
+        "moving_time_seconds": 1200,
+        "distance_meters": 5000.0,
+        "display": {
+          "distance": {
+            "value": 5.0,
+            "unit": "km"
+          }
+        },
+        "has_terrain": false,
+        "start_time": "12:00"
+      }
+    ],
     "taper_alert": {
       "active": false
     },
     "race_week": {
-      "active": false
+      "active": true,
+      "event_name": "5K Race",
+      "event_date": "2026-07-20",
+      "event_category": "RACE_A",
+      "event_type": "Run",
+      "event_duration_class": "short_intense",
+      "event_moving_time_seconds": 1200,
+      "days_until_event": 6,
+      "current_day": "D-6",
+      "ctl_baseline": 102.7,
+      "normal_weekly_tss": 718.6,
+      "race_week_tss_budget": {
+        "min": 287,
+        "max": 395
+      },
+      "race_week_tss_spent": 265,
+      "race_week_tss_remaining": {
+        "min": 22,
+        "max": 130
+      },
+      "projected_race_day_tsb": 41.5,
+      "tsb_target_range": {
+        "min": 5,
+        "max": 15
+      },
+      "today": {
+        "label": "Recovery",
+        "load_target_tss": {
+          "min": 0,
+          "max": 31
+        },
+        "zones": "Z1-Z2 only",
+        "purpose": "Active recovery."
+      },
+      "carb_loading": {
+        "applicable": false,
+        "active": false,
+        "starts": "D-4",
+        "start_date": "2026-07-16",
+        "note": null
+      },
+      "opener": {
+        "day": "D-2",
+        "date": "2026-07-18",
+        "intensity": "more_intense"
+      },
+      "go_no_go": {
+        "tsb_status": "green",
+        "notes": []
+      }
     }
   }
 }
