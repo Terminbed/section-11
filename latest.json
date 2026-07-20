@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-20T13:01:21.046205",
+    "last_updated": "2026-07-20T15:19:19.045142",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -112,10 +112,10 @@
     },
     {
       "metric": "race_week",
-      "value": 0,
+      "value": 1,
       "severity": "info",
       "threshold": "RACE_A within 7 days",
-      "context": "Race week D-0 of '5K Race'. Today: Race day, 0-0 TSS. Race effort",
+      "context": "Race week D-1 of '5K Race'. Today: Rest / minimal, 0-19 TSS. Z1 only if active",
       "persistence_days": null,
       "tier": 1
     }
@@ -127,7 +127,7 @@
       "hrv": {
         "status": "unavailable",
         "value": null,
-        "baseline_7d": 97.0,
+        "baseline_7d": 107.8,
         "delta_pct": null
       },
       "rhr": {
@@ -237,8 +237,8 @@
       "ctl": 95.01,
       "atl": 69.35,
       "tsb": 25.66,
-      "ramp_rate": -3.84,
-      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
+      "ramp_rate": -8.15,
+      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
       "eftp": 276.2,
@@ -303,7 +303,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 274,
+      "steps": 2900,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -317,9 +317,9 @@
   "derived_metrics": {
     "recovery_index": null,
     "recovery_index_yesterday": null,
-    "hrv_baseline_7d": 97.0,
+    "hrv_baseline_7d": 107.8,
     "rhr_baseline_7d": 42,
-    "hrv_baseline_28d": 90.5,
+    "hrv_baseline_28d": 93.8,
     "rhr_baseline_28d": 37.6,
     "latest_hrv": null,
     "latest_rhr": 48,
@@ -650,7 +650,7 @@
           "hard_sessions_planned": 2,
           "current_week_hard_days_completed": 0,
           "current_week_hard_days_total": 2,
-          "race_proximity": 0,
+          "race_proximity": 1,
           "next_week_load": 0.59,
           "plan_coverage_current_week": 0.33,
           "plan_coverage_next_week": 0.2
@@ -688,13 +688,13 @@
     "p_max": 1169,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-07-20T13:01:21.044885",
+    "calculation_timestamp": "2026-07-20T15:19:19.043734",
     "data_quality": {
-      "hrv_data_points": 2,
+      "hrv_data_points": 4,
       "rhr_data_points": 7,
       "activities_7d": 10,
       "activities_28d": 55,
-      "planned_workouts_7d": 4,
+      "planned_workouts_7d": 3,
       "ftp_history_days": {
         "indoor": 82,
         "outdoor": 82
@@ -7021,8 +7021,8 @@
       "resting_hr": 33,
       "hrv_rmssd": 92.0,
       "hrv_sdnn": 74.0,
-      "sleep_hours": 6.91,
-      "sleep_formatted": "6h54m",
+      "sleep_hours": 6.92,
+      "sleep_formatted": "6h55m",
       "sleep_quality": 3,
       "sleep_score": 76.0,
       "mental_energy": null,
@@ -7044,7 +7044,7 @@
       "respiration": 12.2019415,
       "body_fat_pct": 13.7,
       "abdomen_cm": null,
-      "steps": 12409,
+      "steps": 5668,
       "hydration_volume_l": 2.0164137,
       "kcal_consumed": 3586,
       "carbohydrates_g": 642.25275,
@@ -7061,12 +7061,12 @@
         "weight": null
       },
       "resting_hr": 47,
-      "hrv_rmssd": null,
+      "hrv_rmssd": 116.0,
       "hrv_sdnn": 80.0,
       "sleep_hours": 7.98,
-      "sleep_formatted": "7h58m",
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_formatted": "7h59m",
+      "sleep_quality": 2,
+      "sleep_score": 88.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
@@ -7086,7 +7086,7 @@
       "respiration": 12.242363,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 12866,
+      "steps": 8925,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -7103,12 +7103,12 @@
         "weight": null
       },
       "resting_hr": 43,
-      "hrv_rmssd": null,
+      "hrv_rmssd": 121.0,
       "hrv_sdnn": 83.0,
       "sleep_hours": 8.28,
-      "sleep_formatted": "8h16m",
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_formatted": "8h17m",
+      "sleep_quality": 1,
+      "sleep_score": 92.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
@@ -7128,7 +7128,7 @@
       "respiration": 13.254129,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 17000,
+      "steps": 7258,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -7161,7 +7161,7 @@
       "motivation": null,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 99.0,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
@@ -7170,7 +7170,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 7292,
+      "steps": 9445,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -7212,7 +7212,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 274,
+      "steps": 2900,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -7225,20 +7225,6 @@
   ],
   "planned_workouts": [
     {
-      "id": 122772624,
-      "date": "2026-07-20",
-      "name": "5K Race",
-      "type": "RACE_A",
-      "sport_type": "Run",
-      "planned_tss": 38,
-      "duration_hours": 0.33,
-      "duration_formatted": "20m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "start_time": "12:00",
-      "description": "- 5km 3:59/km Pace intensity=active\n[NSM]"
-    },
-    {
       "id": 115502946,
       "date": "2026-07-21",
       "name": "VO2 Openers 3x3",
@@ -7250,6 +7236,20 @@
       "workout_summary": "10m @168W | 3m @210W | 2m @238W | 1m @280W | 2m @140W | 30s @350W | 1m30s @140W | 30s @350W | 3m @140W | 3\u00d73m @336W / 3m rec | 10m @140W",
       "has_terrain": false,
       "description": "Warm Up\n\n-10m 60%\n-3m 75%\n-2m 85%\n-1m 100%\n-2m 50%\n-30s 125%\n-90s 50%\n-30s 125%\n\n-3m 50%\n\nMain Set\n\n3x\n-3m 120%\n-3m 50%\n\nCool Down\n\n-10m 50%"
+    },
+    {
+      "id": 122772624,
+      "date": "2026-07-21",
+      "name": "5K Race",
+      "type": "RACE_A",
+      "sport_type": "Run",
+      "planned_tss": 38,
+      "duration_hours": 0.33,
+      "duration_formatted": "20m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description": "- 5km 3:59/km Pace intensity=active\n[NSM]"
     },
     {
       "id": 122772625,
@@ -7493,16 +7493,16 @@
     "total_training_formatted": "8h26m",
     "total_tss": 370,
     "activities_count": 10,
-    "avg_hrv": 97.0,
+    "avg_hrv": 107.8,
     "avg_resting_hr": 42.0
   },
   "race_calendar": {
     "next_race": {
       "name": "5K Race",
-      "date": "2026-07-20",
+      "date": "2026-07-21",
       "category": "RACE_A",
       "type": "Run",
-      "days_until": 0,
+      "days_until": 1,
       "moving_time_seconds": 1200,
       "distance_meters": 5000.0,
       "display": {
@@ -7517,10 +7517,10 @@
     "all_races": [
       {
         "name": "5K Race",
-        "date": "2026-07-20",
+        "date": "2026-07-21",
         "category": "RACE_A",
         "type": "Run",
-        "days_until": 0,
+        "days_until": 1,
         "moving_time_seconds": 1200,
         "distance_meters": 5000.0,
         "display": {
@@ -7539,13 +7539,13 @@
     "race_week": {
       "active": true,
       "event_name": "5K Race",
-      "event_date": "2026-07-20",
+      "event_date": "2026-07-21",
       "event_category": "RACE_A",
       "event_type": "Run",
       "event_duration_class": "short_intense",
       "event_moving_time_seconds": 1200,
-      "days_until_event": 0,
-      "current_day": "D-0",
+      "days_until_event": 1,
+      "current_day": "D-1",
       "ctl_baseline": 95.0,
       "normal_weekly_tss": 665.1,
       "race_week_tss_budget": {
@@ -7557,30 +7557,30 @@
         "min": 0,
         "max": 0
       },
-      "projected_race_day_tsb": 25.7,
+      "projected_race_day_tsb": 32.7,
       "tsb_target_range": {
         "min": 5,
         "max": 15
       },
       "today": {
-        "label": "Race day",
+        "label": "Rest / minimal",
         "load_target_tss": {
           "min": 0,
-          "max": 0
+          "max": 19
         },
-        "zones": "Race effort",
-        "purpose": "Go/no-go assessment. Execute race plan."
+        "zones": "Z1 only if active",
+        "purpose": "Final rest, logistics, equipment check."
       },
       "carb_loading": {
         "applicable": false,
         "active": false,
         "starts": "D-4",
-        "start_date": "2026-07-16",
+        "start_date": "2026-07-17",
         "note": null
       },
       "opener": {
         "day": "D-2",
-        "date": "2026-07-18",
+        "date": "2026-07-19",
         "intensity": "more_intense"
       },
       "go_no_go": {
