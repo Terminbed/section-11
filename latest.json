@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-28T08:05:07.865164",
+    "last_updated": "2026-07-28T10:44:18.510286",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -116,41 +116,41 @@
     "priority": 3,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 92.8,
-        "delta_pct": null
+        "status": "green",
+        "value": 89.0,
+        "baseline_7d": 92.0,
+        "delta_pct": -3.3
       },
       "rhr": {
-        "status": "amber",
-        "value": 42,
-        "baseline_7d": 38.9,
-        "delta_bpm": 3.1
+        "status": "green",
+        "value": 33,
+        "baseline_7d": 36.3,
+        "delta_bpm": -3.3
       },
       "sleep": {
         "status": "green",
-        "hours": 9.2,
-        "quality": null
+        "hours": 9.22,
+        "quality": 2
       },
       "acwr": {
         "status": "green",
         "value": 0.91
       },
       "ri": {
-        "status": "unavailable",
-        "value": null,
-        "value_yesterday": 0.94
+        "status": "green",
+        "value": 1.06,
+        "value_yesterday": 1.12
       },
       "tsb": {
         "status": "green",
-        "value": 3.4
+        "value": 4.4
       }
     },
     "signal_summary": {
-      "green": 3,
-      "amber": 1,
+      "green": 6,
+      "amber": 0,
       "red": 0,
-      "unavailable": 2
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -160,7 +160,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 3 green, 1 amber (threshold 3), 0 red.",
+    "reason": "P3 green light. 6 green, 0 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -228,10 +228,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 95.54,
-      "atl": 92.17,
-      "tsb": 3.37,
-      "ramp_rate": 0.23,
+      "ctl": 95.33,
+      "atl": 90.97,
+      "tsb": 4.36,
+      "ramp_rate": 0.01,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -275,12 +275,12 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 42,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": 9.2,
-      "sleep_formatted": "9h11m",
-      "sleep_score": null,
+      "resting_hr": 33,
+      "hrv": 89.0,
+      "sleep_quality": 2,
+      "sleep_hours": 9.22,
+      "sleep_formatted": "9h13m",
+      "sleep_score": 83.0,
       "fatigue": null,
       "soreness": null,
       "stress": null,
@@ -297,7 +297,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 28,
+      "steps": 548,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -309,14 +309,14 @@
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "recovery_index_yesterday": 0.94,
-    "hrv_baseline_7d": 92.8,
-    "rhr_baseline_7d": 38.9,
-    "hrv_baseline_28d": 93.9,
-    "rhr_baseline_28d": 38.3,
-    "latest_hrv": null,
-    "latest_rhr": 42,
+    "recovery_index": 1.06,
+    "recovery_index_yesterday": 1.12,
+    "hrv_baseline_7d": 92.0,
+    "rhr_baseline_7d": 36.3,
+    "hrv_baseline_28d": 93.6,
+    "rhr_baseline_28d": 37.7,
+    "latest_hrv": 89.0,
+    "latest_rhr": 33,
     "acwr": 0.91,
     "acwr_interpretation": "optimal",
     "monotony": 1.03,
@@ -328,7 +328,7 @@
     "multi_sport_detected": true,
     "strain": 606.0,
     "stress_tolerance": 5.9,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 5.5,
     "tss_7d_total": 588.0,
     "tss_28d_total": 2595.0,
     "zone_distribution_7d": {
@@ -641,14 +641,14 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.58,
+          "planned_tss_delta": 0.56,
           "hard_sessions_planned": 1,
           "current_week_hard_days_completed": 1,
           "current_week_hard_days_total": 2,
-          "race_proximity": null,
-          "next_week_load": 0.72,
+          "race_proximity": 27,
+          "next_week_load": 0.7,
           "plan_coverage_current_week": 0.31,
-          "plan_coverage_next_week": 0.23
+          "plan_coverage_next_week": 0.46
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -681,9 +681,9 @@
     "p_max": 1162,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-07-28T08:05:07.863921",
+    "calculation_timestamp": "2026-07-28T10:44:18.509286",
     "data_quality": {
-      "hrv_data_points": 4,
+      "hrv_data_points": 5,
       "rhr_data_points": 7,
       "activities_7d": 12,
       "activities_28d": 54,
@@ -6916,11 +6916,11 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 42,
+      "resting_hr": 33,
       "hrv_rmssd": 94.0,
       "hrv_sdnn": 68.0,
-      "sleep_hours": 7.84,
-      "sleep_formatted": "7h50m",
+      "sleep_hours": 7.85,
+      "sleep_formatted": "7h51m",
       "sleep_quality": 1,
       "sleep_score": 90.0,
       "mental_energy": null,
@@ -6942,7 +6942,7 @@
       "respiration": 12.638889,
       "body_fat_pct": 14.0,
       "abdomen_cm": null,
-      "steps": 12988,
+      "steps": 18604,
       "hydration_volume_l": 1.5712893,
       "kcal_consumed": 4257,
       "carbohydrates_g": 762.24567,
@@ -6961,13 +6961,13 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 42,
-      "hrv_rmssd": null,
+      "resting_hr": 33,
+      "hrv_rmssd": 89.0,
       "hrv_sdnn": null,
-      "sleep_hours": 9.2,
-      "sleep_formatted": "9h11m",
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 9.22,
+      "sleep_formatted": "9h13m",
+      "sleep_quality": 2,
+      "sleep_score": 83.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
@@ -6987,7 +6987,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 28,
+      "steps": 548,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -7002,15 +7002,15 @@
     {
       "id": 122772042,
       "date": "2026-07-28",
-      "name": "Aerobic Support W1",
+      "name": "Z2",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 93,
+      "planned_tss": 84,
       "duration_hours": 2.0,
       "duration_formatted": "2h",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "- Warmup 15m ramp 55%-70%\n- Endurance 95m 68-72%\n- Cooldown 10m 50%"
+      "description": "- Endurance 120m 65%"
     },
     {
       "id": 124581469,
@@ -7067,17 +7067,45 @@
       "description": "- Warmup 10m 55%\n- 5m ramp 60%-80%\n\nMain Set 3x\n- 30s 120%\n- 90s 50%\n\n- 3m 60%\n\nMain Set 6x\n- 4m 110%\n- 4m 55%\n\n- Endurance 12m 65%\n- Cooldown 10m 50%"
     },
     {
-      "id": 122772043,
+      "id": 125736085,
+      "date": "2026-08-03",
+      "name": "2 x 10:00",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 49,
+      "duration_hours": 0.82,
+      "duration_formatted": "49m",
+      "workout_summary": "13m | 2\u00d710m / 2m rec | 12m",
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description": "- 13m 5:32-6:55/km Pace intensity=warmup\n\n2x\n- 10m 4:22/km Pace intensity=active\n- 2m 5:32-16:36/km Pace intensity=recovery\n\n- 12m 5:32-6:55/km Pace intensity=cooldown\n[NSM]"
+    },
+    {
+      "id": 125735535,
       "date": "2026-08-04",
-      "name": "Aerobic Support W2",
+      "name": "Z2",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 93,
+      "planned_tss": 84,
       "duration_hours": 2.0,
       "duration_formatted": "2h",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "- Warmup 15m ramp 55%-70%\n- Endurance 95m 68-72%\n- Cooldown 10m 50%"
+      "description": "- Endurance 120m 65%"
+    },
+    {
+      "id": 125736086,
+      "date": "2026-08-05",
+      "name": "Easy Run",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 36,
+      "duration_hours": 0.93,
+      "duration_formatted": "56m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description_preview": "- 56m 62-70% HR hr=1s\n[NSM]"
     },
     {
       "id": 122771636,
@@ -7092,6 +7120,20 @@
       "has_terrain": false
     },
     {
+      "id": 125736087,
+      "date": "2026-08-07",
+      "name": "Easy Run",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 36,
+      "duration_hours": 0.93,
+      "duration_formatted": "56m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description_preview": "- 56m 62-70% HR hr=1s\n[NSM]"
+    },
+    {
       "id": 125410414,
       "date": "2026-08-10",
       "name": "VO2 Build W3 - 4x6",
@@ -7104,17 +7146,44 @@
       "has_terrain": false
     },
     {
-      "id": 122771638,
+      "id": 125736094,
+      "date": "2026-08-10",
+      "name": "7 x 3:00",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 56,
+      "duration_hours": 0.87,
+      "duration_formatted": "52m",
+      "workout_summary": "13m | 7\u00d73m / 1m rec | 12m",
+      "has_terrain": false,
+      "start_time": "12:00"
+    },
+    {
+      "id": 125735537,
       "date": "2026-08-11",
-      "name": "Aerobic Support W3",
+      "name": "Z2",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 91,
+      "planned_tss": 84,
       "duration_hours": 2.0,
       "duration_formatted": "2h",
       "workout_summary": null,
       "has_terrain": false,
-      "description_preview": "- Warmup 15m 55%\n- Endurance 95m 68-72%\n- Cooldown 10m 50%"
+      "description_preview": "- Endurance 120m 65%"
+    },
+    {
+      "id": 125736096,
+      "date": "2026-08-12",
+      "name": "Easy Run",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 39,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description_preview": "- 60m 62-70% HR hr=1s\n[NSM]"
     },
     {
       "id": 122772045,
@@ -7129,6 +7198,20 @@
       "has_terrain": false
     },
     {
+      "id": 125736097,
+      "date": "2026-08-14",
+      "name": "Easy Run",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 39,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description_preview": "- 60m 62-70% HR hr=1s\n[NSM]"
+    },
+    {
       "id": 122771640,
       "date": "2026-08-17",
       "name": "VO2 Maintenance W4 - 3x5",
@@ -7141,17 +7224,44 @@
       "has_terrain": false
     },
     {
-      "id": 122771641,
+      "id": 125736122,
+      "date": "2026-08-17",
+      "name": "4 x 6:00",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 63,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": "15m | 4\u00d76m / 1m30s rec | 16m",
+      "has_terrain": false,
+      "start_time": "12:00"
+    },
+    {
+      "id": 125735538,
       "date": "2026-08-18",
-      "name": "Aerobic Endurance W4",
+      "name": "Z2",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 92,
+      "planned_tss": 84,
       "duration_hours": 2.0,
       "duration_formatted": "2h",
       "workout_summary": null,
       "has_terrain": false,
-      "description_preview": "- Warmup 10m 55%\n- Endurance 100m 68-72%\n- Cooldown 10m 50%"
+      "description_preview": "- Endurance 120m 65%"
+    },
+    {
+      "id": 125736124,
+      "date": "2026-08-19",
+      "name": "Easy Run",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 39,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description_preview": "- 60m 62-70% HR hr=1s\n[NSM]"
     },
     {
       "id": 122772046,
@@ -7179,6 +7289,20 @@
       "description_preview": null
     },
     {
+      "id": 125736125,
+      "date": "2026-08-21",
+      "name": "Easy Run",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 39,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description_preview": "- 60m 62-70% HR hr=1s\n[NSM]"
+    },
+    {
       "id": 122772458,
       "date": "2026-08-24",
       "name": "VO2 Openers - 3x3",
@@ -7191,17 +7315,45 @@
       "has_terrain": false
     },
     {
-      "id": 122772459,
-      "date": "2026-08-25",
-      "name": "Aerobic Recovery",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 59,
-      "duration_hours": 1.42,
-      "duration_formatted": "1h25m",
+      "id": 125736207,
+      "date": "2026-08-24",
+      "name": "5K Race",
+      "type": "RACE_A",
+      "sport_type": "Run",
+      "planned_tss": 37,
+      "duration_hours": 0.83,
+      "duration_formatted": "50m",
       "workout_summary": null,
       "has_terrain": false,
-      "description_preview": "- Warmup 10m 55%\n- Endurance 65m 65-70%\n- Cooldown 10m 50%"
+      "start_time": "12:00",
+      "description_preview": "- 5km 3:54/km Pace intensity=active\n[NSM]"
+    },
+    {
+      "id": 125735554,
+      "date": "2026-08-25",
+      "name": "Z2",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 84,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description_preview": "- Endurance 120m 65%"
+    },
+    {
+      "id": 125736208,
+      "date": "2026-08-26",
+      "name": "Easy Run",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 39,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description_preview": "- 60m 62-70% HR hr=1s\n[NSM]"
     },
     {
       "id": 122772480,
@@ -7217,6 +7369,20 @@
       "description_preview": "Warm Up\n-2m 50%\n-2m 65%"
     },
     {
+      "id": 125736209,
+      "date": "2026-08-28",
+      "name": "Easy Run",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 39,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description_preview": "- 60m 62-70% HR hr=1s\n[NSM]"
+    },
+    {
       "id": 125418082,
       "date": "2026-08-30",
       "name": "FONDO DEBRIEF",
@@ -7228,27 +7394,102 @@
       "workout_summary": null,
       "has_terrain": false,
       "description_preview": null
+    },
+    {
+      "id": 125736876,
+      "date": "2026-08-31",
+      "name": "3 x 10:00",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 69,
+      "duration_hours": 1.07,
+      "duration_formatted": "1h4m",
+      "workout_summary": "15m | 3\u00d710m / 2m rec | 15m",
+      "has_terrain": false,
+      "start_time": "12:00"
+    },
+    {
+      "id": 125736877,
+      "date": "2026-09-02",
+      "name": "Easy Run",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 39,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description_preview": "- 60m 62-70% HR hr=1s\n[NSM]"
+    },
+    {
+      "id": 125736878,
+      "date": "2026-09-04",
+      "name": "Easy Run",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 39,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description_preview": "- 60m 62-70% HR hr=1s\n[NSM]"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 16,
-    "success": 8,
-    "patternA": 8,
+    "attempted": 30,
+    "success": 12,
+    "patternA": 12,
     "patternB": 0,
-    "bail_no_workout_doc": 0,
-    "bail_no_match": 8
+    "bail_no_workout_doc": 1,
+    "bail_no_match": 18
   },
   "weekly_summary": {
     "total_training_hours": 10.92,
     "total_training_formatted": "10h55m",
     "total_tss": 588,
     "activities_count": 12,
-    "avg_hrv": 92.8,
-    "avg_resting_hr": 38.9
+    "avg_hrv": 92.0,
+    "avg_resting_hr": 36.3
   },
   "race_calendar": {
-    "next_race": null,
-    "all_races": [],
+    "next_race": {
+      "name": "5K Race",
+      "date": "2026-08-24",
+      "category": "RACE_A",
+      "type": "Run",
+      "days_until": 27,
+      "moving_time_seconds": 3000,
+      "distance_meters": 5000.0,
+      "display": {
+        "distance": {
+          "value": 5.0,
+          "unit": "km"
+        }
+      },
+      "has_terrain": false,
+      "start_time": "12:00"
+    },
+    "all_races": [
+      {
+        "name": "5K Race",
+        "date": "2026-08-24",
+        "category": "RACE_A",
+        "type": "Run",
+        "days_until": 27,
+        "moving_time_seconds": 3000,
+        "distance_meters": 5000.0,
+        "display": {
+          "distance": {
+            "value": 5.0,
+            "unit": "km"
+          }
+        },
+        "has_terrain": false,
+        "start_time": "12:00"
+      }
+    ],
     "taper_alert": {
       "active": false
     },
