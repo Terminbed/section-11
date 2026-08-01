@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-01T12:38:37.484126",
+    "last_updated": "2026-08-01T14:11:38.690963",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -100,32 +100,22 @@
     "years_on_platform": 2
   },
   "athlete_notes": null,
-  "alerts": [
-    {
-      "metric": "rhr",
-      "value": 60,
-      "severity": "warning",
-      "threshold": "\u2191\u22655bpm vs baseline (39)",
-      "context": "RHR 60 is 21bpm above baseline. Monitor \u2014 alarm if persists >2 days.",
-      "persistence_days": 1,
-      "tier": 1
-    }
-  ],
+  "alerts": [],
   "readiness_decision": {
-    "recommendation": "modify",
-    "priority": 2,
+    "recommendation": "go",
+    "priority": 3,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 83.2,
-        "delta_pct": null
+        "status": "amber",
+        "value": 71.0,
+        "baseline_7d": 80.8,
+        "delta_pct": -12.1
       },
       "rhr": {
-        "status": "red",
-        "value": 60,
-        "baseline_7d": 39,
-        "delta_bpm": 21
+        "status": "green",
+        "value": 33,
+        "baseline_7d": 35.1,
+        "delta_bpm": -2.1
       },
       "sleep": {
         "status": "green",
@@ -137,9 +127,9 @@
         "value": 1.22
       },
       "ri": {
-        "status": "unavailable",
-        "value": null,
-        "value_yesterday": 0.83
+        "status": "green",
+        "value": 0.93,
+        "value_yesterday": 0.77
       },
       "tsb": {
         "status": "green",
@@ -147,10 +137,10 @@
       }
     },
     "signal_summary": {
-      "green": 3,
-      "amber": 0,
-      "red": 1,
-      "unavailable": 2
+      "green": 5,
+      "amber": 1,
+      "red": 0,
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -159,17 +149,8 @@
       "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
-    "modification": {
-      "triggers": [
-        "rhr"
-      ],
-      "suggested_adjustments": {
-        "intensity": "reduce",
-        "volume": "preserve",
-        "cap_zone": null
-      }
-    },
-    "reason": "P2 signal count. 1 red (rhr), 0 amber ().",
+    "modification": null,
+    "reason": "P3 green light. 5 green, 1 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -272,8 +253,8 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 60,
-      "hrv": null,
+      "resting_hr": 33,
+      "hrv": 71.0,
       "sleep_quality": 2,
       "sleep_hours": 8.9,
       "sleep_formatted": "8h54m",
@@ -294,7 +275,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 24506,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -306,14 +287,14 @@
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "recovery_index_yesterday": 0.83,
-    "hrv_baseline_7d": 83.2,
-    "rhr_baseline_7d": 39,
-    "hrv_baseline_28d": 91.8,
-    "rhr_baseline_28d": 38.1,
-    "latest_hrv": null,
-    "latest_rhr": 60,
+    "recovery_index": 0.93,
+    "recovery_index_yesterday": 0.77,
+    "hrv_baseline_7d": 80.8,
+    "rhr_baseline_7d": 35.1,
+    "hrv_baseline_28d": 90.7,
+    "rhr_baseline_28d": 37.2,
+    "latest_hrv": 71.0,
+    "latest_rhr": 33,
     "acwr": 1.22,
     "acwr_interpretation": "optimal",
     "monotony": 1.49,
@@ -325,7 +306,7 @@
     "multi_sport_detected": true,
     "strain": 1210.0,
     "stress_tolerance": 8.1,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 8.7,
     "tss_7d_total": 812.0,
     "tss_28d_total": 2652.0,
     "zone_distribution_7d": {
@@ -680,9 +661,9 @@
     "p_max": 1161,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-01T12:38:37.482320",
+    "calculation_timestamp": "2026-08-01T14:11:38.689694",
     "data_quality": {
-      "hrv_data_points": 4,
+      "hrv_data_points": 5,
       "rhr_data_points": 7,
       "activities_7d": 14,
       "activities_28d": 53,
@@ -698,7 +679,7 @@
       "id": "i171408239",
       "date": "2026-08-01T07:54:57",
       "type": "Ride",
-      "name": "Mow Cop",
+      "name": "CV Sat - Mow Cop Edition",
       "duration_hours": 3.55,
       "distance_km": 107.65,
       "tss": 235,
@@ -6724,8 +6705,8 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 60,
-      "hrv_rmssd": null,
+      "resting_hr": 33,
+      "hrv_rmssd": 71.0,
       "hrv_sdnn": null,
       "sleep_hours": 8.9,
       "sleep_formatted": "8h54m",
@@ -6750,7 +6731,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 24506,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -7186,8 +7167,8 @@
     "total_training_formatted": "17h4m",
     "total_tss": 812,
     "activities_count": 14,
-    "avg_hrv": 83.2,
-    "avg_resting_hr": 39.0
+    "avg_hrv": 80.8,
+    "avg_resting_hr": 35.1
   },
   "race_calendar": {
     "next_race": {
