@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-03T08:23:45.742737",
+    "last_updated": "2026-08-03T11:54:32.884799",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -100,29 +100,10 @@
     "years_on_platform": 2
   },
   "athlete_notes": null,
-  "alerts": [
-    {
-      "metric": "recovery_index",
-      "value": 0.56,
-      "severity": "alarm",
-      "threshold": 0.6,
-      "context": "RI 0.56 < 0.6. Immediate deload required.",
-      "persistence_days": null,
-      "tier": 1
-    },
-    {
-      "metric": "rhr",
-      "value": 82,
-      "severity": "warning",
-      "threshold": "\u2191\u22655bpm vs baseline (40.7)",
-      "context": "RHR 82 is 41.3bpm above baseline. Monitor \u2014 alarm if persists >2 days.",
-      "persistence_days": 1,
-      "tier": 1
-    }
-  ],
+  "alerts": [],
   "readiness_decision": {
-    "recommendation": "skip",
-    "priority": 0,
+    "recommendation": "go",
+    "priority": 3,
     "signals": {
       "hrv": {
         "status": "green",
@@ -131,10 +112,10 @@
         "delta_pct": 12.5
       },
       "rhr": {
-        "status": "red",
-        "value": 82,
-        "baseline_7d": 40.7,
-        "delta_bpm": 41.3
+        "status": "green",
+        "value": 32,
+        "baseline_7d": 33.6,
+        "delta_bpm": -1.6
       },
       "sleep": {
         "status": "green",
@@ -146,15 +127,19 @@
         "value": 1.16
       },
       "ri": {
-        "status": "red",
-        "value": 0.56,
+        "status": "green",
+        "value": 1.18,
         "value_yesterday": null
+      },
+      "tsb": {
+        "status": "green",
+        "value": -10.3
       }
     },
     "signal_summary": {
-      "green": 3,
+      "green": 6,
       "amber": 0,
-      "red": 2,
+      "red": 0,
       "unavailable": 0
     },
     "phase_context": {
@@ -165,10 +150,8 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P0 safety stop. RI 0.56 < 0.6; tier-1 alarms: recovery_index.",
-    "alarm_refs": [
-      "recovery_index"
-    ]
+    "reason": "P3 green light. 6 green, 0 amber (threshold 3), 0 red.",
+    "alarm_refs": []
   },
   "history": {
     "available": true,
@@ -223,10 +206,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 98.55,
-      "atl": 108.57,
-      "tsb": -10.02,
-      "ramp_rate": 2.94,
+      "ctl": 98.62,
+      "atl": 108.97,
+      "tsb": -10.35,
+      "ramp_rate": 3.01,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -270,7 +253,7 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 82,
+      "resting_hr": 32,
       "hrv": 90.0,
       "sleep_quality": 2,
       "sleep_hours": 8.2,
@@ -304,14 +287,14 @@
     }
   },
   "derived_metrics": {
-    "recovery_index": 0.56,
+    "recovery_index": 1.18,
     "recovery_index_yesterday": null,
     "hrv_baseline_7d": 80.0,
-    "rhr_baseline_7d": 40.7,
+    "rhr_baseline_7d": 33.6,
     "hrv_baseline_28d": 90.1,
-    "rhr_baseline_28d": 38.8,
+    "rhr_baseline_28d": 37.0,
     "latest_hrv": 90.0,
-    "latest_rhr": 82,
+    "latest_rhr": 32,
     "acwr": 1.16,
     "acwr_interpretation": "optimal",
     "monotony": 1.48,
@@ -323,7 +306,7 @@
     "multi_sport_detected": true,
     "strain": 1117.0,
     "stress_tolerance": 7.5,
-    "load_recovery_ratio": 13.5,
+    "load_recovery_ratio": 6.4,
     "tss_7d_total": 755.0,
     "tss_28d_total": 2593.0,
     "zone_distribution_7d": {
@@ -639,9 +622,9 @@
         },
         "stream_2": {
           "planned_tss_delta": 0.66,
-          "hard_sessions_planned": 3,
+          "hard_sessions_planned": 4,
           "current_week_hard_days_completed": 1,
-          "current_week_hard_days_total": 4,
+          "current_week_hard_days_total": 5,
           "race_proximity": 21,
           "next_week_load": 0.81,
           "plan_coverage_current_week": 0.46,
@@ -678,7 +661,7 @@
     "p_max": 1161,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-03T08:23:45.741827",
+    "calculation_timestamp": "2026-08-03T11:54:32.883525",
     "data_quality": {
       "hrv_data_points": 5,
       "rhr_data_points": 7,
@@ -6468,7 +6451,7 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 82,
+      "resting_hr": 32,
       "hrv_rmssd": 90.0,
       "hrv_sdnn": null,
       "sleep_hours": 8.2,
@@ -6522,16 +6505,16 @@
     {
       "id": 125736085,
       "date": "2026-08-03",
-      "name": "2 x 10:00",
+      "name": "2 x 10:00 (heat-adj)",
       "type": "WORKOUT",
       "sport_type": "Run",
-      "planned_tss": 49,
-      "duration_hours": 0.82,
-      "duration_formatted": "49m",
-      "workout_summary": "13m | 2\u00d710m / 2m rec | 12m",
+      "planned_tss": 52,
+      "duration_hours": 0.87,
+      "duration_formatted": "52m",
+      "workout_summary": "15m | 2\u00d710m / 2m rec | 15m",
       "has_terrain": false,
       "start_time": "12:00",
-      "description": "- 13m 5:32-6:55/km Pace intensity=warmup\n\n2x\n- 10m 4:22/km Pace intensity=active\n- 2m 5:32-16:36/km Pace intensity=recovery\n\n- 12m 5:32-6:55/km Pace intensity=cooldown\n[NSM]"
+      "description": "- 15m 5:32-6:55/km Pace intensity=warmup\n\n2x\n- 10m 4:29/km Pace intensity=active\n- 2m 5:32-16:36/km Pace intensity=recovery\n\n- 15m 5:32-6:55/km Pace intensity=cooldown\n\nPaces adjusted +2.5% for heat & humidity (26\u00b0C, dew point 11\u00b0C).\n[NSM]"
     },
     {
       "id": 125735535,
@@ -6552,13 +6535,13 @@
       "name": "Easy Run",
       "type": "WORKOUT",
       "sport_type": "Run",
-      "planned_tss": 36,
-      "duration_hours": 0.93,
-      "duration_formatted": "56m",
+      "planned_tss": 39,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
       "workout_summary": null,
       "has_terrain": false,
       "start_time": "12:00",
-      "description": "- 56m 62-70% HR hr=1s\n[NSM]"
+      "description": "- 60m 62-70% HR hr=1s\n[NSM]"
     },
     {
       "id": 122771636,
@@ -6576,16 +6559,16 @@
     {
       "id": 125736087,
       "date": "2026-08-07",
-      "name": "Easy Run",
+      "name": "6 x 3:00",
       "type": "WORKOUT",
       "sport_type": "Run",
-      "planned_tss": 36,
-      "duration_hours": 0.93,
-      "duration_formatted": "56m",
-      "workout_summary": null,
+      "planned_tss": 53,
+      "duration_hours": 0.9,
+      "duration_formatted": "54m",
+      "workout_summary": "15m | 6\u00d73m / 1m rec | 15m",
       "has_terrain": false,
       "start_time": "12:00",
-      "description": "- 56m 62-70% HR hr=1s\n[NSM]"
+      "description": "- 15m 5:32-6:55/km Pace intensity=warmup\n\n6x\n- 3m 4:08/km Pace intensity=active\n- 1m 5:32-16:36/km Pace intensity=recovery\n\n- 15m 5:32-6:55/km Pace intensity=cooldown\n[NSM]"
     },
     {
       "id": 125410414,
@@ -6603,16 +6586,16 @@
     {
       "id": 125736094,
       "date": "2026-08-10",
-      "name": "7 x 3:00",
+      "name": "4 x 6:00",
       "type": "WORKOUT",
       "sport_type": "Run",
-      "planned_tss": 56,
-      "duration_hours": 0.87,
-      "duration_formatted": "52m",
-      "workout_summary": "13m | 7\u00d73m / 1m rec | 12m",
+      "planned_tss": 63,
+      "duration_hours": 0.98,
+      "duration_formatted": "59m",
+      "workout_summary": "15m | 4\u00d76m / 1m30s rec | 15m",
       "has_terrain": false,
       "start_time": "12:00",
-      "description": "- 13m 5:32-6:55/km Pace intensity=warmup\n\n7x\n- 3m 4:08/km Pace intensity=active\n- 1m 5:32-16:36/km Pace intensity=recovery\n\n- 12m 5:32-6:55/km Pace intensity=cooldown\n[NSM]"
+      "description": "- 15m 5:32-6:55/km Pace intensity=warmup\n\n4x\n- 6m 4:14/km Pace intensity=active\n- 1m30s 5:32-16:36/km Pace intensity=recovery\n\n- 15m 5:32-6:55/km Pace intensity=cooldown\n[NSM]"
     },
     {
       "id": 125735537,
@@ -6669,16 +6652,15 @@
     {
       "id": 125736097,
       "date": "2026-08-14",
-      "name": "Easy Run",
+      "name": "7 x 3:00",
       "type": "WORKOUT",
       "sport_type": "Run",
-      "planned_tss": 39,
-      "duration_hours": 1.0,
-      "duration_formatted": "1h",
-      "workout_summary": null,
+      "planned_tss": 58,
+      "duration_hours": 0.97,
+      "duration_formatted": "58m",
+      "workout_summary": "15m | 7\u00d73m / 1m rec | 15m",
       "has_terrain": false,
-      "start_time": "12:00",
-      "description_preview": "- 60m 62-70% HR hr=1s\n[NSM]"
+      "start_time": "12:00"
     },
     {
       "id": 122771640,
@@ -6695,13 +6677,13 @@
     {
       "id": 125736122,
       "date": "2026-08-17",
-      "name": "4 x 6:00",
+      "name": "3 x 10:00",
       "type": "WORKOUT",
       "sport_type": "Run",
-      "planned_tss": 63,
-      "duration_hours": 1.0,
-      "duration_formatted": "1h",
-      "workout_summary": "15m | 4\u00d76m / 1m30s rec | 16m",
+      "planned_tss": 69,
+      "duration_hours": 1.07,
+      "duration_formatted": "1h4m",
+      "workout_summary": "15m | 3\u00d710m / 2m rec | 15m",
       "has_terrain": false,
       "start_time": "12:00"
     },
@@ -6737,7 +6719,7 @@
       "name": "Easy Run",
       "type": "WORKOUT",
       "sport_type": "Run",
-      "planned_tss": 39,
+      "planned_tss": 22,
       "duration_hours": 1.0,
       "duration_formatted": "1h",
       "workout_summary": null,
@@ -6773,16 +6755,15 @@
     {
       "id": 125736125,
       "date": "2026-08-21",
-      "name": "Easy Run",
+      "name": "5 x 6:00",
       "type": "WORKOUT",
       "sport_type": "Run",
-      "planned_tss": 39,
-      "duration_hours": 1.0,
-      "duration_formatted": "1h",
-      "workout_summary": null,
+      "planned_tss": 73,
+      "duration_hours": 1.1,
+      "duration_formatted": "1h6m",
+      "workout_summary": "15m | 5\u00d76m / 1m30s rec | 15m",
       "has_terrain": false,
-      "start_time": "12:00",
-      "description_preview": "- 60m 62-70% HR hr=1s\n[NSM]"
+      "start_time": "12:00"
     },
     {
       "id": 122772458,
@@ -6934,11 +6915,11 @@
   ],
   "workout_summary_stats": {
     "attempted": 28,
-    "success": 11,
-    "patternA": 11,
+    "success": 14,
+    "patternA": 14,
     "patternB": 0,
     "bail_no_workout_doc": 1,
-    "bail_no_match": 17
+    "bail_no_match": 14
   },
   "weekly_summary": {
     "total_training_hours": 16.16,
@@ -6946,7 +6927,7 @@
     "total_tss": 755,
     "activities_count": 12,
     "avg_hrv": 80.0,
-    "avg_resting_hr": 40.7
+    "avg_resting_hr": 33.6
   },
   "race_calendar": {
     "next_race": {
