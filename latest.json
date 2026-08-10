@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-10T07:18:45.427825",
+    "last_updated": "2026-08-10T08:55:45.217705",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -102,6 +102,24 @@
   "athlete_notes": null,
   "alerts": [
     {
+      "metric": "recovery_index",
+      "value": 0.52,
+      "severity": "alarm",
+      "threshold": 0.6,
+      "context": "RI 0.52 < 0.6. Immediate deload required.",
+      "persistence_days": null,
+      "tier": 1
+    },
+    {
+      "metric": "rhr",
+      "value": 93,
+      "severity": "warning",
+      "threshold": "\u2191\u22655bpm vs baseline (44.1)",
+      "context": "RHR 93 is 48.9bpm above baseline. Monitor \u2014 alarm if persists >2 days.",
+      "persistence_days": 1,
+      "tier": 1
+    },
+    {
       "metric": "race_taper",
       "value": 14,
       "severity": "info",
@@ -112,8 +130,8 @@
     }
   ],
   "readiness_decision": {
-    "recommendation": "go",
-    "priority": 3,
+    "recommendation": "skip",
+    "priority": 0,
     "signals": {
       "hrv": {
         "status": "green",
@@ -122,10 +140,10 @@
         "delta_pct": 9.0
       },
       "rhr": {
-        "status": "green",
-        "value": 37,
-        "baseline_7d": 36.1,
-        "delta_bpm": 0.9
+        "status": "red",
+        "value": 93,
+        "baseline_7d": 44.1,
+        "delta_bpm": 48.9
       },
       "sleep": {
         "status": "green",
@@ -137,19 +155,15 @@
         "value": 0.84
       },
       "ri": {
-        "status": "green",
-        "value": 1.06,
-        "value_yesterday": 1.04
-      },
-      "tsb": {
-        "status": "green",
-        "value": 2.0
+        "status": "red",
+        "value": 0.52,
+        "value_yesterday": 1.27
       }
     },
     "signal_summary": {
-      "green": 6,
+      "green": 3,
       "amber": 0,
-      "red": 0,
+      "red": 2,
       "unavailable": 0
     },
     "phase_context": {
@@ -160,8 +174,10 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 6 green, 0 amber (threshold 1), 0 red.",
-    "alarm_refs": []
+    "reason": "P0 safety stop. RI 0.52 < 0.6; tier-1 alarms: recovery_index.",
+    "alarm_refs": [
+      "recovery_index"
+    ]
   },
   "history": {
     "available": true,
@@ -228,10 +244,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 95.85,
-      "atl": 93.87,
-      "tsb": 1.98,
-      "ramp_rate": -2.81,
+      "ctl": 94.37,
+      "atl": 85.48,
+      "tsb": 8.89,
+      "ramp_rate": -4.3,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -275,7 +291,7 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 37,
+      "resting_hr": 93,
       "hrv": 88.0,
       "sleep_quality": 2,
       "sleep_hours": 7.93,
@@ -309,14 +325,14 @@
     }
   },
   "derived_metrics": {
-    "recovery_index": 1.06,
-    "recovery_index_yesterday": 1.04,
+    "recovery_index": 0.52,
+    "recovery_index_yesterday": 1.27,
     "hrv_baseline_7d": 80.7,
-    "rhr_baseline_7d": 36.1,
+    "rhr_baseline_7d": 44.1,
     "hrv_baseline_28d": 88.4,
-    "rhr_baseline_28d": 36.8,
+    "rhr_baseline_28d": 38.8,
     "latest_hrv": 88.0,
-    "latest_rhr": 37,
+    "latest_rhr": 93,
     "acwr": 0.84,
     "acwr_interpretation": "optimal",
     "monotony": 1.48,
@@ -328,7 +344,7 @@
     "multi_sport_detected": true,
     "strain": 736.0,
     "stress_tolerance": 5.0,
-    "load_recovery_ratio": 4.7,
+    "load_recovery_ratio": 9.6,
     "tss_7d_total": 497.0,
     "tss_28d_total": 2371.0,
     "zone_distribution_7d": {
@@ -649,7 +665,7 @@
           "current_week_hard_days_total": 5,
           "race_proximity": 14,
           "next_week_load": 0.79,
-          "plan_coverage_current_week": 0.54,
+          "plan_coverage_current_week": 0.69,
           "plan_coverage_next_week": 0.62
         },
         "data_quality": "good",
@@ -685,7 +701,7 @@
     "p_max": 1157,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-10T07:18:45.426501",
+    "calculation_timestamp": "2026-08-10T08:55:45.216358",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -6105,7 +6121,7 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 37,
+      "resting_hr": 93,
       "hrv_rmssd": 88.0,
       "hrv_sdnn": null,
       "sleep_hours": 7.93,
@@ -6157,18 +6173,17 @@
       "description": "Warm Up\n\n-10m 60%\n-3m 75%\n-2m 85%\n-1m 100%\n-2m 50%\n\n2x\n-30s 125%\n-90s 50%\n\n-150s 50%\n\nMain Set 4x\n- 6m 108%\n- 5m 55%\n\n- Endurance 42m 65%\n- Cooldown 10m 50%"
     },
     {
-      "id": 125736094,
+      "id": 128349172,
       "date": "2026-08-10",
-      "name": "4 x 6:00",
+      "name": "Lift",
       "type": "WORKOUT",
-      "sport_type": "Run",
-      "planned_tss": 63,
-      "duration_hours": 0.98,
-      "duration_formatted": "59m",
-      "workout_summary": "15m | 4\u00d76m / 1m30s rec | 15m",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
+      "workout_summary": null,
       "has_terrain": false,
-      "start_time": "12:00",
-      "description": "- 15m 5:32-6:55/km Pace intensity=warmup\n\n4x\n- 6m 4:14/km Pace intensity=active\n- 1m30s 5:32-16:36/km Pace intensity=recovery\n\n- 15m 5:32-6:55/km Pace intensity=cooldown\n[NSM]"
+      "description": ""
     },
     {
       "id": 125735537,
@@ -6182,6 +6197,20 @@
       "workout_summary": null,
       "has_terrain": false,
       "description": "- Endurance 120m 65%"
+    },
+    {
+      "id": 125736094,
+      "date": "2026-08-11",
+      "name": "4 x 6:00",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 63,
+      "duration_hours": 0.98,
+      "duration_formatted": "59m",
+      "workout_summary": "15m | 4\u00d76m / 1m30s rec | 15m",
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description": "- 15m 5:32-6:55/km Pace intensity=warmup\n\n4x\n- 6m 4:14/km Pace intensity=active\n- 1m30s 5:32-16:36/km Pace intensity=recovery\n\n- 15m 5:32-6:55/km Pace intensity=cooldown\n[NSM]"
     },
     {
       "id": 125772957,
@@ -6222,6 +6251,19 @@
       "workout_summary": "10m @171W | 5m @213W | 5m @242W | 3m @171W | 3\u00d71m @285W / 2m rec | 3m @156W | 1h @270W | 10m @142W",
       "has_terrain": false,
       "description": "Warm Up\n- 10m 60%\n- 5m 75%\n- 5m 85%\n\n- 3m 60%\n\n3x\n- 1m 100%\n- 2m 55%\n\n- 3m 55%\n\nMain set\n- Threshold 60m 95%\n- Cooldown 10m 50%"
+    },
+    {
+      "id": 128349209,
+      "date": "2026-08-13",
+      "name": "Lift",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": ""
     },
     {
       "id": 125736097,
@@ -6504,7 +6546,7 @@
     "total_tss": 497,
     "activities_count": 12,
     "avg_hrv": 80.7,
-    "avg_resting_hr": 36.1
+    "avg_resting_hr": 44.1
   },
   "race_calendar": {
     "next_race": {
