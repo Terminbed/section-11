@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-24T11:51:45.345173",
+    "last_updated": "2026-08-24T12:36:38.325292",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -102,6 +102,15 @@
   "athlete_notes": null,
   "alerts": [
     {
+      "metric": "recovery_index",
+      "value": 0.56,
+      "severity": "alarm",
+      "threshold": 0.6,
+      "context": "RI 0.56 < 0.6. Immediate deload required.",
+      "persistence_days": null,
+      "tier": 1
+    },
+    {
       "metric": "rhr",
       "value": 79,
       "severity": "warning",
@@ -121,14 +130,14 @@
     }
   ],
   "readiness_decision": {
-    "recommendation": "modify",
-    "priority": 2,
+    "recommendation": "skip",
+    "priority": 0,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 76.3,
-        "delta_pct": null
+        "status": "green",
+        "value": 84.0,
+        "baseline_7d": 77.4,
+        "delta_pct": 8.5
       },
       "rhr": {
         "status": "red",
@@ -138,28 +147,24 @@
       },
       "sleep": {
         "status": "green",
-        "hours": 8.94,
-        "quality": null
+        "hours": 8.95,
+        "quality": 2
       },
       "acwr": {
         "status": "green",
         "value": 0.79
       },
       "ri": {
-        "status": "unavailable",
-        "value": null,
-        "value_yesterday": 1.44
-      },
-      "tsb": {
-        "status": "green",
-        "value": 7.1
+        "status": "red",
+        "value": 0.56,
+        "value_yesterday": 1.42
       }
     },
     "signal_summary": {
       "green": 3,
       "amber": 0,
-      "red": 1,
-      "unavailable": 2
+      "red": 2,
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -168,18 +173,11 @@
       "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
-    "modification": {
-      "triggers": [
-        "rhr"
-      ],
-      "suggested_adjustments": {
-        "intensity": "reduce",
-        "volume": "preserve",
-        "cap_zone": null
-      }
-    },
-    "reason": "P2 signal count. 1 red (rhr), 0 amber ().",
-    "alarm_refs": []
+    "modification": null,
+    "reason": "P0 safety stop. RI 0.56 < 0.6; tier-1 alarms: recovery_index.",
+    "alarm_refs": [
+      "recovery_index"
+    ]
   },
   "history": {
     "available": true,
@@ -294,11 +292,11 @@
         }
       },
       "resting_hr": 79,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": 8.94,
-      "sleep_formatted": "8h56m",
-      "sleep_score": null,
+      "hrv": 84.0,
+      "sleep_quality": 2,
+      "sleep_hours": 8.95,
+      "sleep_formatted": "8h57m",
+      "sleep_score": 84.0,
       "fatigue": null,
       "soreness": null,
       "stress": null,
@@ -327,13 +325,13 @@
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "recovery_index_yesterday": 1.44,
-    "hrv_baseline_7d": 76.3,
+    "recovery_index": 0.56,
+    "recovery_index_yesterday": 1.42,
+    "hrv_baseline_7d": 77.4,
     "rhr_baseline_7d": 40.9,
-    "hrv_baseline_28d": 82.5,
+    "hrv_baseline_28d": 82.6,
     "rhr_baseline_28d": 41.2,
-    "latest_hrv": null,
+    "latest_hrv": 84.0,
     "latest_rhr": 79,
     "acwr": 0.79,
     "acwr_interpretation": "undertraining",
@@ -346,7 +344,7 @@
     "multi_sport_detected": true,
     "strain": 578.0,
     "stress_tolerance": 5.4,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 9.6,
     "tss_7d_total": 535.0,
     "tss_28d_total": 2725.0,
     "zone_distribution_7d": {
@@ -698,13 +696,13 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.49,
+          "planned_tss_delta": 1.06,
           "hard_sessions_planned": 4,
           "current_week_hard_days_completed": 0,
           "current_week_hard_days_total": 4,
           "race_proximity": 6,
           "next_week_load": 0.34,
-          "plan_coverage_current_week": 0.58,
+          "plan_coverage_current_week": 0.5,
           "plan_coverage_next_week": 0.5
         },
         "data_quality": "good",
@@ -738,9 +736,9 @@
     "p_max": 1149,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-24T11:51:45.343871",
+    "calculation_timestamp": "2026-08-24T12:36:38.323901",
     "data_quality": {
-      "hrv_data_points": 6,
+      "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 9,
       "activities_28d": 47,
@@ -6202,8 +6200,8 @@
       "resting_hr": 39,
       "hrv_rmssd": 105.0,
       "hrv_sdnn": 82.0,
-      "sleep_hours": 8.04,
-      "sleep_formatted": "8h2m",
+      "sleep_hours": 8.05,
+      "sleep_formatted": "8h3m",
       "sleep_quality": 2,
       "sleep_score": 86.0,
       "mental_energy": null,
@@ -6225,7 +6223,7 @@
       "respiration": 13.538012,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 11618,
+      "steps": 11589,
       "hydration_volume_l": 0.27758068,
       "kcal_consumed": 620,
       "carbohydrates_g": 97.42948,
@@ -6245,12 +6243,12 @@
         }
       },
       "resting_hr": 79,
-      "hrv_rmssd": null,
+      "hrv_rmssd": 84.0,
       "hrv_sdnn": null,
-      "sleep_hours": 8.94,
-      "sleep_formatted": "8h56m",
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 8.95,
+      "sleep_formatted": "8h57m",
+      "sleep_quality": 2,
+      "sleep_score": 84.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
@@ -6352,30 +6350,18 @@
       "description": "- 15m 5:32-6:55/km Pace intensity=warmup\n\n10x\n- 3m 4:08/km Pace intensity=active\n- 1m 5:32-16:36/km Pace intensity=recovery\n\n- 15m 5:32-6:55/km Pace intensity=cooldown\n[NSM]"
     },
     {
-      "id": 125418082,
-      "date": "2026-08-30",
-      "name": "FONDO DEBRIEF",
-      "type": "NOTE",
-      "sport_type": null,
-      "planned_tss": null,
-      "duration_hours": 0.0,
-      "duration_formatted": "0s",
-      "workout_summary": null,
-      "has_terrain": false,
-      "description": ""
-    },
-    {
       "id": 129001971,
       "date": "2026-08-30",
       "name": "Tour of Britain Ride The Route",
       "type": "RACE_C",
       "sport_type": "Ride",
-      "planned_tss": null,
-      "duration_hours": 7.0,
-      "duration_formatted": "7h",
+      "planned_tss": 300,
+      "duration_hours": 6.0,
+      "duration_formatted": "6h",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "Created in STAS \u00b7 stas.run"
+      "start_time": "07:30",
+      "description": ""
     },
     {
       "id": 129772215,
@@ -6652,7 +6638,7 @@
     "success": 12,
     "patternA": 12,
     "patternB": 0,
-    "bail_no_workout_doc": 7,
+    "bail_no_workout_doc": 6,
     "bail_no_match": 7
   },
   "weekly_summary": {
@@ -6660,7 +6646,7 @@
     "total_training_formatted": "11h25m",
     "total_tss": 535,
     "activities_count": 9,
-    "avg_hrv": 76.3,
+    "avg_hrv": 77.4,
     "avg_resting_hr": 40.9
   },
   "race_calendar": {
@@ -6670,15 +6656,16 @@
       "category": "RACE_C",
       "type": "Ride",
       "days_until": 6,
-      "moving_time_seconds": 25200,
-      "distance_meters": 184000.0,
+      "moving_time_seconds": 21600,
+      "distance_meters": 170000.0,
       "display": {
         "distance": {
-          "value": 184.0,
+          "value": 170.0,
           "unit": "km"
         }
       },
-      "has_terrain": false
+      "has_terrain": false,
+      "start_time": "07:30"
     },
     "all_races": [
       {
@@ -6687,15 +6674,16 @@
         "category": "RACE_C",
         "type": "Ride",
         "days_until": 6,
-        "moving_time_seconds": 25200,
-        "distance_meters": 184000.0,
+        "moving_time_seconds": 21600,
+        "distance_meters": 170000.0,
         "display": {
           "distance": {
-            "value": 184.0,
+            "value": 170.0,
             "unit": "km"
           }
         },
-        "has_terrain": false
+        "has_terrain": false,
+        "start_time": "07:30"
       }
     ],
     "taper_alert": {
