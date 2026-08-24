@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-24T12:36:38.325292",
+    "last_updated": "2026-08-24T13:36:04.171622",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -127,6 +127,15 @@
       "context": "TID shift: 7d Pyramidal vs 28d Polarized. Training distribution changing.",
       "persistence_days": null,
       "tier": 3
+    },
+    {
+      "metric": "race_taper",
+      "value": 9,
+      "severity": "info",
+      "threshold": "RACE_A within 8-14 days",
+      "context": "RACE_A '5K Race' in 9 days. Begin volume reduction (target 41-60% over 2 weeks). Maintain intensity. CTL should peak now or within the next few days.",
+      "persistence_days": null,
+      "tier": 1
     }
   ],
   "readiness_decision": {
@@ -696,12 +705,12 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.06,
-          "hard_sessions_planned": 4,
+          "planned_tss_delta": 0.87,
+          "hard_sessions_planned": 2,
           "current_week_hard_days_completed": 0,
-          "current_week_hard_days_total": 4,
+          "current_week_hard_days_total": 2,
           "race_proximity": 6,
-          "next_week_load": 0.34,
+          "next_week_load": 0.3,
           "plan_coverage_current_week": 0.5,
           "plan_coverage_next_week": 0.5
         },
@@ -736,7 +745,7 @@
     "p_max": 1149,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-24T12:36:38.323901",
+    "calculation_timestamp": "2026-08-24T13:36:04.170600",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -6295,17 +6304,18 @@
       "description": "- 90m 55-70%% FTP\n\n## STAS\nPM 5K TT day. No bike threshold. FTP anchor 285 W; ~157-171 W. Keep this genuinely easy to support the run."
     },
     {
-      "id": 125735554,
+      "id": 131358558,
       "date": "2026-08-25",
-      "name": "Z2",
+      "name": "Easy Run",
       "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 84,
-      "duration_hours": 2.0,
-      "duration_formatted": "2h",
+      "sport_type": "Run",
+      "planned_tss": 24,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "- Endurance 120m 65%"
+      "start_time": "12:00",
+      "description": "- 60m 62-70% HR hr=1s\n[NSM]"
     },
     {
       "id": 129213944,
@@ -6322,32 +6332,32 @@
       "description": "- 90m 55-60% FTP\n\n## STAS\nEasy aerobic/recovery ride. FTP reference 285 W; target ~157-171 W."
     },
     {
-      "id": 129772173,
-      "date": "2026-08-27",
-      "name": "Bike Threshold",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 67,
-      "duration_hours": 1.12,
-      "duration_formatted": "1h7m",
-      "workout_summary": "12m | 3m @228W | 2m @164W | 3\u00d710m @253W / 4m rec | 8m",
-      "has_terrain": false,
-      "start_time": "07:00",
-      "description": "Warmup\n- 12m Z2\n- 3m 80% FTP\n- 2m 55-60% FTP\n\nMain set 3x\n- 10m 88-90% FTP\n- Recovery 4m 55-60% FTP\n\nCooldown\n- 8m Z1\n\n## STAS\nFTP anchor 285 W; work guide 251-257 W. Power is a ceiling/guide, not a mandatory escalation. Optional if fresh: add 20-30m 55-65% FTP after the quality work. Monday/Thursday progression rule: only progress if prior sessions were controlled; final rep controlled, RPE <=6-7, Thursday broadly comparable with Monday."
-    },
-    {
       "id": 129214774,
       "date": "2026-08-27",
-      "name": "10 x 3:00",
+      "name": "Easy Run",
       "type": "WORKOUT",
       "sport_type": "Run",
-      "planned_tss": 74,
-      "duration_hours": 1.17,
-      "duration_formatted": "1h10m",
-      "workout_summary": "15m | 10\u00d73m / 1m rec | 15m",
+      "planned_tss": 39,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
       "has_terrain": false,
       "start_time": "12:00",
-      "description": "- 15m 5:32-6:55/km Pace intensity=warmup\n\n10x\n- 3m 4:08/km Pace intensity=active\n- 1m 5:32-16:36/km Pace intensity=recovery\n\n- 15m 5:32-6:55/km Pace intensity=cooldown\n[NSM]"
+      "description": "- 60m 62-70% HR hr=1s\n[NSM]"
+    },
+    {
+      "id": 131359018,
+      "date": "2026-08-28",
+      "name": "Easy Bike",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 50,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "07:00",
+      "description": "- 90m 55-60% FTP\n\n## STAS\nEasy aerobic/recovery ride. FTP reference 285 W; target ~157-171 W."
     },
     {
       "id": 129001971,
@@ -6364,8 +6374,49 @@
       "description": ""
     },
     {
+      "id": 131358916,
+      "date": "2026-09-01",
+      "name": "Z2",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 84,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description_preview": "- Endurance 120m z2"
+    },
+    {
+      "id": 131358349,
+      "date": "2026-09-02",
+      "name": "5K Race",
+      "type": "RACE_A",
+      "sport_type": "Run",
+      "planned_tss": 37,
+      "duration_hours": 0.33,
+      "duration_formatted": "20m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description_preview": "- 5km 3:54/km Pace intensity=active\n[NSM]"
+    },
+    {
+      "id": 131358350,
+      "date": "2026-09-03",
+      "name": "Easy Run",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 29,
+      "duration_hours": 1.22,
+      "duration_formatted": "1h13m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description_preview": "- 73m 62-70% HR hr=1s\n[NSM]"
+    },
+    {
       "id": 129772215,
-      "date": "2026-08-31",
+      "date": "2026-09-04",
       "name": "Bike Threshold",
       "type": "WORKOUT",
       "sport_type": "Ride",
@@ -6374,62 +6425,20 @@
       "duration_formatted": "1h13m",
       "workout_summary": "12m | 3m @228W | 2m @164W | 3\u00d712m @253W / 4m rec | 8m",
       "has_terrain": false,
-      "start_time": "07:00",
-      "description": "Warmup\n- 12m Z2\n- 3m 80% FTP\n- 2m 55-60% FTP\n\nMain set 3x\n- 12m 88-90% FTP\n- Recovery 4m 55-60% FTP\n\nCooldown\n- 8m Z1\n\n## STAS\nFTP anchor 285 W; work guide 251-257 W. Power is a ceiling/guide, not a mandatory escalation. Optional if fresh: add 20-45m 55-65% FTP after the quality work. If Saturday was a race simulation or unusually hard, replace this threshold set with 60-90m easy Z2 at 55-60% FTP; do not make up missed intervals later. Only progress if prior Monday/Thursday sessions were controlled; final rep controlled, RPE <=6-7, Thursday broadly comparable with Monday."
-    },
-    {
-      "id": 125736876,
-      "date": "2026-08-31",
-      "name": "3 x 10:00",
-      "type": "WORKOUT",
-      "sport_type": "Run",
-      "planned_tss": 69,
-      "duration_hours": 1.07,
-      "duration_formatted": "1h4m",
-      "workout_summary": "15m | 3\u00d710m / 2m rec | 15m",
-      "has_terrain": false,
-      "start_time": "12:00",
-      "description": "- 15m 5:32-6:55/km Pace intensity=warmup\n\n3x\n- 10m 4:22/km Pace intensity=active\n- 2m 5:32-16:36/km Pace intensity=recovery\n\n- 15m 5:32-6:55/km Pace intensity=cooldown\n[NSM]"
-    },
-    {
-      "id": 129772216,
-      "date": "2026-09-02",
-      "name": "Easy Bike",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 33,
-      "duration_hours": 1.0,
-      "duration_formatted": "1h",
-      "workout_summary": null,
-      "has_terrain": false,
-      "start_time": "07:00",
-      "description_preview": "- 60m 55-60% FTP\n## STAS\nEasy aerobic/recovery ride. FTP anchor 285 W; ~157-171 W."
-    },
-    {
-      "id": 129772217,
-      "date": "2026-09-03",
-      "name": "Bike Threshold",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 70,
-      "duration_hours": 1.15,
-      "duration_formatted": "1h9m",
-      "workout_summary": "12m | 3m @228W | 2m @164W | 4\u00d78m @256W / 3m rec | 8m",
-      "has_terrain": false,
       "start_time": "07:00"
     },
     {
-      "id": 128484292,
+      "id": 131358352,
       "date": "2026-09-04",
-      "name": "Lake Garda travel",
-      "type": "NOTE",
-      "sport_type": null,
-      "planned_tss": null,
-      "duration_hours": 0.0,
-      "duration_formatted": "0s",
-      "workout_summary": null,
+      "name": "3 x 10:00",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 68,
+      "duration_hours": 1.1,
+      "duration_formatted": "1h6m",
+      "workout_summary": "15m | 3\u00d710m / 2m rec | 15m",
       "has_terrain": false,
-      "description_preview": "Travel day. Training is possible if practical."
+      "start_time": "12:00"
     },
     {
       "id": 128484293,
@@ -6635,11 +6644,11 @@
   ],
   "workout_summary_stats": {
     "attempted": 19,
-    "success": 12,
-    "patternA": 12,
+    "success": 9,
+    "patternA": 9,
     "patternB": 0,
     "bail_no_workout_doc": 6,
-    "bail_no_match": 7
+    "bail_no_match": 10
   },
   "weekly_summary": {
     "total_training_hours": 11.43,
@@ -6684,10 +6693,31 @@
         },
         "has_terrain": false,
         "start_time": "07:30"
+      },
+      {
+        "name": "5K Race",
+        "date": "2026-09-02",
+        "category": "RACE_A",
+        "type": "Run",
+        "days_until": 9,
+        "moving_time_seconds": 1200,
+        "distance_meters": 5000.0,
+        "display": {
+          "distance": {
+            "value": 5.0,
+            "unit": "km"
+          }
+        },
+        "has_terrain": false,
+        "start_time": "12:00"
       }
     ],
     "taper_alert": {
-      "active": false
+      "active": true,
+      "event_name": "5K Race",
+      "event_date": "2026-09-02",
+      "days_until": 9,
+      "message": "RACE_A '5K Race' in 9 days. Begin volume reduction (target 41-60% over 2 weeks). Maintain intensity. CTL should peak now or within the next few days."
     },
     "race_week": {
       "active": false
