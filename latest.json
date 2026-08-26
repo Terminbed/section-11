@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-26T06:37:18.233173",
+    "last_updated": "2026-08-26T07:30:56.959400",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -102,6 +102,15 @@
   "athlete_notes": null,
   "alerts": [
     {
+      "metric": "rhr",
+      "value": 66,
+      "severity": "alarm",
+      "threshold": "\u2191\u22655bpm vs baseline (51.4)",
+      "context": "RHR 66 is 14.6bpm above baseline, persisting 3 days.",
+      "persistence_days": 3,
+      "tier": 1
+    },
+    {
       "metric": "tid_distribution",
       "value": "Pyramidal",
       "severity": "warning",
@@ -121,8 +130,8 @@
     }
   ],
   "readiness_decision": {
-    "recommendation": "go",
-    "priority": 3,
+    "recommendation": "skip",
+    "priority": 0,
     "signals": {
       "hrv": {
         "status": "unavailable",
@@ -131,10 +140,10 @@
         "delta_pct": null
       },
       "rhr": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 49,
-        "delta_bpm": null
+        "status": "red",
+        "value": 66,
+        "baseline_7d": 51.4,
+        "delta_bpm": 14.6
       },
       "sleep": {
         "status": "unavailable",
@@ -148,18 +157,14 @@
       "ri": {
         "status": "unavailable",
         "value": null,
-        "value_yesterday": 0.76
-      },
-      "tsb": {
-        "status": "green",
-        "value": 17.4
+        "value_yesterday": 0.8
       }
     },
     "signal_summary": {
-      "green": 2,
+      "green": 1,
       "amber": 0,
-      "red": 0,
-      "unavailable": 4
+      "red": 1,
+      "unavailable": 3
     },
     "phase_context": {
       "phase": "Build",
@@ -169,8 +174,10 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 2 green, 0 amber (threshold 1), 0 red. Note: 4 signals unavailable \u2014 limited data.",
-    "alarm_refs": []
+    "reason": "P0 safety stop. tier-1 alarms: rhr.",
+    "alarm_refs": [
+      "rhr"
+    ]
   },
   "history": {
     "available": true,
@@ -272,7 +279,7 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 76,
+      "resting_hr": 66,
       "hrv": null,
       "sleep_quality": null,
       "sleep_hours": null,
@@ -294,7 +301,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 84,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -307,13 +314,13 @@
   },
   "derived_metrics": {
     "recovery_index": null,
-    "recovery_index_yesterday": 0.76,
+    "recovery_index_yesterday": 0.8,
     "hrv_baseline_7d": 80.8,
-    "rhr_baseline_7d": 49,
+    "rhr_baseline_7d": 51.4,
     "hrv_baseline_28d": 82.5,
-    "rhr_baseline_28d": 43.0,
+    "rhr_baseline_28d": 43.9,
     "latest_hrv": null,
-    "latest_rhr": null,
+    "latest_rhr": 66,
     "acwr": 0.75,
     "acwr_interpretation": "undertraining",
     "monotony": 0.92,
@@ -715,10 +722,10 @@
     "p_max": 1147,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-26T06:37:18.231783",
+    "calculation_timestamp": "2026-08-26T07:30:56.957983",
     "data_quality": {
       "hrv_data_points": 6,
-      "rhr_data_points": 6,
+      "rhr_data_points": 7,
       "activities_7d": 7,
       "activities_28d": 44,
       "planned_workouts_7d": 5,
@@ -5935,7 +5942,7 @@
           "unit": "kg"
         }
       },
-      "resting_hr": null,
+      "resting_hr": 66,
       "hrv_rmssd": null,
       "hrv_sdnn": null,
       "sleep_hours": null,
@@ -5961,7 +5968,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 84,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -6325,7 +6332,7 @@
     "total_tss": 487,
     "activities_count": 7,
     "avg_hrv": 80.8,
-    "avg_resting_hr": 49.0
+    "avg_resting_hr": 51.4
   },
   "race_calendar": {
     "next_race": {
