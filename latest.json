@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-31T15:17:03.798442",
+    "last_updated": "2026-08-31T20:55:57.013590",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -109,15 +109,6 @@
       "context": "TID shift: 7d Pyramidal vs 28d Polarized. Training distribution changing.",
       "persistence_days": null,
       "tier": 3
-    },
-    {
-      "metric": "race_week",
-      "value": 2,
-      "severity": "info",
-      "threshold": "RACE_A within 7 days",
-      "context": "Race week D-2 of '5K Race'. Today: Opener, 28-46 TSS. 5-6 efforts Z4-Z6 (10-30s), high cadence, full recovery",
-      "persistence_days": null,
-      "tier": 1
     }
   ],
   "readiness_decision": {
@@ -137,8 +128,8 @@
         "delta_bpm": null
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
+        "status": "green",
+        "hours": 8.79,
         "quality": null
       },
       "acwr": {
@@ -156,20 +147,20 @@
       }
     },
     "signal_summary": {
-      "green": 2,
+      "green": 3,
       "amber": 0,
       "red": 0,
-      "unavailable": 4
+      "unavailable": 3
     },
     "phase_context": {
-      "phase": "Taper",
+      "phase": "Build",
       "phase_week": 1,
-      "amber_threshold": 1,
-      "modifier_applied": "race_week_tightened"
+      "amber_threshold": 3,
+      "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 2 green, 0 amber (threshold 1), 0 red. Note: 4 signals unavailable \u2014 limited data.",
+    "reason": "P3 green light. 3 green, 0 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -287,8 +278,8 @@
       "resting_hr": 69,
       "hrv": null,
       "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
+      "sleep_hours": 8.79,
+      "sleep_formatted": "8h47m",
       "sleep_score": null,
       "fatigue": null,
       "soreness": null,
@@ -675,11 +666,9 @@
       ]
     },
     "phase_detection": {
-      "phase": "Taper",
+      "phase": "Build",
       "confidence": "high",
-      "reason_codes": [
-        "RACE_IMMINENT_VOLUME_REDUCING"
-      ],
+      "reason_codes": [],
       "basis": {
         "stream_1": {
           "ctl_slope": null,
@@ -692,9 +681,9 @@
           "hard_sessions_planned": 3,
           "current_week_hard_days_completed": 0,
           "current_week_hard_days_total": 3,
-          "race_proximity": 2,
+          "race_proximity": null,
           "next_week_load": null,
-          "plan_coverage_current_week": 0.6,
+          "plan_coverage_current_week": 0.7,
           "plan_coverage_next_week": 0.1
         },
         "data_quality": "good",
@@ -705,10 +694,8 @@
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": "Taper",
-    "phase_triggers": [
-      "RACE_IMMINENT_VOLUME_REDUCING"
-    ],
+    "phase_detected": "Build",
+    "phase_triggers": [],
     "seasonal_context": "Peak Race Season",
     "benchmark_indoor": {
       "current_ftp": 285,
@@ -730,7 +717,7 @@
     "p_max": 1141,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-31T15:17:03.797358",
+    "calculation_timestamp": "2026-08-31T20:55:57.012196",
     "data_quality": {
       "hrv_data_points": 5,
       "rhr_data_points": 5,
@@ -5953,8 +5940,8 @@
       "resting_hr": 69,
       "hrv_rmssd": null,
       "hrv_sdnn": 79.0,
-      "sleep_hours": 7.64,
-      "sleep_formatted": "7h38m",
+      "sleep_hours": 7.63,
+      "sleep_formatted": "7h37m",
       "sleep_quality": 2,
       "sleep_score": 89.0,
       "mental_energy": null,
@@ -5995,8 +5982,8 @@
       "resting_hr": null,
       "hrv_rmssd": null,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
+      "sleep_hours": 8.79,
+      "sleep_formatted": "8h47m",
       "sleep_quality": null,
       "sleep_score": null,
       "mental_energy": null,
@@ -6044,18 +6031,32 @@
       "description": "- Endurance 120m z2"
     },
     {
+      "id": 133049397,
+      "date": "2026-09-01",
+      "name": "3 x 10:00",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 68,
+      "duration_hours": 1.1,
+      "duration_formatted": "1h6m",
+      "workout_summary": "15m | 3\u00d710m / 2m rec | 15m",
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description": "- 15m 5:32-6:55/km Pace intensity=warmup\n\n3x\n- 10m 4:22/km Pace intensity=active\n- 2m 5:32-16:36/km Pace intensity=recovery\n\n- 15m 5:32-6:55/km Pace intensity=cooldown\n[NSM]"
+    },
+    {
       "id": 131358349,
       "date": "2026-09-02",
-      "name": "5K Race",
-      "type": "RACE_A",
+      "name": "Easy Run",
+      "type": "WORKOUT",
       "sport_type": "Run",
-      "planned_tss": 37,
-      "duration_hours": 0.33,
-      "duration_formatted": "20m",
+      "planned_tss": 33,
+      "duration_hours": 1.22,
+      "duration_formatted": "1h13m",
       "workout_summary": null,
       "has_terrain": false,
       "start_time": "12:00",
-      "description": "- 5km 3:54/km Pace intensity=active\n[NSM]"
+      "description": "- 73m 62-70% HR hr=1s\n[NSM]"
     },
     {
       "id": 132068739,
@@ -6071,6 +6072,20 @@
       "description": "- Endurance 120m z2"
     },
     {
+      "id": 133049398,
+      "date": "2026-09-03",
+      "name": "5 x 6:00",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 71,
+      "duration_hours": 1.12,
+      "duration_formatted": "1h7m30s",
+      "workout_summary": "15m | 5\u00d76m / 1m30s rec | 15m",
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description": "- 15m 5:32-6:55/km Pace intensity=warmup\n\n5x\n- 6m 4:14/km Pace intensity=active\n- 1m30s 5:32-16:36/km Pace intensity=recovery\n\n- 15m 5:32-6:55/km Pace intensity=cooldown\n[NSM]"
+    },
+    {
       "id": 129772215,
       "date": "2026-09-04",
       "name": "Bike Threshold",
@@ -6083,20 +6098,6 @@
       "has_terrain": false,
       "start_time": "07:00",
       "description": "Warmup\n- 12m Z2\n- 3m 80% FTP\n- 2m 55-60% FTP\n\nMain set 3x\n- 12m 88-90% FTP\n- Recovery 4m 55-60% FTP\n\nCooldown\n- 8m Z1\n\n## STAS\nFTP anchor 285 W; work guide 251-257 W. Power is a ceiling/guide, not a mandatory escalation. Optional if fresh: add 20-45m 55-65% FTP after the quality work. If Saturday was a race simulation or unusually hard, replace this threshold set with 60-90m easy Z2 at 55-60% FTP; do not make up missed intervals later. Only progress if prior Monday/Thursday sessions were controlled; final rep controlled, RPE <=6-7, Thursday broadly comparable with Monday."
-    },
-    {
-      "id": 131358352,
-      "date": "2026-09-04",
-      "name": "3 x 10:00",
-      "type": "WORKOUT",
-      "sport_type": "Run",
-      "planned_tss": 68,
-      "duration_hours": 1.1,
-      "duration_formatted": "1h6m",
-      "workout_summary": "15m | 3\u00d710m / 2m rec | 15m",
-      "has_terrain": false,
-      "start_time": "12:00",
-      "description": "- 15m 5:32-6:55/km Pace intensity=warmup\n\n3x\n- 10m 4:22/km Pace intensity=active\n- 2m 5:32-16:36/km Pace intensity=recovery\n\n- 15m 5:32-6:55/km Pace intensity=cooldown\n[NSM]"
     },
     {
       "id": 128484293,
@@ -6356,12 +6357,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 18,
-    "success": 10,
-    "patternA": 10,
+    "attempted": 20,
+    "success": 11,
+    "patternA": 11,
     "patternB": 0,
-    "bail_no_workout_doc": 6,
-    "bail_no_match": 8
+    "bail_no_workout_doc": 5,
+    "bail_no_match": 9
   },
   "weekly_summary": {
     "total_training_hours": 10.84,
@@ -6372,96 +6373,13 @@
     "avg_resting_hr": 48.4
   },
   "race_calendar": {
-    "next_race": {
-      "name": "5K Race",
-      "date": "2026-09-02",
-      "category": "RACE_A",
-      "type": "Run",
-      "days_until": 2,
-      "moving_time_seconds": 1200,
-      "distance_meters": 5000.0,
-      "display": {
-        "distance": {
-          "value": 5.0,
-          "unit": "km"
-        }
-      },
-      "has_terrain": false,
-      "start_time": "12:00"
-    },
-    "all_races": [
-      {
-        "name": "5K Race",
-        "date": "2026-09-02",
-        "category": "RACE_A",
-        "type": "Run",
-        "days_until": 2,
-        "moving_time_seconds": 1200,
-        "distance_meters": 5000.0,
-        "display": {
-          "distance": {
-            "value": 5.0,
-            "unit": "km"
-          }
-        },
-        "has_terrain": false,
-        "start_time": "12:00"
-      }
-    ],
+    "next_race": null,
+    "all_races": [],
     "taper_alert": {
       "active": false
     },
     "race_week": {
-      "active": true,
-      "event_name": "5K Race",
-      "event_date": "2026-09-02",
-      "event_category": "RACE_A",
-      "event_type": "Run",
-      "event_duration_class": "short_intense",
-      "event_moving_time_seconds": 1200,
-      "days_until_event": 2,
-      "current_day": "D-2",
-      "ctl_baseline": 92.2,
-      "normal_weekly_tss": 645.5,
-      "race_week_tss_budget": {
-        "min": 258,
-        "max": 355
-      },
-      "race_week_tss_spent": 449,
-      "race_week_tss_remaining": {
-        "min": 0,
-        "max": 0
-      },
-      "projected_race_day_tsb": 25.1,
-      "tsb_target_range": {
-        "min": 5,
-        "max": 15
-      },
-      "today": {
-        "label": "Opener",
-        "load_target_tss": {
-          "min": 28,
-          "max": 46
-        },
-        "zones": "5-6 efforts Z4-Z6 (10-30s), high cadence, full recovery",
-        "purpose": "Full neuromuscular activation for short, intense effort."
-      },
-      "carb_loading": {
-        "applicable": false,
-        "active": false,
-        "starts": "D-4",
-        "start_date": "2026-08-29",
-        "note": null
-      },
-      "opener": {
-        "day": "D-2",
-        "date": "2026-08-31",
-        "intensity": "more_intense"
-      },
-      "go_no_go": {
-        "tsb_status": "green",
-        "notes": []
-      }
+      "active": false
     }
   }
 }
