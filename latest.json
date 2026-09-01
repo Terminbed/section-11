@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-01T10:17:31.972713",
+    "last_updated": "2026-09-01T15:00:55.031235",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -118,9 +118,9 @@
         "delta_bpm": null
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "green",
+        "hours": 8.12,
+        "quality": 2
       },
       "acwr": {
         "status": "green",
@@ -133,14 +133,14 @@
       },
       "tsb": {
         "status": "green",
-        "value": 1.3
+        "value": -6.1
       }
     },
     "signal_summary": {
-      "green": 2,
+      "green": 3,
       "amber": 0,
       "red": 0,
-      "unavailable": 4
+      "unavailable": 3
     },
     "phase_context": {
       "phase": "Build",
@@ -150,7 +150,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 2 green, 0 amber (threshold 3), 0 red. Note: 4 signals unavailable \u2014 limited data.",
+    "reason": "P3 green light. 3 green, 0 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -218,17 +218,17 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 93.56,
-      "atl": 92.29,
-      "tsb": 1.27,
-      "ramp_rate": -1.1,
+      "ctl": 95.14,
+      "atl": 101.21,
+      "tsb": -6.07,
+      "ramp_rate": 0.47,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
-      "eftp": 269.3,
-      "w_prime": 23022,
+      "eftp": 269.6,
+      "w_prime": 23045,
       "w_prime_kj": 23.0,
-      "p_max": 1140,
+      "p_max": 1141,
       "vo2max": 67.0,
       "sports": {
         "cycling": {
@@ -267,10 +267,10 @@
       },
       "resting_hr": 36,
       "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_score": null,
+      "sleep_quality": 2,
+      "sleep_hours": 8.12,
+      "sleep_formatted": "8h7m",
+      "sleep_score": 88.0,
       "fatigue": null,
       "soreness": null,
       "stress": null,
@@ -287,7 +287,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 10423,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -593,7 +593,7 @@
           },
           "coverage_ratio": 1.0,
           "ftp_used": 285,
-          "w_prime_used": 23022,
+          "w_prime_used": 23045,
           "ftp_staleness_days": 0,
           "model_trust_note": "CP/W' model (P=CP+W'/t) is primary for durations \u226420min where W' contribution is meaningful. Coggan duration factors (Allen & Coggan, 3rd ed.) are the established reference for \u226560min. 30min is the crossover zone where both apply. model_divergence_pct = (actual - CP_model) / CP_model \u00d7 100. Positive divergence at short durations may indicate strong anaerobic capacity or stale W' value. Indoor MMP is typically 3-5% lower than outdoor (cooling, motivation) \u2014 source flag indicates which environment produced each anchor."
         }
@@ -667,13 +667,13 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.49,
-          "hard_sessions_planned": 3,
+          "planned_tss_delta": 0.68,
+          "hard_sessions_planned": 4,
           "current_week_hard_days_completed": 1,
-          "current_week_hard_days_total": 4,
+          "current_week_hard_days_total": 5,
           "race_proximity": null,
           "next_week_load": null,
-          "plan_coverage_current_week": 0.7,
+          "plan_coverage_current_week": 1.0,
           "plan_coverage_next_week": 0.1
         },
         "data_quality": "good",
@@ -701,19 +701,19 @@
       "benchmark_percentage": null,
       "seasonal_expected": null
     },
-    "eftp": 269.3,
-    "w_prime": 23022,
+    "eftp": 269.6,
+    "w_prime": 23045,
     "w_prime_kj": 23.0,
-    "p_max": 1140,
+    "p_max": 1141,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 67.0,
-    "calculation_timestamp": "2026-09-01T10:17:31.971617",
+    "calculation_timestamp": "2026-09-01T15:00:55.029963",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 5,
       "activities_7d": 8,
       "activities_28d": 41,
-      "planned_workouts_7d": 6,
+      "planned_workouts_7d": 7,
       "ftp_history_days": {
         "indoor": 125,
         "outdoor": 125
@@ -5910,10 +5910,10 @@
       "resting_hr": null,
       "hrv_rmssd": null,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 8.12,
+      "sleep_formatted": "8h7m",
+      "sleep_quality": 2,
+      "sleep_score": 88.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": 67.0,
@@ -5933,7 +5933,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 10423,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -5959,6 +5959,20 @@
       "description": "- Endurance 120m z2"
     },
     {
+      "id": 133159982,
+      "date": "2026-09-01",
+      "name": "Bike Threshold",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 67,
+      "duration_hours": 1.12,
+      "duration_formatted": "1h7m",
+      "workout_summary": "12m | 3m @228W | 2m @164W | 3\u00d710m @253W / 4m rec | 8m",
+      "has_terrain": false,
+      "start_time": "07:00",
+      "description": "Warmup\n- 12m Z2\n- 3m 80% FTP\n- 2m 55-60% FTP\n\nMain set 3x\n- 10m 88-90% FTP\n- Recovery 4m 55-60% FTP\n\nCooldown\n- 8m Z1\n\n## STAS\nPost-Garda re-entry. FTP anchor 285 W; work guide 251-257 W. Optional if fresh: add 20-45m 55-65% FTP after the quality work. If Saturday was a race simulation or unusually hard, replace this threshold set with 60-90m easy Z2 at 55-60% FTP; do not make up missed intervals later. Only progress if prior Monday/Thursday sessions were controlled; final rep controlled, RPE <=6-7, Thursday broadly comparable with Monday."
+    },
+    {
       "id": 133049397,
       "date": "2026-09-01",
       "name": "3 x 10:00",
@@ -5973,31 +5987,45 @@
       "description": "- 15m 5:32-6:55/km Pace intensity=warmup\n\n3x\n- 10m 4:22/km Pace intensity=active\n- 2m 5:32-16:36/km Pace intensity=recovery\n\n- 15m 5:32-6:55/km Pace intensity=cooldown\n[NSM]"
     },
     {
-      "id": 131358349,
+      "id": 133160271,
       "date": "2026-09-02",
-      "name": "Easy Run",
+      "name": "Lift",
       "type": "WORKOUT",
-      "sport_type": "Run",
-      "planned_tss": 47,
-      "duration_hours": 1.22,
-      "duration_formatted": "1h13m",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
       "workout_summary": null,
       "has_terrain": false,
-      "start_time": "12:00",
-      "description": "- 73m 62-70% HR hr=1s\n[NSM]"
+      "description": ""
     },
     {
-      "id": 132068739,
-      "date": "2026-09-03",
-      "name": "Z2",
+      "id": 133160195,
+      "date": "2026-09-02",
+      "name": "Easy Bike",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 84,
-      "duration_hours": 2.0,
-      "duration_formatted": "2h",
+      "planned_tss": 54,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
       "workout_summary": null,
       "has_terrain": false,
-      "description": "- Endurance 120m z2"
+      "start_time": "07:00",
+      "description": "9x\n-10m 60%\n\n## STAS\nEasy aerobic/recovery ride. FTP reference 285 W; target ~157-171 W."
+    },
+    {
+      "id": 129772215,
+      "date": "2026-09-03",
+      "name": "Bike Threshold",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 74,
+      "duration_hours": 1.22,
+      "duration_formatted": "1h13m",
+      "workout_summary": "12m | 3m @228W | 2m @164W | 3\u00d712m @253W / 4m rec | 8m",
+      "has_terrain": false,
+      "start_time": "07:00",
+      "description": "Warmup\n- 12m Z2\n- 3m 80% FTP\n- 2m 55-60% FTP\n\nMain set 3x\n- 12m 88-90% FTP\n- Recovery 4m 55-60% FTP\n\nCooldown\n- 8m Z1\n\n## STAS\nFTP anchor 285 W; work guide 251-257 W. Power is a ceiling/guide, not a mandatory escalation. Optional if fresh: add 20-45m 55-65% FTP after the quality work. If Saturday was a race simulation or unusually hard, replace this threshold set with 60-90m easy Z2 at 55-60% FTP; do not make up missed intervals later. Only progress if prior Monday/Thursday sessions were controlled; final rep controlled, RPE <=6-7, Thursday broadly comparable with Monday."
     },
     {
       "id": 133049398,
@@ -6014,18 +6042,31 @@
       "description": "- 15m 5:23-6:44/km Pace intensity=warmup\n\n3x\n- 10m 4:15/km Pace intensity=active\n- 2m 5:23-16:09/km Pace intensity=recovery\n\n- 15m 5:23-6:44/km Pace intensity=cooldown\n[NSM]"
     },
     {
-      "id": 129772215,
+      "id": 133160294,
       "date": "2026-09-04",
-      "name": "Bike Threshold",
+      "name": "Lift",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "description": ""
+    },
+    {
+      "id": 133160026,
+      "date": "2026-09-04",
+      "name": "Easy Bike",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 74,
-      "duration_hours": 1.22,
-      "duration_formatted": "1h13m",
-      "workout_summary": "12m | 3m @228W | 2m @164W | 3\u00d712m @253W / 4m rec | 8m",
+      "planned_tss": 54,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
       "has_terrain": false,
       "start_time": "07:00",
-      "description": "Warmup\n- 12m Z2\n- 3m 80% FTP\n- 2m 55-60% FTP\n\nMain set 3x\n- 12m 88-90% FTP\n- Recovery 4m 55-60% FTP\n\nCooldown\n- 8m Z1\n\n## STAS\nFTP anchor 285 W; work guide 251-257 W. Power is a ceiling/guide, not a mandatory escalation. Optional if fresh: add 20-45m 55-65% FTP after the quality work. If Saturday was a race simulation or unusually hard, replace this threshold set with 60-90m easy Z2 at 55-60% FTP; do not make up missed intervals later. Only progress if prior Monday/Thursday sessions were controlled; final rep controlled, RPE <=6-7, Thursday broadly comparable with Monday."
+      "description": "9x\n-10m 60%\n\n## STAS\nEasy aerobic/recovery ride. FTP reference 285 W; target ~157-171 W."
     },
     {
       "id": 128484293,
@@ -6285,9 +6326,9 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 20,
-    "success": 11,
-    "patternA": 11,
+    "attempted": 21,
+    "success": 12,
+    "patternA": 12,
     "patternB": 0,
     "bail_no_workout_doc": 5,
     "bail_no_match": 9
