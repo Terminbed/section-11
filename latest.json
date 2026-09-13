@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-13T17:30:39.668081",
+    "last_updated": "2026-09-13T19:47:08.724251",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -100,46 +100,36 @@
     "years_on_platform": 3
   },
   "athlete_notes": null,
-  "alerts": [
-    {
-      "metric": "rhr",
-      "value": 46,
-      "severity": "warning",
-      "threshold": "\u2191\u22655bpm vs baseline (39.1)",
-      "context": "RHR 46 is 6.9bpm above baseline. Monitor \u2014 alarm if persists >2 days.",
-      "persistence_days": 1,
-      "tier": 1
-    }
-  ],
+  "alerts": [],
   "readiness_decision": {
-    "recommendation": "modify",
-    "priority": 2,
+    "recommendation": "go",
+    "priority": 3,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 97.8,
-        "delta_pct": null
+        "status": "green",
+        "value": 107.0,
+        "baseline_7d": 102.1,
+        "delta_pct": 4.8
       },
       "rhr": {
-        "status": "red",
-        "value": 46,
-        "baseline_7d": 39.1,
-        "delta_bpm": 6.9
+        "status": "green",
+        "value": 37,
+        "baseline_7d": 37.9,
+        "delta_bpm": -0.9
       },
       "sleep": {
         "status": "amber",
-        "hours": 6.11,
-        "quality": null
+        "hours": 6.12,
+        "quality": 3
       },
       "acwr": {
         "status": "green",
         "value": 1.15
       },
       "ri": {
-        "status": "unavailable",
-        "value": null,
-        "value_yesterday": null
+        "status": "green",
+        "value": 1.07,
+        "value_yesterday": 1.05
       },
       "tsb": {
         "status": "green",
@@ -147,10 +137,10 @@
       }
     },
     "signal_summary": {
-      "green": 2,
+      "green": 5,
       "amber": 1,
-      "red": 1,
-      "unavailable": 2
+      "red": 0,
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -159,18 +149,8 @@
       "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
-    "modification": {
-      "triggers": [
-        "rhr",
-        "sleep"
-      ],
-      "suggested_adjustments": {
-        "intensity": "reduce",
-        "volume": "reduce",
-        "cap_zone": null
-      }
-    },
-    "reason": "P2 signal count. 1 red (rhr), 1 amber (sleep).",
+    "modification": null,
+    "reason": "P3 green light. 5 green, 1 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -261,12 +241,12 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 46,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": 6.11,
-      "sleep_formatted": "6h6m",
-      "sleep_score": null,
+      "resting_hr": 37,
+      "hrv": 107.0,
+      "sleep_quality": 3,
+      "sleep_hours": 6.12,
+      "sleep_formatted": "6h7m",
+      "sleep_score": 67.0,
       "fatigue": null,
       "soreness": null,
       "stress": null,
@@ -283,7 +263,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 3399,
+      "steps": 5363,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -295,14 +275,14 @@
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "recovery_index_yesterday": null,
-    "hrv_baseline_7d": 97.8,
-    "rhr_baseline_7d": 39.1,
-    "hrv_baseline_28d": 86.5,
-    "rhr_baseline_28d": 43.3,
-    "latest_hrv": null,
-    "latest_rhr": 46,
+    "recovery_index": 1.07,
+    "recovery_index_yesterday": 1.05,
+    "hrv_baseline_7d": 102.1,
+    "rhr_baseline_7d": 37.9,
+    "hrv_baseline_28d": 88.4,
+    "rhr_baseline_28d": 43,
+    "latest_hrv": 107.0,
+    "latest_rhr": 37,
     "acwr": 1.15,
     "acwr_interpretation": "optimal",
     "monotony": 1.22,
@@ -314,7 +294,7 @@
     "multi_sport_detected": true,
     "strain": 915.0,
     "stress_tolerance": 7.5,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 7.0,
     "tss_7d_total": 750.0,
     "tss_28d_total": 2611.0,
     "zone_distribution_7d": {
@@ -628,9 +608,9 @@
           "current_week_hard_days_completed": 5,
           "current_week_hard_days_total": 5,
           "race_proximity": null,
-          "next_week_load": 0.67,
+          "next_week_load": 0.73,
           "plan_coverage_current_week": 0.11,
-          "plan_coverage_next_week": 0.44
+          "plan_coverage_next_week": 0.67
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -663,9 +643,9 @@
     "p_max": 1138,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-09-13T17:30:39.667085",
+    "calculation_timestamp": "2026-09-13T19:47:08.722880",
     "data_quality": {
-      "hrv_data_points": 5,
+      "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 5,
       "activities_28d": 33,
@@ -4948,8 +4928,8 @@
       "resting_hr": 37,
       "hrv_rmssd": 94.0,
       "hrv_sdnn": 81.0,
-      "sleep_hours": 7.71,
-      "sleep_formatted": "7h42m",
+      "sleep_hours": 7.72,
+      "sleep_formatted": "7h43m",
       "sleep_quality": 2,
       "sleep_score": 88.0,
       "mental_energy": null,
@@ -4971,7 +4951,7 @@
       "respiration": 13.661215,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 28399,
+      "steps": 14181,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -4988,12 +4968,12 @@
         "weight": null
       },
       "resting_hr": 42,
-      "hrv_rmssd": null,
+      "hrv_rmssd": 119.0,
       "hrv_sdnn": 111.0,
-      "sleep_hours": 7.21,
-      "sleep_formatted": "7h12m",
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 7.22,
+      "sleep_formatted": "7h13m",
+      "sleep_quality": 2,
+      "sleep_score": 83.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
@@ -5013,7 +4993,7 @@
       "respiration": 14.230125,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 21909,
+      "steps": 7591,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -5029,13 +5009,13 @@
       "display": {
         "weight": null
       },
-      "resting_hr": 46,
-      "hrv_rmssd": null,
+      "resting_hr": 37,
+      "hrv_rmssd": 107.0,
       "hrv_sdnn": null,
-      "sleep_hours": 6.11,
-      "sleep_formatted": "6h6m",
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 6.12,
+      "sleep_formatted": "6h7m",
+      "sleep_quality": 3,
+      "sleep_score": 67.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
@@ -5055,7 +5035,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 3399,
+      "steps": 5363,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -5081,22 +5061,36 @@
       "description": "Travel day. Training is possible if practical."
     },
     {
-      "id": 129772218,
+      "id": 135920592,
       "date": "2026-09-14",
-      "name": "Bike Threshold",
+      "name": "Kolie Moore FTP Test",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 67,
-      "duration_hours": 1.12,
-      "duration_formatted": "1h7m",
-      "workout_summary": "12m | 3m @228W | 2m @164W | 3\u00d710m @253W / 4m rec | 8m",
+      "planned_tss": 102,
+      "duration_hours": 1.25,
+      "duration_formatted": "1h15m",
+      "workout_summary": null,
       "has_terrain": false,
       "start_time": "07:00",
-      "description": "Warmup\n- 12m Z2\n- 3m 80% FTP\n- 2m 55-60% FTP\n\nMain set 3x\n- 10m 88-90% FTP\n- Recovery 4m 55-60% FTP\n\nCooldown\n- 8m Z1\n\n## STAS\nPost-Garda re-entry. FTP anchor 285 W; work guide 251-257 W. Optional if fresh: add 20-45m 55-65% FTP after the quality work. If Saturday was a race simulation or unusually hard, replace this threshold set with 60-90m easy Z2 at 55-60% FTP; do not make up missed intervals later. Only progress if prior Monday/Thursday sessions were controlled; final rep controlled, RPE <=6-7, Thursday broadly comparable with Monday."
+      "description": "Warm Up\n- 2m 50% FTP\n- 2m 65% FTP\n- 2m 88% FTP\n- 1m 95% FTP\n- 3m 50% FTP\n- 1m 100% FTP\n- 1m 50% FTP\n- 1m 110% FTP\n- 1m 50% FTP\n- 1m 120% FTP\n- 5m 55% FTP\n\nMain Set\n- 10m 96% FTP\n- 15m 102% FTP\n- 15m ramp 102-109.5% FTP\n\nCool Down\n- 15m 45% FTP\n\n## STAS\nKolie Moore FTP assessment. Use the standardized protocol and setup consistently. Fuel and cool consistently. FTP anchor remains 285 W for the test protocol; use the result to reset cycling targets for the next block."
+    },
+    {
+      "id": 135921052,
+      "date": "2026-09-14",
+      "name": "3 x 10:00",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 68,
+      "duration_hours": 1.1,
+      "duration_formatted": "1h6m",
+      "workout_summary": "15m | 3\u00d710m / 2m rec | 15m",
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description": "- 15m 5:23-6:44/km Pace intensity=warmup\n\n3x\n- 10m 4:15/km Pace intensity=active\n- 2m 5:23-16:09/km Pace intensity=recovery\n\n- 15m 5:23-6:44/km Pace intensity=cooldown\n[NSM]"
     },
     {
       "id": 129772219,
-      "date": "2026-09-16",
+      "date": "2026-09-15",
       "name": "Easy Bike",
       "type": "WORKOUT",
       "sport_type": "Ride",
@@ -5110,7 +5104,7 @@
     },
     {
       "id": 129772220,
-      "date": "2026-09-17",
+      "date": "2026-09-16",
       "name": "Bike Threshold",
       "type": "WORKOUT",
       "sport_type": "Ride",
@@ -5121,6 +5115,20 @@
       "has_terrain": false,
       "start_time": "07:00",
       "description": "Warmup\n- 12m Z2\n- 3m 80% FTP\n- 2m 55-60% FTP\n\nMain set 3x\n- 10m 88-90% FTP\n- Recovery 4m 55-60% FTP\n\nCooldown\n- 8m Z1\n\n## STAS\nPost-Garda re-entry. FTP anchor 285 W; work guide 251-257 W. Optional if fresh: add 20-30m 55-65% FTP after the quality work. Keep Thursday broadly comparable with Monday; no automatic progression."
+    },
+    {
+      "id": 135921054,
+      "date": "2026-09-16",
+      "name": "10 x 3:00",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 73,
+      "duration_hours": 1.17,
+      "duration_formatted": "1h10m",
+      "workout_summary": "15m | 10\u00d73m / 1m rec | 15m",
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description": "- 15m 5:23-6:44/km Pace intensity=warmup\n\n10x\n- 3m 4:01/km Pace intensity=active\n- 1m 5:23-16:09/km Pace intensity=recovery\n\n- 15m 5:23-6:44/km Pace intensity=cooldown\n[NSM]"
     },
     {
       "id": 129772221,
@@ -5314,20 +5322,20 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 14,
-    "success": 8,
-    "patternA": 8,
+    "attempted": 16,
+    "success": 9,
+    "patternA": 9,
     "patternB": 0,
     "bail_no_workout_doc": 4,
-    "bail_no_match": 6
+    "bail_no_match": 7
   },
   "weekly_summary": {
     "total_training_hours": 13.08,
     "total_training_formatted": "13h4m",
     "total_tss": 750,
     "activities_count": 5,
-    "avg_hrv": 97.8,
-    "avg_resting_hr": 39.1
+    "avg_hrv": 102.1,
+    "avg_resting_hr": 37.9
   },
   "race_calendar": {
     "next_race": null,
