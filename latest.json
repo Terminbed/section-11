@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-13T18:16:17.625147",
+    "last_updated": "2026-10-13T22:59:07.256704",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -102,24 +102,6 @@
   "athlete_notes": null,
   "alerts": [
     {
-      "metric": "recovery_index",
-      "value": 0.58,
-      "severity": "alarm",
-      "threshold": 0.6,
-      "context": "RI 0.58 < 0.6. Immediate deload required.",
-      "persistence_days": null,
-      "tier": 1
-    },
-    {
-      "metric": "rhr",
-      "value": 74,
-      "severity": "warning",
-      "threshold": "\u2191\u22655bpm vs baseline (43.7)",
-      "context": "RHR 74 is 30.3bpm above baseline. Monitor \u2014 alarm if persists >2 days.",
-      "persistence_days": 2,
-      "tier": 1
-    },
-    {
       "metric": "tid_distribution",
       "value": 1.88,
       "severity": "warning",
@@ -130,8 +112,8 @@
     }
   ],
   "readiness_decision": {
-    "recommendation": "skip",
-    "priority": 0,
+    "recommendation": "go",
+    "priority": 3,
     "signals": {
       "hrv": {
         "status": "green",
@@ -140,10 +122,10 @@
         "delta_pct": -1.5
       },
       "rhr": {
-        "status": "red",
-        "value": 74,
-        "baseline_7d": 43.7,
-        "delta_bpm": 30.3
+        "status": "green",
+        "value": 34,
+        "baseline_7d": 34.2,
+        "delta_bpm": -0.2
       },
       "sleep": {
         "status": "green",
@@ -155,15 +137,19 @@
         "value": 0.84
       },
       "ri": {
-        "status": "red",
-        "value": 0.58,
-        "value_yesterday": 0.88
+        "status": "green",
+        "value": 0.99,
+        "value_yesterday": 1.04
+      },
+      "tsb": {
+        "status": "green",
+        "value": 11.2
       }
     },
     "signal_summary": {
-      "green": 3,
+      "green": 6,
       "amber": 0,
-      "red": 2,
+      "red": 0,
       "unavailable": 0
     },
     "phase_context": {
@@ -174,10 +160,8 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P0 safety stop. RI 0.58 < 0.6; tier-1 alarms: recovery_index.",
-    "alarm_refs": [
-      "recovery_index"
-    ]
+    "reason": "P3 green light. 6 green, 0 amber (threshold 3), 0 red.",
+    "alarm_refs": []
   },
   "history": {
     "available": true,
@@ -291,7 +275,7 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 74,
+      "resting_hr": 34,
       "hrv": 87.0,
       "sleep_quality": 2,
       "sleep_hours": 7.8,
@@ -313,7 +297,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 33,
+      "steps": 13035,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -325,14 +309,14 @@
     }
   },
   "derived_metrics": {
-    "recovery_index": 0.58,
-    "recovery_index_yesterday": 0.88,
+    "recovery_index": 0.99,
+    "recovery_index_yesterday": 1.04,
     "hrv_baseline_7d": 88.3,
-    "rhr_baseline_7d": 43.7,
+    "rhr_baseline_7d": 34.2,
     "hrv_baseline_28d": 85.2,
-    "rhr_baseline_28d": 42.7,
+    "rhr_baseline_28d": 40.5,
     "latest_hrv": 87.0,
-    "latest_rhr": 74,
+    "latest_rhr": 34,
     "acwr": 0.84,
     "acwr_interpretation": "optimal",
     "monotony": 1.22,
@@ -344,7 +328,7 @@
     "multi_sport_detected": true,
     "strain": 609.0,
     "stress_tolerance": 5.0,
-    "load_recovery_ratio": 8.6,
+    "load_recovery_ratio": 5.0,
     "tss_7d_total": 499.0,
     "tss_28d_total": 2378.0,
     "zone_distribution_7d": {
@@ -658,13 +642,13 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.34,
+          "planned_tss_delta": 1.18,
           "hard_sessions_planned": 2,
           "current_week_hard_days_completed": 1,
           "current_week_hard_days_total": 3,
           "race_proximity": null,
           "next_week_load": 0.86,
-          "plan_coverage_current_week": 0.57,
+          "plan_coverage_current_week": 0.5,
           "plan_coverage_next_week": 0.5
         },
         "data_quality": "good",
@@ -698,7 +682,7 @@
     "p_max": 1113,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-10-13T18:16:17.623893",
+    "calculation_timestamp": "2026-10-13T22:59:07.255610",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 6,
@@ -716,7 +700,7 @@
       "id": "i196920454",
       "date": "2026-10-13T17:16:14",
       "type": "Ride",
-      "name": "Bike Z2 \u2014 90m",
+      "name": "Easy",
       "duration_hours": 1.68,
       "distance_km": 46.76,
       "tss": 63,
@@ -821,7 +805,8 @@
           }
         }
       },
-      "weather_status": "unavailable"
+      "weather_status": "unavailable",
+      "description": "Last outdoor evening for a while"
     },
     {
       "id": "i196691914",
@@ -6331,7 +6316,7 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 51,
+      "resting_hr": 34,
       "hrv_rmssd": 91.0,
       "hrv_sdnn": 74.0,
       "sleep_hours": 9.05,
@@ -6357,7 +6342,7 @@
       "respiration": 12.116998,
       "body_fat_pct": 13.5,
       "abdomen_cm": null,
-      "steps": 11236,
+      "steps": 14522,
       "hydration_volume_l": 1.8200871,
       "kcal_consumed": 4397,
       "carbohydrates_g": 758.7064,
@@ -6376,7 +6361,7 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 74,
+      "resting_hr": 34,
       "hrv_rmssd": 87.0,
       "hrv_sdnn": null,
       "sleep_hours": 7.8,
@@ -6402,7 +6387,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 33,
+      "steps": 13035,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -6442,32 +6427,18 @@
       "description": "Goal: easy aerobic volume.\nMain:\n- 90m 60% FTP\n\nControl: RPE 2-3/10. Keep it easy."
     },
     {
-      "id": 136383733,
-      "date": "2026-10-14",
-      "name": "Bike Z2 \u2014 90m",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 54,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "start_time": "06:30",
-      "description": "Goal: easy aerobic volume.\nMain:\n- 90m 60% FTP\n\nControl: RPE 2-3/10. Keep it easy."
-    },
-    {
       "id": 143756148,
-      "date": "2026-10-15",
+      "date": "2026-10-14",
       "name": "Norwegian-style Threshold A \u2014 4\u00d710 min + Z2 extension",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 90,
+      "planned_tss": 91,
       "duration_hours": 1.5,
       "duration_formatted": "1h30m",
-      "workout_summary": "5m @145W | 4m @174W | 3m @203W | 3m @232W | 30s @290W | 1m @145W | 30s @290W | 1m @145W | 3\u00d710m @261W / 2m rec | 10m @261W | 16m @174W | 10m @145W",
+      "workout_summary": "5m @145W | 4m @174W | 3m @203W | 3m @232W | 30s @290W | 1m @145W | 30s @290W | 1m @145W | 3\u00d710m @261W / 2m rec | 10m @261W | 21m @174W | 5m @145W",
       "has_terrain": false,
       "start_time": "07:00",
-      "description": "- 5m 50% FTP (145 W) warm-up\n- 4m 60% FTP (174 W) warm-up\n- 3m 70% FTP (203 W) warm-up\n- 3m 80% FTP (232 W) warm-up\n- 30s 100% FTP (290 W)\n- 1m 50% FTP (145 W)\n- 30s 100% FTP (290 W)\n- 1m 50% FTP (145 W)\n\n3x\n- 10m 90% FTP (261 W)\n- 2m 50% FTP (145 W)\n\n- 10m 90% FTP (261 W) final interval\n- 16m 60% FTP (174 W)\n- 10m 50% FTP (145 W) cool-down\n\nKeep threshold work controlled at RPE 5\u20136/10. Hold steady power and finish feeling you could do another rep. If power or effort drifts, reduce intensity rather than forcing it. Z2 extension follows the intervals and precedes the cool-down."
+      "description": "- 5m 50% FTP (145 W) warm-up\n- 4m 60% FTP (174 W) warm-up\n- 3m 70% FTP (203 W) warm-up\n- 3m 80% FTP (232 W) warm-up\n- 30s 100% FTP (290 W)\n- 1m 50% FTP (145 W)\n- 30s 100% FTP (290 W)\n- 1m 50% FTP (145 W)\n\n3x\n- 10m 90% FTP (261 W)\n- 2m 50% FTP (145 W)\n\n- 10m 90% FTP (261 W) final interval\n- 21m 60% FTP (174 W)\n- 5m 50% FTP (145 W) cool-down\n\nKeep threshold work controlled at RPE 5\u20136/10. Hold steady power and finish feeling you could do another rep. If power or effort drifts, reduce intensity rather than forcing it. Z2 extension follows the intervals and precedes the cool-down."
     },
     {
       "id": 136090962,
@@ -6661,12 +6632,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 14,
+    "attempted": 13,
     "success": 7,
     "patternA": 7,
     "patternB": 0,
     "bail_no_workout_doc": 2,
-    "bail_no_match": 7
+    "bail_no_match": 6
   },
   "weekly_summary": {
     "total_training_hours": 11.8,
@@ -6674,7 +6645,7 @@
     "total_tss": 499,
     "activities_count": 13,
     "avg_hrv": 88.3,
-    "avg_resting_hr": 43.7
+    "avg_resting_hr": 34.2
   },
   "race_calendar": {
     "next_race": null,
