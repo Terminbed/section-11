@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-18T00:19:16.321547",
+    "last_updated": "2026-10-18T04:52:30.496127",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -165,8 +165,8 @@
   },
   "history": {
     "available": true,
-    "last_generated": "2026-09-13",
-    "age_days": 34,
+    "last_generated": "2026-10-18",
+    "age_days": 0,
     "total_months": 35,
     "history_confidence": "high"
   },
@@ -634,11 +634,13 @@
     "phase_detection": {
       "phase": "Build",
       "confidence": "medium",
-      "reason_codes": [],
+      "reason_codes": [
+        "PHASE_TRANSITION_Deload_TO_Build"
+      ],
       "basis": {
         "stream_1": {
-          "ctl_slope": null,
-          "acwr_trend": null,
+          "ctl_slope": -4.5,
+          "acwr_trend": "falling",
           "hard_day_pattern": 3.7,
           "weeks_available": 4
         },
@@ -655,13 +657,15 @@
         "data_quality": "good",
         "stream_agreement": null
       },
-      "previous_phase": null,
+      "previous_phase": "Deload",
       "phase_duration_weeks": 1,
       "dossier_declared": null,
       "dossier_agreement": null
     },
     "phase_detected": "Build",
-    "phase_triggers": [],
+    "phase_triggers": [
+      "PHASE_TRANSITION_Deload_TO_Build"
+    ],
     "seasonal_context": "Late Season / Transition",
     "benchmark_indoor": {
       "current_ftp": null,
@@ -683,7 +687,7 @@
     "p_max": 1110,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-10-18T00:19:16.320069",
+    "calculation_timestamp": "2026-10-18T04:52:30.494752",
     "data_quality": {
       "hrv_data_points": 5,
       "rhr_data_points": 6,
