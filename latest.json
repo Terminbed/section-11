@@ -70,7 +70,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-21T02:01:40.771227",
+    "last_updated": "2026-10-21T07:35:01.070789",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -102,6 +102,15 @@
   "athlete_notes": null,
   "alerts": [
     {
+      "metric": "rhr",
+      "value": 64,
+      "severity": "warning",
+      "threshold": "\u2191\u22655bpm vs baseline (41.9)",
+      "context": "RHR 64 is 22.1bpm above baseline. Monitor \u2014 alarm if persists >2 days.",
+      "persistence_days": 1,
+      "tier": 1
+    },
+    {
       "metric": "tid_distribution",
       "value": "Pyramidal",
       "severity": "warning",
@@ -112,8 +121,8 @@
     }
   ],
   "readiness_decision": {
-    "recommendation": "go",
-    "priority": 3,
+    "recommendation": "skip",
+    "priority": 2,
     "signals": {
       "hrv": {
         "status": "unavailable",
@@ -122,15 +131,15 @@
         "delta_pct": null
       },
       "rhr": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 39.3,
-        "delta_bpm": null
+        "status": "red",
+        "value": 64,
+        "baseline_7d": 41.9,
+        "delta_bpm": 22.1
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "red",
+        "hours": 3.97,
+        "quality": 4
       },
       "acwr": {
         "status": "green",
@@ -139,7 +148,7 @@
       "ri": {
         "status": "unavailable",
         "value": null,
-        "value_yesterday": 1.02
+        "value_yesterday": 1.32
       },
       "tsb": {
         "status": "green",
@@ -149,8 +158,8 @@
     "signal_summary": {
       "green": 2,
       "amber": 0,
-      "red": 0,
-      "unavailable": 4
+      "red": 2,
+      "unavailable": 2
     },
     "phase_context": {
       "phase": "Build",
@@ -160,7 +169,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 2 green, 0 amber (threshold 3), 0 red. Note: 4 signals unavailable \u2014 limited data.",
+    "reason": "P2 signal count. 2 red (rhr, sleep), 0 amber ().",
     "alarm_refs": []
   },
   "history": {
@@ -280,19 +289,19 @@
       }
     },
     "current_metrics": {
-      "weight_kg": 75.84,
+      "weight_kg": 75.8,
       "display": {
         "weight": {
           "value": 75.8,
           "unit": "kg"
         }
       },
-      "resting_hr": 39,
+      "resting_hr": 64,
       "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_score": null,
+      "sleep_quality": 4,
+      "sleep_hours": 3.97,
+      "sleep_formatted": "3h58m",
+      "sleep_score": 45.0,
       "fatigue": null,
       "soreness": null,
       "stress": null,
@@ -309,7 +318,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 186,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -322,13 +331,13 @@
   },
   "derived_metrics": {
     "recovery_index": null,
-    "recovery_index_yesterday": 1.02,
+    "recovery_index_yesterday": 1.32,
     "hrv_baseline_7d": 86.2,
-    "rhr_baseline_7d": 39.3,
+    "rhr_baseline_7d": 41.9,
     "hrv_baseline_28d": 87.4,
-    "rhr_baseline_28d": 40.3,
+    "rhr_baseline_28d": 40.9,
     "latest_hrv": null,
-    "latest_rhr": null,
+    "latest_rhr": 64,
     "acwr": 0.94,
     "acwr_interpretation": "optimal",
     "monotony": 0.92,
@@ -694,10 +703,10 @@
     "p_max": 1108,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-10-21T02:01:40.769854",
+    "calculation_timestamp": "2026-10-21T07:35:01.069339",
     "data_quality": {
       "hrv_data_points": 4,
-      "rhr_data_points": 6,
+      "rhr_data_points": 7,
       "activities_7d": 9,
       "activities_28d": 50,
       "planned_workouts_7d": 7,
@@ -6346,18 +6355,18 @@
     },
     {
       "date": "2026-10-20",
-      "weight_kg": 75.84,
+      "weight_kg": 75.8,
       "display": {
         "weight": {
           "value": 75.8,
           "unit": "kg"
         }
       },
-      "resting_hr": 39,
+      "resting_hr": 32,
       "hrv_rmssd": 87.0,
-      "hrv_sdnn": null,
+      "hrv_sdnn": 78.0,
       "sleep_hours": 7.58,
-      "sleep_formatted": "7h35m",
+      "sleep_formatted": "7h34m",
       "sleep_quality": 2,
       "sleep_score": 84.0,
       "mental_energy": null,
@@ -6370,21 +6379,21 @@
       "motivation": null,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 98.17094,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
       "baevsky_si": null,
       "lactate": null,
-      "respiration": null,
-      "body_fat_pct": null,
+      "respiration": 13.220085,
+      "body_fat_pct": 13.4,
       "abdomen_cm": null,
-      "steps": 11454,
-      "hydration_volume_l": null,
-      "kcal_consumed": null,
-      "carbohydrates_g": null,
-      "protein_g": null,
-      "fat_g": null,
+      "steps": 15662,
+      "hydration_volume_l": 1.3686937,
+      "kcal_consumed": 3446,
+      "carbohydrates_g": 450.64813,
+      "protein_g": 130.9869,
+      "fat_g": 52.890842,
       "menstrual_phase": null,
       "menstrual_phase_predicted": null,
       "readiness": null
@@ -6395,13 +6404,13 @@
       "display": {
         "weight": null
       },
-      "resting_hr": null,
+      "resting_hr": 64,
       "hrv_rmssd": null,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 3.97,
+      "sleep_formatted": "3h58m",
+      "sleep_quality": 4,
+      "sleep_score": 45.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
@@ -6421,7 +6430,7 @@
       "respiration": null,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 186,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -6583,7 +6592,7 @@
     "total_tss": 528,
     "activities_count": 9,
     "avg_hrv": 86.2,
-    "avg_resting_hr": 39.3
+    "avg_resting_hr": 41.9
   },
   "race_calendar": {
     "next_race": null,
