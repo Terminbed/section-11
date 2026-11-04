@@ -62,15 +62,15 @@
       "menstrual": "menstrual_phase and menstrual_phase_predicted are not on the 1-4 scale. Values: PERIOD, FOLLICULAR, OVULATION, LUTEAL, etc."
     },
     "quick_stats": {
-      "total_training_hours": 5.21,
-      "total_training_formatted": "5h12m",
-      "total_activities": 6,
-      "total_tss": 278
+      "total_training_hours": 5.94,
+      "total_training_formatted": "5h56m",
+      "total_activities": 7,
+      "total_tss": 311
     }
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-11-04T10:51:06.169341",
+    "last_updated": "2026-11-04T18:21:59.864470",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -106,41 +106,41 @@
     "priority": 3,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 90.0,
-        "delta_pct": null
+        "status": "green",
+        "value": 93.0,
+        "baseline_7d": 91.0,
+        "delta_pct": 2.2
       },
       "rhr": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 44.3,
-        "delta_bpm": null
+        "status": "green",
+        "value": 40,
+        "baseline_7d": 43.7,
+        "delta_bpm": -3.7
       },
       "sleep": {
         "status": "amber",
         "hours": 6.98,
-        "quality": null
+        "quality": 3
       },
       "acwr": {
         "status": "green",
-        "value": 0.57
+        "value": 0.63
       },
       "ri": {
-        "status": "unavailable",
-        "value": null,
-        "value_yesterday": 1.21
+        "status": "green",
+        "value": 1.12,
+        "value_yesterday": 1.18
       },
       "tsb": {
         "status": "green",
-        "value": 12.9
+        "value": 9.3
       }
     },
     "signal_summary": {
-      "green": 2,
+      "green": 5,
       "amber": 1,
       "red": 0,
-      "unavailable": 3
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -150,7 +150,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 2 green, 1 amber (threshold 3), 0 red.",
+    "reason": "P3 green light. 5 green, 1 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -163,9 +163,21 @@
   "summary": {
     "period_description": "Last 7 days of training (including today)",
     "note": "Duration calculated from API moving_time field.",
-    "total_duration_decimal_hours": 5.21,
-    "total_activities": 6,
+    "total_duration_decimal_hours": 5.94,
+    "total_activities": 7,
     "by_activity_type": {
+      "Ride": {
+        "duration_decimal_hours": 0.72,
+        "count": 1,
+        "tss": 33,
+        "distance_km": 0.0,
+        "display": {
+          "distance": {
+            "value": 0.0,
+            "unit": "km"
+          }
+        }
+      },
       "Run": {
         "duration_decimal_hours": 2.28,
         "count": 2,
@@ -218,10 +230,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 82.01,
-      "atl": 69.08,
-      "tsb": 12.93,
-      "ramp_rate": -4.63,
+      "ctl": 82.79,
+      "atl": 73.47,
+      "tsb": 9.32,
+      "ramp_rate": -3.86,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -265,12 +277,12 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 37,
-      "hrv": null,
-      "sleep_quality": null,
+      "resting_hr": 40,
+      "hrv": 93.0,
+      "sleep_quality": 3,
       "sleep_hours": 6.98,
-      "sleep_formatted": "6h58m",
-      "sleep_score": null,
+      "sleep_formatted": "6h59m",
+      "sleep_score": 75.0,
       "fatigue": null,
       "soreness": null,
       "stress": null,
@@ -287,7 +299,7 @@
       "respiration": 13.3,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 1864,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -299,52 +311,52 @@
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "recovery_index_yesterday": 1.21,
-    "hrv_baseline_7d": 90.0,
-    "rhr_baseline_7d": 44.3,
-    "hrv_baseline_28d": 85.6,
+    "recovery_index": 1.12,
+    "recovery_index_yesterday": 1.18,
+    "hrv_baseline_7d": 91.0,
+    "rhr_baseline_7d": 43.7,
+    "hrv_baseline_28d": 85.9,
     "rhr_baseline_28d": 40.2,
-    "latest_hrv": null,
-    "latest_rhr": null,
-    "acwr": 0.57,
+    "latest_hrv": 93.0,
+    "latest_rhr": 40,
+    "acwr": 0.63,
     "acwr_interpretation": "undertraining",
-    "monotony": 0.62,
+    "monotony": 0.72,
     "monotony_interpretation": "normal",
     "primary_sport": "run",
     "primary_sport_monotony": null,
     "primary_sport_tss_7d": 159.0,
-    "effective_monotony": 0.62,
+    "effective_monotony": 0.72,
     "multi_sport_detected": true,
-    "strain": 172.0,
-    "stress_tolerance": 2.8,
-    "load_recovery_ratio": null,
-    "tss_7d_total": 278.0,
-    "tss_28d_total": 1954.0,
+    "strain": 224.0,
+    "stress_tolerance": 3.1,
+    "load_recovery_ratio": 2.8,
+    "tss_7d_total": 311.0,
+    "tss_28d_total": 1987.0,
     "zone_distribution_7d": {
-      "z1_hours": 1.49,
-      "z2_hours": 1.72,
-      "z3_hours": 0.99,
+      "z1_hours": 1.86,
+      "z2_hours": 2.07,
+      "z3_hours": 1.01,
       "z4_plus_hours": 1.0,
-      "total_hours": 5.21,
+      "total_hours": 5.94,
       "zone_basis": "mixed"
     },
-    "grey_zone_percentage": 19.0,
+    "grey_zone_percentage": 17.1,
     "grey_zone_note": "Gray Zone % (Z3/tempo) - minimize in polarized training",
-    "quality_intensity_percentage": 19.2,
+    "quality_intensity_percentage": 16.9,
     "quality_intensity_note": "Quality Intensity % (Z4+/threshold+) - target ~20% in polarized training",
-    "easy_time_ratio": 0.62,
+    "easy_time_ratio": 0.66,
     "easy_time_ratio_note": "Easy time (Z1+Z2) / Total - target ~80% in polarized training",
     "hard_days_this_week": 1,
     "hard_days_note": "Power ladder: z3+ >= 30min, z4+ >= 10min, z5+ >= 5min, z6+ >= 2min, z7 >= 1min. HR fallback (when no power): z4+ >= 10min, z5+ >= 5min. Per Seiler 3-zone model + Foster. HR-based days flagged with intensity_basis: hr",
     "seiler_tid_7d": {
-      "z1_seconds": 11584,
-      "z2_seconds": 3575,
+      "z1_seconds": 14123,
+      "z2_seconds": 3647,
       "z3_seconds": 3610,
-      "z1_pct": 61.7,
-      "z2_pct": 19.0,
-      "z3_pct": 19.2,
-      "polarization_index": 1.79,
+      "z1_pct": 66.1,
+      "z2_pct": 17.1,
+      "z3_pct": 16.9,
+      "polarization_index": null,
       "classification": "Pyramidal",
       "zone_basis": "mixed"
     },
@@ -361,12 +373,12 @@
       "sport": "run"
     },
     "seiler_tid_28d": {
-      "z1_seconds": 94308,
-      "z2_seconds": 27220,
+      "z1_seconds": 96847,
+      "z2_seconds": 27292,
       "z3_seconds": 25214,
-      "z1_pct": 64.3,
-      "z2_pct": 18.5,
-      "z3_pct": 17.2,
+      "z1_pct": 64.8,
+      "z2_pct": 18.3,
+      "z3_pct": 16.9,
       "polarization_index": null,
       "classification": "Pyramidal",
       "zone_basis": "mixed"
@@ -415,7 +427,7 @@
       "tid_comparison": {
         "classification_7d": "Pyramidal",
         "classification_28d": "Pyramidal",
-        "pi_7d": 1.79,
+        "pi_7d": null,
         "pi_28d": null,
         "pi_delta": null,
         "drift": "consistent",
@@ -600,11 +612,11 @@
       },
       "dfa_a1_profile": null
     },
-    "consistency_index": 0.67,
+    "consistency_index": 1.0,
     "consistency_details": {
       "planned_days": 3,
-      "completed_days": 2,
-      "matched_days": 2,
+      "completed_days": 3,
+      "matched_days": 3,
       "planned_dates": [
         "2026-11-02",
         "2026-11-03",
@@ -612,7 +624,8 @@
       ],
       "completed_dates": [
         "2026-11-02",
-        "2026-11-03"
+        "2026-11-03",
+        "2026-11-04"
       ]
     },
     "phase_detection": {
@@ -633,8 +646,8 @@
           "current_week_hard_days_total": 1,
           "race_proximity": null,
           "next_week_load": 0.68,
-          "plan_coverage_current_week": 0.4,
-          "plan_coverage_next_week": 0.2
+          "plan_coverage_current_week": 0.5,
+          "plan_coverage_next_week": 0.9
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -667,13 +680,13 @@
     "p_max": 1095,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-11-04T10:51:06.167988",
+    "calculation_timestamp": "2026-11-04T18:21:59.863204",
     "data_quality": {
-      "hrv_data_points": 2,
-      "rhr_data_points": 6,
-      "activities_7d": 6,
-      "activities_28d": 41,
-      "planned_workouts_7d": 5,
+      "hrv_data_points": 3,
+      "rhr_data_points": 7,
+      "activities_7d": 7,
+      "activities_28d": 42,
+      "planned_workouts_7d": 4,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 189
@@ -681,6 +694,66 @@
     }
   },
   "recent_activities": [
+    {
+      "id": "i205747036",
+      "date": "2026-11-04T13:48:25",
+      "type": "Ride",
+      "name": "Other",
+      "duration_hours": 0.72,
+      "distance_km": 0.0,
+      "tss": 33,
+      "intensity_factor": 67.47939,
+      "avg_power": null,
+      "normalized_power": null,
+      "avg_hr": 111,
+      "max_hr": 147,
+      "avg_cadence": null,
+      "avg_speed": null,
+      "avg_speed_unit": "KPH",
+      "max_speed": null,
+      "max_speed_unit": "KPH",
+      "avg_pace": null,
+      "avg_temp": null,
+      "avg_temp_unit": "C",
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "wind_speed_unit": "KMH",
+      "work_kj": null,
+      "calories": 243,
+      "carbs_used": null,
+      "carbs_ingested": null,
+      "variability_index": null,
+      "decoupling": null,
+      "efficiency_factor": null,
+      "hrrc": null,
+      "elevation_m": null,
+      "display": {
+        "distance": {
+          "value": 0.0,
+          "unit": "km"
+        },
+        "elevation": null,
+        "avg_speed": null,
+        "max_speed": null
+      },
+      "feel": 3,
+      "rpe": 2,
+      "effort_response": "neutral",
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 1303,
+          "z2_time": 1236,
+          "z3_time": 72,
+          "z4_time": 0,
+          "z5_time": 0
+        }
+      },
+      "has_intervals": true,
+      "has_dfa": false,
+      "terrain_status": "no_gps",
+      "weather_status": "unavailable"
+    },
     {
       "id": "20853236118",
       "date": "2026-11-04T06:14:44",
@@ -5262,7 +5335,7 @@
       "hrv_rmssd": 91.0,
       "hrv_sdnn": 85.0,
       "sleep_hours": 7.2,
-      "sleep_formatted": "7h11m",
+      "sleep_formatted": "7h12m",
       "sleep_quality": 2,
       "sleep_score": 80.0,
       "mental_energy": null,
@@ -5284,7 +5357,7 @@
       "respiration": 13.1,
       "body_fat_pct": 13.6,
       "abdomen_cm": null,
-      "steps": 2287,
+      "steps": 1387,
       "hydration_volume_l": 0.5618172,
       "kcal_consumed": 3294,
       "carbohydrates_g": 382.09,
@@ -5303,13 +5376,13 @@
           "unit": "kg"
         }
       },
-      "resting_hr": null,
-      "hrv_rmssd": null,
+      "resting_hr": 40,
+      "hrv_rmssd": 93.0,
       "hrv_sdnn": null,
       "sleep_hours": 6.98,
-      "sleep_formatted": "6h58m",
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_formatted": "6h59m",
+      "sleep_quality": 3,
+      "sleep_score": 75.0,
       "mental_energy": null,
       "avg_sleeping_hr": null,
       "vo2max": null,
@@ -5329,7 +5402,7 @@
       "respiration": 13.3,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 1864,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -5356,22 +5429,8 @@
       "description": "- Warmup 15m 55%\n- Prep 5m ramp 60%-90%\n- Easy 5m 55%\n- All out 12m 110-115%\n- Easy 30m 50%\n- All out 6m 117-125%\n- Easy 30m 50%\n- All out 3m 140-150%\n- Cooldown 10m 50%"
     },
     {
-      "id": 150538182,
-      "date": "2026-11-05",
-      "name": "Bike Z2 \u2014 90m",
-      "type": "WORKOUT",
-      "sport_type": "Ride",
-      "planned_tss": 54,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
-      "workout_summary": null,
-      "has_terrain": false,
-      "start_time": "06:30",
-      "description": "Goal: easy aerobic volume.\nMain:\n- 90m 60% FTP\n\nControl: RPE 2-3/10. Keep it easy."
-    },
-    {
       "id": 146070301,
-      "date": "2026-11-06",
+      "date": "2026-11-05",
       "name": "Lift",
       "type": "WORKOUT",
       "sport_type": "WeightTraining",
@@ -5381,6 +5440,20 @@
       "workout_summary": null,
       "has_terrain": false,
       "description": "Lift"
+    },
+    {
+      "id": 151934043,
+      "date": "2026-11-05",
+      "name": "Easy Z2 \u00b7 90 min",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 59,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "06:30",
+      "description": "## STAS\nGoal: aerobic endurance and recovery support. Keep this fully conversational in Z2; shorten or skip if fatigue is building.\n\n---\n\n## Workout\nWarmup\n- 10m 50%\n- 10m 60%\n\nMain Set\n- 65m 65%\n\nCooldown\n- 5m 50%"
     },
     {
       "id": 151610904,
@@ -5397,6 +5470,20 @@
       "description": "- 15m 5:23-6:44/km Pace intensity=warmup\n\n- 5km 3:44/km Pace intensity=active\n[NSM]\n\n- 15m 5:23-6:44/km Pace intensity=cooldown\n[NSM]"
     },
     {
+      "id": 151864977,
+      "date": "2026-11-07",
+      "name": "Saturday Group Ride",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 200,
+      "duration_hours": 3.5,
+      "duration_formatted": "3h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "08:50",
+      "description": "Group ride. Follow the group, fuel normally for the duration, and avoid adding extra work if the ride is already demanding."
+    },
+    {
       "id": 150536391,
       "date": "2026-11-09",
       "name": "5 x 6:00",
@@ -5411,6 +5498,34 @@
       "description": "- 15m 5:23-6:44/km Pace intensity=warmup\n\n5x\n- 6m 4:07/km Pace intensity=active\n- 1m30s 5:23-16:09/km Pace intensity=recovery\n\n- 15m 5:23-6:44/km Pace intensity=cooldown\n[NSM]"
     },
     {
+      "id": 151864968,
+      "date": "2026-11-09",
+      "name": "30/15 VO\u2082 \u00b7 3\u00d713 @ 122%",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 83,
+      "duration_hours": 1.15,
+      "duration_formatted": "1h9m15s",
+      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 13\u00d730s @362W / 15s rec | 5m @148W | 13\u00d730s @362W / 15s rec | 5m @148W | 13\u00d730s @362W / 15s rec | 10m @148W",
+      "has_terrain": false,
+      "start_time": "19:15",
+      "description": "## STAS\nGoal: R\u00f8nnestad-style 30/15 VO\u2082 work. Complete 3\u00d713 with 5 minutes easy between sets. Start each 30-second effort at the listed power; progress power only when all repetitions stay even and controlled. Back off if power falls or form deteriorates.\n\n---\n\n## Workout\nWarmup\n- 5m 50%\n- 5m 65%\n- 3m 80%\n- 2m 90%\n\nOpeners 3x\n- 30s 110%\n- 30s 50%\n\n- 2m 50%\n\nMain Set 13x\n- 30s 122%\n- 15s 50%\n\n- 5m 50%\n\nMain Set 13x\n- 30s 122%\n- 15s 50%\n\n- 5m 50%\n\nMain Set 13x\n- 30s 122%\n- 15s 50%\n\nCooldown\n- 10m 50%"
+    },
+    {
+      "id": 151864969,
+      "date": "2026-11-10",
+      "name": "Lift",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "06:30",
+      "description": "Repeat your established strength routine unchanged. Keep the usual exercises, sets, repetitions, and loads."
+    },
+    {
       "id": 150536697,
       "date": "2026-11-11",
       "name": "10 x 3:00",
@@ -5423,23 +5538,448 @@
       "has_terrain": false,
       "start_time": "12:00",
       "description": "- 15m 5:23-6:44/km Pace intensity=warmup\n\n10x\n- 3m 4:01/km Pace intensity=active\n- 1m 5:23-16:09/km Pace intensity=recovery\n\n- 15m 5:23-6:44/km Pace intensity=cooldown\n[NSM]"
+    },
+    {
+      "id": 151864970,
+      "date": "2026-11-11",
+      "name": "Threshold Builder \u00b7 4\u00d78 min",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 100,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 4\u00d78m @297W / 4m rec | 12m @193W | 10m @148W",
+      "has_terrain": false,
+      "start_time": "19:15",
+      "description": "## STAS\nGoal: build sustainable threshold power using the approved Montis library progression. Keep every work interval controlled and even; if power or form fades, hold the target rather than forcing progression.\n\n---\n\n## Workout\nWarmup\n- 5m 50%\n- 5m 65%\n- 3m 80%\n- 2m 90%\n\nOpeners 3x\n- 30s 110%\n- 30s 50%\n\n- 2m 50%\n\nMain Set 4x\n- 8m 100%\n- 4m 50%\n\n- 12m 65%\n\nCooldown\n- 10m 50%"
+    },
+    {
+      "id": 151864971,
+      "date": "2026-11-12",
+      "name": "Easy Z2 \u00b7 90 min",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 59,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "06:30",
+      "description_preview": "## STAS\nGoal: aerobic endurance and recovery support. Keep this fully conversational in Z2; shorten or skip if fatigue is building.\n---"
+    },
+    {
+      "id": 151865664,
+      "date": "2026-11-13",
+      "name": "Lift",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "06:30",
+      "description_preview": "Repeat your established strength routine unchanged. Keep the usual exercises, sets, repetitions, and loads."
+    },
+    {
+      "id": 151864972,
+      "date": "2026-11-14",
+      "name": "Saturday Group Ride",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 200,
+      "duration_hours": 3.5,
+      "duration_formatted": "3h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "08:50",
+      "description_preview": "Group ride. Follow the group, fuel normally for the duration, and avoid adding extra work if the ride is already demanding."
+    },
+    {
+      "id": 151933598,
+      "date": "2026-11-14",
+      "name": "Saturday Group Ride",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 200,
+      "duration_hours": 3.5,
+      "duration_formatted": "3h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "08:50",
+      "description_preview": "Group ride. Follow the group, fuel normally for the duration, and avoid adding extra work if the ride is already demanding."
+    },
+    {
+      "id": 151864973,
+      "date": "2026-11-16",
+      "name": "30/15 VO\u2082 \u00b7 3\u00d713 @ 123%",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 84,
+      "duration_hours": 1.15,
+      "duration_formatted": "1h9m15s",
+      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 13\u00d730s @365W / 15s rec | 5m @148W | 13\u00d730s @365W / 15s rec | 5m @148W | 13\u00d730s @365W / 15s rec | 10m @148W",
+      "has_terrain": false,
+      "start_time": "19:15"
+    },
+    {
+      "id": 151865605,
+      "date": "2026-11-17",
+      "name": "Lift",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "06:30",
+      "description_preview": "Repeat your established strength routine unchanged. Keep the usual exercises, sets, repetitions, and loads."
+    },
+    {
+      "id": 151864975,
+      "date": "2026-11-18",
+      "name": "Threshold Progression \u00b7 2\u00d720 min",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 111,
+      "duration_hours": 1.58,
+      "duration_formatted": "1h35m",
+      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 2\u00d720m @294W / 8m rec | 9m @193W | 10m @148W",
+      "has_terrain": false,
+      "start_time": "19:15"
+    },
+    {
+      "id": 151864976,
+      "date": "2026-11-19",
+      "name": "Easy Z2 \u00b7 90 min",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 59,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "06:30",
+      "description_preview": "## STAS\nGoal: aerobic endurance and recovery support. Keep this fully conversational in Z2; shorten or skip if fatigue is building.\n---"
+    },
+    {
+      "id": 151865677,
+      "date": "2026-11-20",
+      "name": "Lift",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "06:30",
+      "description_preview": "Repeat your established strength routine unchanged. Keep the usual exercises, sets, repetitions, and loads."
+    },
+    {
+      "id": 151933599,
+      "date": "2026-11-21",
+      "name": "Saturday Group Ride",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 200,
+      "duration_hours": 3.5,
+      "duration_formatted": "3h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "08:50",
+      "description_preview": "Group ride. Follow the group, fuel normally for the duration, and avoid adding extra work if the ride is already demanding."
+    },
+    {
+      "id": 151864978,
+      "date": "2026-11-23",
+      "name": "30/15 VO\u2082 \u00b7 3\u00d713 @ 124%",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 85,
+      "duration_hours": 1.15,
+      "duration_formatted": "1h9m15s",
+      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 13\u00d730s @368W / 15s rec | 5m @148W | 13\u00d730s @368W / 15s rec | 5m @148W | 13\u00d730s @368W / 15s rec | 10m @148W",
+      "has_terrain": false,
+      "start_time": "19:15"
+    },
+    {
+      "id": 151865606,
+      "date": "2026-11-24",
+      "name": "Lift",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "06:30",
+      "description_preview": "Repeat your established strength routine unchanged. Keep the usual exercises, sets, repetitions, and loads."
+    },
+    {
+      "id": 151864980,
+      "date": "2026-11-25",
+      "name": "Threshold TTE \u00b7 3\u00d715 min",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 120,
+      "duration_hours": 1.75,
+      "duration_formatted": "1h45m",
+      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 3\u00d715m @288W / 5m rec | 15m @193W | 10m @148W",
+      "has_terrain": false,
+      "start_time": "19:15"
+    },
+    {
+      "id": 151864981,
+      "date": "2026-11-26",
+      "name": "Easy Z2 \u00b7 90 min",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 59,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "06:30",
+      "description_preview": "## STAS\nGoal: aerobic endurance and recovery support. Keep this fully conversational in Z2; shorten or skip if fatigue is building.\n---"
+    },
+    {
+      "id": 151865678,
+      "date": "2026-11-27",
+      "name": "Lift",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "06:30",
+      "description_preview": "Repeat your established strength routine unchanged. Keep the usual exercises, sets, repetitions, and loads."
+    },
+    {
+      "id": 151933600,
+      "date": "2026-11-28",
+      "name": "Saturday Group Ride",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 200,
+      "duration_hours": 3.5,
+      "duration_formatted": "3h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "08:50",
+      "description_preview": "Group ride. Follow the group, fuel normally for the duration, and avoid adding extra work if the ride is already demanding."
+    },
+    {
+      "id": 151865607,
+      "date": "2026-12-01",
+      "name": "Lift",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "06:30",
+      "description_preview": "Repeat your established strength routine unchanged. Keep the usual exercises, sets, repetitions, and loads."
+    },
+    {
+      "id": 151864986,
+      "date": "2026-12-02",
+      "name": "Threshold Maintenance \u00b7 3\u00d76 min",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 71,
+      "duration_hours": 1.17,
+      "duration_formatted": "1h10m",
+      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 3\u00d76m @297W / 3m rec | 8m @193W | 15m @148W",
+      "has_terrain": false,
+      "start_time": "19:15"
+    },
+    {
+      "id": 151864988,
+      "date": "2026-12-03",
+      "name": "Easy Z2 \u00b7 90 min",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 59,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "06:30",
+      "description_preview": "## STAS\nGoal: aerobic endurance and recovery support. Keep this fully conversational in Z2; shorten or skip if fatigue is building.\n---"
+    },
+    {
+      "id": 151865679,
+      "date": "2026-12-04",
+      "name": "Lift",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "06:30",
+      "description_preview": "Repeat your established strength routine unchanged. Keep the usual exercises, sets, repetitions, and loads."
+    },
+    {
+      "id": 151933601,
+      "date": "2026-12-05",
+      "name": "Saturday Group Ride",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 200,
+      "duration_hours": 3.5,
+      "duration_formatted": "3h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "08:50",
+      "description_preview": "Group ride. Follow the group, fuel normally for the duration, and avoid adding extra work if the ride is already demanding."
+    },
+    {
+      "id": 151864991,
+      "date": "2026-12-07",
+      "name": "30/15 VO\u2082 \u00b7 3\u00d713 @ 125%",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 86,
+      "duration_hours": 1.15,
+      "duration_formatted": "1h9m15s",
+      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 13\u00d730s @371W / 15s rec | 5m @148W | 13\u00d730s @371W / 15s rec | 5m @148W | 13\u00d730s @371W / 15s rec | 10m @148W",
+      "has_terrain": false,
+      "start_time": "19:15"
+    },
+    {
+      "id": 151865608,
+      "date": "2026-12-08",
+      "name": "Lift",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "06:30",
+      "description_preview": "Repeat your established strength routine unchanged. Keep the usual exercises, sets, repetitions, and loads."
+    },
+    {
+      "id": 151864994,
+      "date": "2026-12-09",
+      "name": "Threshold Progression \u00b7 2\u00d720 min",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 111,
+      "duration_hours": 1.58,
+      "duration_formatted": "1h35m",
+      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 2\u00d720m @294W / 8m rec | 9m @193W | 10m @148W",
+      "has_terrain": false,
+      "start_time": "19:15"
+    },
+    {
+      "id": 151864995,
+      "date": "2026-12-10",
+      "name": "Easy Z2 \u00b7 90 min",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 59,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "06:30",
+      "description_preview": "## STAS\nGoal: aerobic endurance and recovery support. Keep this fully conversational in Z2; shorten or skip if fatigue is building.\n---"
+    },
+    {
+      "id": 151865680,
+      "date": "2026-12-11",
+      "name": "Lift",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "06:30",
+      "description_preview": "Repeat your established strength routine unchanged. Keep the usual exercises, sets, repetitions, and loads."
+    },
+    {
+      "id": 151933602,
+      "date": "2026-12-12",
+      "name": "Saturday Group Ride",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 200,
+      "duration_hours": 3.5,
+      "duration_formatted": "3h30m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "08:50",
+      "description_preview": "Group ride. Follow the group, fuel normally for the duration, and avoid adding extra work if the ride is already demanding."
+    },
+    {
+      "id": 151864997,
+      "date": "2026-12-14",
+      "name": "30/15 VO\u2082 \u00b7 3\u00d713 @ 126%",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 87,
+      "duration_hours": 1.15,
+      "duration_formatted": "1h9m15s",
+      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 13\u00d730s @374W / 15s rec | 5m @148W | 13\u00d730s @374W / 15s rec | 5m @148W | 13\u00d730s @374W / 15s rec | 10m @148W",
+      "has_terrain": false,
+      "start_time": "19:15"
+    },
+    {
+      "id": 151865609,
+      "date": "2026-12-15",
+      "name": "Lift",
+      "type": "WORKOUT",
+      "sport_type": "WeightTraining",
+      "planned_tss": null,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "06:30",
+      "description_preview": "Repeat your established strength routine unchanged. Keep the usual exercises, sets, repetitions, and loads."
+    },
+    {
+      "id": 151864999,
+      "date": "2026-12-16",
+      "name": "Threshold TTE \u00b7 3\u00d715 min",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 120,
+      "duration_hours": 1.75,
+      "duration_formatted": "1h45m",
+      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 3\u00d715m @288W / 5m rec | 15m @193W | 10m @148W",
+      "has_terrain": false,
+      "start_time": "19:15"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 5,
-    "success": 2,
-    "patternA": 2,
+    "attempted": 21,
+    "success": 13,
+    "patternA": 13,
     "patternB": 0,
-    "bail_no_workout_doc": 1,
-    "bail_no_match": 3
+    "bail_no_workout_doc": 19,
+    "bail_no_match": 8
   },
   "weekly_summary": {
-    "total_training_hours": 5.21,
-    "total_training_formatted": "5h12m",
-    "total_tss": 278,
-    "activities_count": 6,
-    "avg_hrv": 90.0,
-    "avg_resting_hr": 44.3
+    "total_training_hours": 5.94,
+    "total_training_formatted": "5h56m",
+    "total_tss": 311,
+    "activities_count": 7,
+    "avg_hrv": 91.0,
+    "avg_resting_hr": 43.7
   },
   "race_calendar": {
     "next_race": null,
