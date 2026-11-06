@@ -62,15 +62,15 @@
       "menstrual": "menstrual_phase and menstrual_phase_predicted are not on the 1-4 scale. Values: PERIOD, FOLLICULAR, OVULATION, LUTEAL, etc."
     },
     "quick_stats": {
-      "total_training_hours": 8.42,
-      "total_training_formatted": "8h25m",
-      "total_activities": 9,
-      "total_tss": 440
+      "total_training_hours": 9.82,
+      "total_training_formatted": "9h49m",
+      "total_activities": 12,
+      "total_tss": 469
     }
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-11-06T07:54:16.898264",
+    "last_updated": "2026-11-06T15:33:03.550586",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.109"
@@ -103,10 +103,10 @@
   "alerts": [
     {
       "metric": "rhr",
-      "value": 55,
+      "value": 51,
       "severity": "warning",
-      "threshold": "\u2191\u22655bpm vs baseline (42.7)",
-      "context": "RHR 55 is 12.3bpm above baseline. Monitor \u2014 alarm if persists >2 days.",
+      "threshold": "\u2191\u22655bpm vs baseline (42.1)",
+      "context": "RHR 51 is 8.9bpm above baseline. Monitor \u2014 alarm if persists >2 days.",
       "persistence_days": 1,
       "tier": 1
     }
@@ -123,9 +123,9 @@
       },
       "rhr": {
         "status": "red",
-        "value": 55,
-        "baseline_7d": 42.7,
-        "delta_bpm": 12.3
+        "value": 51,
+        "baseline_7d": 42.1,
+        "delta_bpm": 8.9
       },
       "sleep": {
         "status": "green",
@@ -134,16 +134,16 @@
       },
       "acwr": {
         "status": "green",
-        "value": 0.92
+        "value": 0.96
       },
       "ri": {
         "status": "green",
-        "value": 0.82,
-        "value_yesterday": 1.18
+        "value": 0.87,
+        "value_yesterday": 1.16
       },
       "tsb": {
         "status": "green",
-        "value": 10.7
+        "value": 7.4
       }
     },
     "signal_summary": {
@@ -182,17 +182,17 @@
   "summary": {
     "period_description": "Last 7 days of training (including today)",
     "note": "Duration calculated from API moving_time field.",
-    "total_duration_decimal_hours": 8.42,
-    "total_activities": 9,
+    "total_duration_decimal_hours": 9.82,
+    "total_activities": 12,
     "by_activity_type": {
       "Ride": {
-        "duration_decimal_hours": 2.35,
-        "count": 2,
-        "tss": 100,
-        "distance_km": 45.4,
+        "duration_decimal_hours": 3.03,
+        "count": 4,
+        "tss": 125,
+        "distance_km": 59.8,
         "display": {
           "distance": {
-            "value": 45.4,
+            "value": 59.8,
             "unit": "km"
           }
         }
@@ -200,7 +200,7 @@
       "Run": {
         "duration_decimal_hours": 3.14,
         "count": 3,
-        "tss": 221,
+        "tss": 217,
         "distance_km": 38.8,
         "display": {
           "distance": {
@@ -234,9 +234,9 @@
         }
       },
       "WeightTraining": {
-        "duration_decimal_hours": 0.67,
-        "count": 1,
-        "tss": 6,
+        "duration_decimal_hours": 1.39,
+        "count": 2,
+        "tss": 14,
         "distance_km": 0.0,
         "display": {
           "distance": {
@@ -249,10 +249,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 81.93,
-      "atl": 71.2,
-      "tsb": 10.73,
-      "ramp_rate": -0.68,
+      "ctl": 82.43,
+      "atl": 75.06,
+      "tsb": 7.37,
+      "ramp_rate": -0.19,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -273,7 +273,7 @@
         "run": {
           "lthr": 173,
           "max_hr": 193,
-          "threshold_pace": 4.1174917,
+          "threshold_pace": 4.237288,
           "pace_units": "MINS_KM",
           "ftp": 457,
           "ftp_indoor": null
@@ -296,7 +296,7 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 55,
+      "resting_hr": 51,
       "hrv": 97.0,
       "sleep_quality": 2,
       "sleep_hours": 8.65,
@@ -318,7 +318,7 @@
       "respiration": 13.0,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 8886,
+      "steps": 9334,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -330,89 +330,89 @@
     }
   },
   "derived_metrics": {
-    "recovery_index": 0.82,
-    "recovery_index_yesterday": 1.18,
+    "recovery_index": 0.87,
+    "recovery_index_yesterday": 1.16,
     "hrv_baseline_7d": 92.4,
-    "rhr_baseline_7d": 42.7,
+    "rhr_baseline_7d": 42.1,
     "hrv_baseline_28d": 86.6,
-    "rhr_baseline_28d": 41,
+    "rhr_baseline_28d": 40.9,
     "latest_hrv": 97.0,
-    "latest_rhr": 55,
-    "acwr": 0.92,
+    "latest_rhr": 51,
+    "acwr": 0.96,
     "acwr_interpretation": "optimal",
-    "monotony": 1.16,
-    "monotony_interpretation": "normal (primary sport 0.79, total 1.16 inflated by multi-sport)",
-    "primary_sport": "run",
-    "primary_sport_monotony": 0.79,
-    "primary_sport_tss_7d": 221.0,
-    "effective_monotony": 0.79,
+    "monotony": 1.22,
+    "monotony_interpretation": "normal (primary sport 1.02, total 1.22 inflated by multi-sport)",
+    "primary_sport": "cycling",
+    "primary_sport_monotony": 1.02,
+    "primary_sport_tss_7d": 238.0,
+    "effective_monotony": 1.02,
     "multi_sport_detected": true,
-    "strain": 510.0,
-    "stress_tolerance": 4.4,
+    "strain": 572.0,
+    "stress_tolerance": 4.7,
     "load_recovery_ratio": 5.4,
-    "tss_7d_total": 440.0,
-    "tss_28d_total": 1922.0,
+    "tss_7d_total": 469.0,
+    "tss_28d_total": 1951.0,
     "zone_distribution_7d": {
-      "z1_hours": 2.21,
-      "z2_hours": 3.53,
+      "z1_hours": 3.22,
+      "z2_hours": 3.94,
       "z3_hours": 1.32,
       "z4_plus_hours": 1.35,
-      "total_hours": 8.42,
+      "total_hours": 9.83,
       "zone_basis": "mixed"
     },
-    "grey_zone_percentage": 15.7,
+    "grey_zone_percentage": 13.5,
     "grey_zone_note": "Gray Zone % (Z3/tempo) - minimize in polarized training",
-    "quality_intensity_percentage": 16.1,
+    "quality_intensity_percentage": 13.8,
     "quality_intensity_note": "Quality Intensity % (Z4+/threshold+) - target ~20% in polarized training",
-    "easy_time_ratio": 0.68,
+    "easy_time_ratio": 0.73,
     "easy_time_ratio_note": "Easy time (Z1+Z2) / Total - target ~80% in polarized training",
     "hard_days_this_week": 2,
     "hard_days_note": "Power ladder: z3+ >= 30min, z4+ >= 10min, z5+ >= 5min, z6+ >= 2min, z7 >= 1min. HR fallback (when no power): z4+ >= 10min, z5+ >= 5min. Per Seiler 3-zone model + Foster. HR-based days flagged with intensity_basis: hr",
     "seiler_tid_7d": {
-      "z1_seconds": 20669,
+      "z1_seconds": 25744,
       "z2_seconds": 4764,
       "z3_seconds": 4869,
-      "z1_pct": 68.2,
-      "z2_pct": 15.7,
-      "z3_pct": 16.1,
-      "polarization_index": 1.84,
+      "z1_pct": 72.8,
+      "z2_pct": 13.5,
+      "z3_pct": 13.8,
+      "polarization_index": 1.87,
       "classification": "Pyramidal",
       "zone_basis": "mixed"
     },
     "seiler_tid_7d_primary": {
-      "z1_seconds": 3047,
-      "z2_seconds": 3996,
-      "z3_seconds": 4258,
-      "z1_pct": 27.0,
-      "z2_pct": 35.4,
-      "z3_pct": 37.7,
+      "z1_seconds": 17688,
+      "z2_seconds": 768,
+      "z3_seconds": 611,
+      "z1_pct": 92.8,
+      "z2_pct": 4.0,
+      "z3_pct": 3.2,
       "polarization_index": null,
-      "classification": "High Intensity",
-      "zone_basis": "power",
-      "sport": "run"
+      "classification": "Pyramidal",
+      "zone_basis": "mixed",
+      "sport": "cycling"
     },
     "seiler_tid_28d": {
-      "z1_seconds": 93652,
+      "z1_seconds": 98727,
       "z2_seconds": 26375,
       "z3_seconds": 23331,
-      "z1_pct": 65.3,
-      "z2_pct": 18.4,
-      "z3_pct": 16.3,
+      "z1_pct": 66.5,
+      "z2_pct": 17.8,
+      "z3_pct": 15.7,
       "polarization_index": null,
       "classification": "Pyramidal",
       "zone_basis": "mixed"
     },
     "seiler_tid_28d_primary": {
-      "z1_seconds": 18188,
-      "z2_seconds": 12371,
-      "z3_seconds": 13694,
-      "z1_pct": 41.1,
-      "z2_pct": 28.0,
-      "z3_pct": 30.9,
-      "polarization_index": 1.66,
+      "z1_seconds": 53373,
+      "z2_seconds": 13937,
+      "z3_seconds": 9622,
+      "z1_pct": 69.4,
+      "z2_pct": 18.1,
+      "z3_pct": 12.5,
+      "polarization_index": null,
       "classification": "Pyramidal",
-      "zone_basis": "power",
-      "sport": "run"
+      "zone_basis": "mixed",
+      "sport": "cycling"
     },
     "capability": {
       "durability": {
@@ -446,7 +446,7 @@
       "tid_comparison": {
         "classification_7d": "Pyramidal",
         "classification_28d": "Pyramidal",
-        "pi_7d": 1.84,
+        "pi_7d": 1.87,
         "pi_28d": null,
         "pi_delta": null,
         "drift": "consistent",
@@ -631,23 +631,23 @@
       },
       "dfa_a1_profile": null
     },
-    "consistency_index": 0.8,
+    "consistency_index": 1.0,
     "consistency_details": {
-      "planned_days": 5,
-      "completed_days": 4,
+      "planned_days": 4,
+      "completed_days": 5,
       "matched_days": 4,
       "planned_dates": [
         "2026-11-02",
         "2026-11-03",
         "2026-11-04",
-        "2026-11-05",
-        "2026-11-06"
+        "2026-11-05"
       ],
       "completed_dates": [
         "2026-11-02",
         "2026-11-03",
         "2026-11-04",
-        "2026-11-05"
+        "2026-11-05",
+        "2026-11-06"
       ]
     },
     "phase_detection": {
@@ -662,14 +662,14 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.62,
+          "planned_tss_delta": 1.6,
           "hard_sessions_planned": 0,
           "current_week_hard_days_completed": 2,
           "current_week_hard_days_total": 2,
           "race_proximity": null,
-          "next_week_load": 0.68,
-          "plan_coverage_current_week": 0.2,
-          "plan_coverage_next_week": 0.8
+          "next_week_load": 1.43,
+          "plan_coverage_current_week": 0.1,
+          "plan_coverage_next_week": 0.9
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -702,13 +702,13 @@
     "p_max": 1093,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 64.0,
-    "calculation_timestamp": "2026-11-06T07:54:16.897275",
+    "calculation_timestamp": "2026-11-06T15:33:03.549916",
     "data_quality": {
       "hrv_data_points": 5,
       "rhr_data_points": 7,
-      "activities_7d": 9,
-      "activities_28d": 37,
-      "planned_workouts_7d": 7,
+      "activities_7d": 12,
+      "activities_28d": 40,
+      "planned_workouts_7d": 5,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 191
@@ -717,13 +717,277 @@
   },
   "recent_activities": [
     {
+      "id": "i206601603",
+      "date": "2026-11-06T13:51:47",
+      "type": "WeightTraining",
+      "name": "Strength",
+      "duration_hours": 0.72,
+      "distance_km": 0.0,
+      "tss": 8,
+      "intensity_factor": 33.378433,
+      "avg_power": null,
+      "normalized_power": null,
+      "avg_hr": 89,
+      "max_hr": 131,
+      "avg_cadence": null,
+      "avg_speed": null,
+      "avg_speed_unit": "KPH",
+      "max_speed": null,
+      "max_speed_unit": "KPH",
+      "avg_pace": null,
+      "avg_temp": null,
+      "avg_temp_unit": "C",
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "wind_speed_unit": "KMH",
+      "work_kj": null,
+      "calories": 215,
+      "carbs_used": null,
+      "carbs_ingested": null,
+      "variability_index": null,
+      "decoupling": null,
+      "efficiency_factor": null,
+      "hrrc": null,
+      "elevation_m": null,
+      "display": {
+        "distance": {
+          "value": 0.0,
+          "unit": "km"
+        },
+        "elevation": null,
+        "avg_speed": null,
+        "max_speed": null
+      },
+      "feel": null,
+      "rpe": null,
+      "effort_response": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 2587,
+          "z2_time": 0,
+          "z3_time": 0,
+          "z4_time": 0,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      },
+      "has_intervals": false,
+      "has_dfa": false
+    },
+    {
+      "id": "i206579192",
+      "date": "2026-11-06T13:04:19",
+      "type": "Ride",
+      "name": "Stockport Cycling",
+      "duration_hours": 0.32,
+      "distance_km": 7.2,
+      "tss": 11,
+      "intensity_factor": 55.862038,
+      "avg_power": null,
+      "normalized_power": null,
+      "avg_hr": 110,
+      "max_hr": 129,
+      "avg_cadence": null,
+      "avg_speed": 21.9,
+      "avg_speed_unit": "KPH",
+      "max_speed": 38.8,
+      "max_speed_unit": "KPH",
+      "avg_pace": null,
+      "avg_temp": null,
+      "avg_temp_unit": "C",
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "wind_speed_unit": "KMH",
+      "work_kj": null,
+      "calories": 167,
+      "carbs_used": null,
+      "carbs_ingested": null,
+      "variability_index": null,
+      "decoupling": null,
+      "efficiency_factor": null,
+      "hrrc": null,
+      "elevation_m": 47.0,
+      "display": {
+        "distance": {
+          "value": 7.2,
+          "unit": "km"
+        },
+        "elevation": {
+          "value": 47,
+          "unit": "m"
+        },
+        "avg_speed": {
+          "value": 21.9,
+          "unit": "km/h"
+        },
+        "max_speed": {
+          "value": 38.8,
+          "unit": "km/h"
+        }
+      },
+      "feel": 3,
+      "rpe": 2,
+      "effort_response": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 642,
+          "z2_time": 534,
+          "z3_time": 0,
+          "z4_time": 0,
+          "z5_time": 0
+        }
+      },
+      "has_intervals": true,
+      "has_dfa": false,
+      "terrain_summary": {
+        "source": "activity_streams",
+        "total_distance_km": 7.3,
+        "total_elevation_m": 61,
+        "elevation_per_km": 8.4,
+        "course_character": "rolling",
+        "max_grade_pct": 5.1,
+        "grade_distribution": {
+          "flat_pct": 44.7,
+          "gentle_pct": 38.5,
+          "moderate_pct": 16.8,
+          "steep_pct": 0.0
+        },
+        "start_coords": [
+          53.39884,
+          -2.15429
+        ],
+        "climbs": [],
+        "descents": [],
+        "display": {
+          "total_distance": {
+            "value": 7.3,
+            "unit": "km"
+          },
+          "total_elevation": {
+            "value": 61,
+            "unit": "m"
+          },
+          "elevation_per_distance": {
+            "value": 8,
+            "unit": "m/km"
+          }
+        }
+      },
+      "weather_status": "unavailable"
+    },
+    {
+      "id": "i206476309",
+      "date": "2026-11-06T08:17:46",
+      "type": "Ride",
+      "name": "Manchester Cycling",
+      "duration_hours": 0.36,
+      "distance_km": 7.2,
+      "tss": 14,
+      "intensity_factor": 58.474503,
+      "avg_power": null,
+      "normalized_power": null,
+      "avg_hr": 118,
+      "max_hr": 132,
+      "avg_cadence": null,
+      "avg_speed": 19.7,
+      "avg_speed_unit": "KPH",
+      "max_speed": 43.9,
+      "max_speed_unit": "KPH",
+      "avg_pace": null,
+      "avg_temp": null,
+      "avg_temp_unit": "C",
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "wind_speed_unit": "KMH",
+      "work_kj": null,
+      "calories": 213,
+      "carbs_used": null,
+      "carbs_ingested": null,
+      "variability_index": null,
+      "decoupling": null,
+      "efficiency_factor": null,
+      "hrrc": null,
+      "elevation_m": 86.0,
+      "display": {
+        "distance": {
+          "value": 7.2,
+          "unit": "km"
+        },
+        "elevation": {
+          "value": 86,
+          "unit": "m"
+        },
+        "avg_speed": {
+          "value": 19.7,
+          "unit": "km/h"
+        },
+        "max_speed": {
+          "value": 43.9,
+          "unit": "km/h"
+        }
+      },
+      "feel": 3,
+      "rpe": 2,
+      "effort_response": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 388,
+          "z2_time": 924,
+          "z3_time": 0,
+          "z4_time": 0,
+          "z5_time": 0
+        }
+      },
+      "has_intervals": true,
+      "has_dfa": false,
+      "terrain_summary": {
+        "source": "activity_streams",
+        "total_distance_km": 7.3,
+        "total_elevation_m": 99,
+        "elevation_per_km": 13.6,
+        "course_character": "rolling",
+        "max_grade_pct": 4.9,
+        "grade_distribution": {
+          "flat_pct": 38.4,
+          "gentle_pct": 44.8,
+          "moderate_pct": 16.8,
+          "steep_pct": 0.0
+        },
+        "start_coords": [
+          53.43361,
+          -2.22166
+        ],
+        "climbs": [],
+        "descents": [],
+        "display": {
+          "total_distance": {
+            "value": 7.3,
+            "unit": "km"
+          },
+          "total_elevation": {
+            "value": 99,
+            "unit": "m"
+          },
+          "elevation_per_distance": {
+            "value": 14,
+            "unit": "m/km"
+          }
+        }
+      },
+      "weather_status": "unavailable"
+    },
+    {
       "id": "i206457449",
       "date": "2026-11-06T06:47:10",
       "type": "Run",
       "name": "5K TT",
       "duration_hours": 0.86,
       "distance_km": 10.79,
-      "tss": 62,
+      "tss": 58,
       "intensity_factor": 89.93436,
       "avg_power": 377,
       "normalized_power": 411,
@@ -4975,7 +5239,7 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 55,
+      "resting_hr": 51,
       "hrv_rmssd": 97.0,
       "hrv_sdnn": null,
       "sleep_hours": 8.65,
@@ -5001,7 +5265,7 @@
       "respiration": 13.0,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": 8886,
+      "steps": 9334,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -5013,20 +5277,6 @@
     }
   ],
   "planned_workouts": [
-    {
-      "id": 151610904,
-      "date": "2026-11-06",
-      "name": "5K TT",
-      "type": "WORKOUT",
-      "sport_type": "Run",
-      "planned_tss": 56,
-      "duration_hours": 0.81,
-      "duration_formatted": "48m40s",
-      "workout_summary": null,
-      "has_terrain": false,
-      "start_time": "12:00",
-      "description": "- 15m 5:23-6:44/km Pace intensity=warmup\n\n- 5km 3:44/km Pace intensity=active\n[NSM]\n\n- 15m 5:23-6:44/km Pace intensity=cooldown\n[NSM]"
-    },
     {
       "id": 151864977,
       "date": "2026-11-07",
@@ -5053,21 +5303,21 @@
       "workout_summary": "15m | 5\u00d76m / 1m30s rec | 15m",
       "has_terrain": false,
       "start_time": "12:00",
-      "description": "- 15m 5:23-6:44/km Pace intensity=warmup\n\n5x\n- 6m 4:07/km Pace intensity=active\n- 1m30s 5:23-16:09/km Pace intensity=recovery\n\n- 15m 5:23-6:44/km Pace intensity=cooldown\n[NSM]"
+      "description": "- 15m 5:14-6:33/km Pace intensity=warmup\n\n5x\n- 6m 4:00/km Pace intensity=active\n- 1m30s 5:14-15:42/km Pace intensity=recovery\n\n- 15m 5:14-6:33/km Pace intensity=cooldown\n[NSM]"
     },
     {
-      "id": 151864968,
+      "id": 152531268,
       "date": "2026-11-09",
-      "name": "30/15 VO\u2082 \u00b7 3\u00d713 @ 122%",
+      "name": "VO\u2082 4x4",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 83,
-      "duration_hours": 1.15,
-      "duration_formatted": "1h9m15s",
-      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 13\u00d730s @362W / 15s rec | 5m @148W | 13\u00d730s @362W / 15s rec | 5m @148W | 13\u00d730s @362W / 15s rec | 10m @148W",
+      "planned_tss": 72,
+      "duration_hours": 1.12,
+      "duration_formatted": "1h7m",
+      "workout_summary": "5m @148W | 5m @178W | 3m @207W | 2m @237W | 3\u00d730s @297W / 1m30s rec | 4\u00d74m @326W / 4m rec | 10m @193W | 10m @148W",
       "has_terrain": false,
       "start_time": "19:15",
-      "description": "## STAS\nGoal: R\u00f8nnestad-style 30/15 VO\u2082 work. Complete 3\u00d713 with 5 minutes easy between sets. Start each 30-second effort at the listed power; progress power only when all repetitions stay even and controlled. Back off if power falls or form deteriorates.\n\n---\n\n## Workout\nWarmup\n- 5m 50%\n- 5m 65%\n- 3m 80%\n- 2m 90%\n\nOpeners 3x\n- 30s 110%\n- 30s 50%\n\n- 2m 50%\n\nMain Set 13x\n- 30s 122%\n- 15s 50%\n\n- 5m 50%\n\nMain Set 13x\n- 30s 122%\n- 15s 50%\n\n- 5m 50%\n\nMain Set 13x\n- 30s 122%\n- 15s 50%\n\nCooldown\n- 10m 50%"
+      "description": "- Warmup 5m 50%\n- Endurance 5m 60%\n- Endurance 3m 70%\n- Endurance 2m 80%\n\nPriming 3x\n- Threshold 30s 100%\n- Recovery 90s 50%\n\nMain Set 4x\n- VO2 4m 110%\n- Recovery 4m 55%\n\n- Endurance 10m 65%\n- Cooldown 10m 50%"
     },
     {
       "id": 151864969,
@@ -5084,6 +5334,20 @@
       "description": "Repeat your established strength routine unchanged. Keep the usual exercises, sets, repetitions, and loads."
     },
     {
+      "id": 152500228,
+      "date": "2026-11-10",
+      "name": "Easy Run",
+      "type": "WORKOUT",
+      "sport_type": "Run",
+      "planned_tss": 45,
+      "duration_hours": 1.22,
+      "duration_formatted": "1h13m",
+      "workout_summary": null,
+      "has_terrain": false,
+      "start_time": "12:00",
+      "description": "- 73m 62-70% HR hr=1s\n[NSM]"
+    },
+    {
       "id": 150536697,
       "date": "2026-11-11",
       "name": "10 x 3:00",
@@ -5095,21 +5359,21 @@
       "workout_summary": "15m | 10\u00d73m / 1m rec | 15m",
       "has_terrain": false,
       "start_time": "12:00",
-      "description": "- 15m 5:23-6:44/km Pace intensity=warmup\n\n10x\n- 3m 4:01/km Pace intensity=active\n- 1m 5:23-16:09/km Pace intensity=recovery\n\n- 15m 5:23-6:44/km Pace intensity=cooldown\n[NSM]"
+      "description": "- 15m 5:14-6:33/km Pace intensity=warmup\n\n10x\n- 3m 3:54/km Pace intensity=active\n- 1m 5:14-15:42/km Pace intensity=recovery\n\n- 15m 5:14-6:33/km Pace intensity=cooldown\n[NSM]"
     },
     {
-      "id": 151864970,
+      "id": 152531285,
       "date": "2026-11-11",
-      "name": "Threshold Builder \u00b7 4\u00d78 min",
+      "name": "Threshold 3x10",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 100,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
-      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 4\u00d78m @297W / 4m rec | 12m @193W | 10m @148W",
+      "planned_tss": 86,
+      "duration_hours": 1.28,
+      "duration_formatted": "1h17m",
+      "workout_summary": "5m @148W | 5m @178W | 3m @207W | 2m @237W | 2\u00d71m @282W / 1m rec | 3\u00d710m @297W / 4m rec | 10m @193W | 10m @148W",
       "has_terrain": false,
       "start_time": "19:15",
-      "description": "## STAS\nGoal: build sustainable threshold power using the approved Montis library progression. Keep every work interval controlled and even; if power or form fades, hold the target rather than forcing progression.\n\n---\n\n## Workout\nWarmup\n- 5m 50%\n- 5m 65%\n- 3m 80%\n- 2m 90%\n\nOpeners 3x\n- 30s 110%\n- 30s 50%\n\n- 2m 50%\n\nMain Set 4x\n- 8m 100%\n- 4m 50%\n\n- 12m 65%\n\nCooldown\n- 10m 50%"
+      "description": "- Warmup 5m 50%\n- Endurance 5m 60%\n- Endurance 3m 70%\n- Endurance 2m 80%\n\nPriming 2x\n- Threshold 1m 95%\n- Recovery 1m 50%\n\nMain Set 3x\n- Threshold 10m 100%\n- Recovery 4m 55%\n\n- Endurance 10m 65%\n- Cooldown 10m 50%"
     },
     {
       "id": 151864971,
@@ -5154,15 +5418,15 @@
       "description_preview": "Group ride. Follow the group, fuel normally for the duration, and avoid adding extra work if the ride is already demanding."
     },
     {
-      "id": 151864973,
+      "id": 152531286,
       "date": "2026-11-16",
-      "name": "30/15 VO\u2082 \u00b7 3\u00d713 @ 123%",
+      "name": "VO\u2082 5x4",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 84,
-      "duration_hours": 1.15,
-      "duration_formatted": "1h9m15s",
-      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 13\u00d730s @365W / 15s rec | 5m @148W | 13\u00d730s @365W / 15s rec | 5m @148W | 13\u00d730s @365W / 15s rec | 10m @148W",
+      "planned_tss": 82,
+      "duration_hours": 1.25,
+      "duration_formatted": "1h15m",
+      "workout_summary": "5m @148W | 5m @178W | 3m @207W | 2m @237W | 3\u00d730s @297W / 1m30s rec | 5\u00d74m @323W / 4m rec | 10m @193W | 10m @148W",
       "has_terrain": false,
       "start_time": "19:15"
     },
@@ -5181,15 +5445,15 @@
       "description_preview": "Repeat your established strength routine unchanged. Keep the usual exercises, sets, repetitions, and loads."
     },
     {
-      "id": 151864975,
+      "id": 152531287,
       "date": "2026-11-18",
-      "name": "Threshold Progression \u00b7 2\u00d720 min",
+      "name": "Threshold 2x20",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 111,
-      "duration_hours": 1.58,
-      "duration_formatted": "1h35m",
-      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 2\u00d720m @294W / 8m rec | 9m @193W | 10m @148W",
+      "planned_tss": 103,
+      "duration_hours": 1.42,
+      "duration_formatted": "1h25m",
+      "workout_summary": "5m @148W | 5m @178W | 3m @207W | 2m @237W | 2\u00d71m @282W / 1m rec | 2\u00d720m @297W / 4m rec | 10m @193W | 10m @148W",
       "has_terrain": false,
       "start_time": "19:15"
     },
@@ -5236,15 +5500,15 @@
       "description_preview": "Group ride. Follow the group, fuel normally for the duration, and avoid adding extra work if the ride is already demanding."
     },
     {
-      "id": 151864978,
+      "id": 152531288,
       "date": "2026-11-23",
-      "name": "30/15 VO\u2082 \u00b7 3\u00d713 @ 124%",
+      "name": "VO\u2082 4x5",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 85,
-      "duration_hours": 1.15,
-      "duration_formatted": "1h9m15s",
-      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 13\u00d730s @368W / 15s rec | 5m @148W | 13\u00d730s @368W / 15s rec | 5m @148W | 13\u00d730s @368W / 15s rec | 10m @148W",
+      "planned_tss": 82,
+      "duration_hours": 1.25,
+      "duration_formatted": "1h15m",
+      "workout_summary": "5m @148W | 5m @178W | 3m @207W | 2m @237W | 3\u00d730s @297W / 1m30s rec | 4\u00d75m @320W / 5m rec | 10m @193W | 10m @148W",
       "has_terrain": false,
       "start_time": "19:15"
     },
@@ -5263,15 +5527,15 @@
       "description_preview": "Repeat your established strength routine unchanged. Keep the usual exercises, sets, repetitions, and loads."
     },
     {
-      "id": 151864980,
+      "id": 152531289,
       "date": "2026-11-25",
-      "name": "Threshold TTE \u00b7 3\u00d715 min",
+      "name": "Threshold 3x15",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 120,
-      "duration_hours": 1.75,
-      "duration_formatted": "1h45m",
-      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 3\u00d715m @288W / 5m rec | 15m @193W | 10m @148W",
+      "planned_tss": 115,
+      "duration_hours": 1.58,
+      "duration_formatted": "1h35m",
+      "workout_summary": "5m @148W | 5m @178W | 3m @207W | 2m @237W | 2\u00d71m @282W / 1m rec | 3\u00d715m @297W / 4m rec | 10m @193W | 10m @148W",
       "has_terrain": false,
       "start_time": "19:15"
     },
@@ -5318,6 +5582,19 @@
       "description_preview": "Group ride. Follow the group, fuel normally for the duration, and avoid adding extra work if the ride is already demanding."
     },
     {
+      "id": 152531290,
+      "date": "2026-11-30",
+      "name": "VO\u2082 3x2",
+      "type": "WORKOUT",
+      "sport_type": "Ride",
+      "planned_tss": 40,
+      "duration_hours": 0.78,
+      "duration_formatted": "47m",
+      "workout_summary": "5m @148W | 5m @178W | 3m @207W | 2m @237W | 3\u00d730s @297W / 1m30s rec | 3\u00d72m @326W / 2m rec | 10m @193W | 10m @148W",
+      "has_terrain": false,
+      "start_time": "19:15"
+    },
+    {
       "id": 151865607,
       "date": "2026-12-01",
       "name": "Lift",
@@ -5332,15 +5609,15 @@
       "description_preview": "Repeat your established strength routine unchanged. Keep the usual exercises, sets, repetitions, and loads."
     },
     {
-      "id": 151864986,
+      "id": 152531291,
       "date": "2026-12-02",
-      "name": "Threshold Maintenance \u00b7 3\u00d76 min",
+      "name": "Threshold 2x8",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 71,
-      "duration_hours": 1.17,
-      "duration_formatted": "1h10m",
-      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 3\u00d76m @297W / 3m rec | 8m @193W | 15m @148W",
+      "planned_tss": 57,
+      "duration_hours": 0.98,
+      "duration_formatted": "59m",
+      "workout_summary": "5m @148W | 5m @178W | 3m @207W | 2m @237W | 2\u00d71m @282W / 1m rec | 2\u00d78m @297W / 4m rec | 10m @193W | 10m @148W",
       "has_terrain": false,
       "start_time": "19:15"
     },
@@ -5387,15 +5664,15 @@
       "description_preview": "Group ride. Follow the group, fuel normally for the duration, and avoid adding extra work if the ride is already demanding."
     },
     {
-      "id": 151864991,
+      "id": 152531292,
       "date": "2026-12-07",
-      "name": "30/15 VO\u2082 \u00b7 3\u00d713 @ 125%",
+      "name": "VO\u2082 4x5",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 86,
-      "duration_hours": 1.15,
-      "duration_formatted": "1h9m15s",
-      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 13\u00d730s @371W / 15s rec | 5m @148W | 13\u00d730s @371W / 15s rec | 5m @148W | 13\u00d730s @371W / 15s rec | 10m @148W",
+      "planned_tss": 82,
+      "duration_hours": 1.25,
+      "duration_formatted": "1h15m",
+      "workout_summary": "5m @148W | 5m @178W | 3m @207W | 2m @237W | 3\u00d730s @297W / 1m30s rec | 4\u00d75m @320W / 5m rec | 10m @193W | 10m @148W",
       "has_terrain": false,
       "start_time": "19:15"
     },
@@ -5414,15 +5691,15 @@
       "description_preview": "Repeat your established strength routine unchanged. Keep the usual exercises, sets, repetitions, and loads."
     },
     {
-      "id": 151864994,
+      "id": 152531293,
       "date": "2026-12-09",
-      "name": "Threshold Progression \u00b7 2\u00d720 min",
+      "name": "Threshold 2x20",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 111,
-      "duration_hours": 1.58,
-      "duration_formatted": "1h35m",
-      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 2\u00d720m @294W / 8m rec | 9m @193W | 10m @148W",
+      "planned_tss": 103,
+      "duration_hours": 1.42,
+      "duration_formatted": "1h25m",
+      "workout_summary": "5m @148W | 5m @178W | 3m @207W | 2m @237W | 2\u00d71m @282W / 1m rec | 2\u00d720m @297W / 4m rec | 10m @193W | 10m @148W",
       "has_terrain": false,
       "start_time": "19:15"
     },
@@ -5469,15 +5746,15 @@
       "description_preview": "Group ride. Follow the group, fuel normally for the duration, and avoid adding extra work if the ride is already demanding."
     },
     {
-      "id": 151864997,
+      "id": 152531294,
       "date": "2026-12-14",
-      "name": "30/15 VO\u2082 \u00b7 3\u00d713 @ 126%",
+      "name": "VO\u2082 5x5",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 87,
-      "duration_hours": 1.15,
-      "duration_formatted": "1h9m15s",
-      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 13\u00d730s @374W / 15s rec | 5m @148W | 13\u00d730s @374W / 15s rec | 5m @148W | 13\u00d730s @374W / 15s rec | 10m @148W",
+      "planned_tss": 94,
+      "duration_hours": 1.42,
+      "duration_formatted": "1h25m",
+      "workout_summary": "5m @148W | 5m @178W | 3m @207W | 2m @237W | 3\u00d730s @297W / 1m30s rec | 5\u00d75m @317W / 5m rec | 10m @193W | 10m @148W",
       "has_terrain": false,
       "start_time": "19:15"
     },
@@ -5496,15 +5773,15 @@
       "description_preview": "Repeat your established strength routine unchanged. Keep the usual exercises, sets, repetitions, and loads."
     },
     {
-      "id": 151864999,
+      "id": 152531295,
       "date": "2026-12-16",
-      "name": "Threshold TTE \u00b7 3\u00d715 min",
+      "name": "Threshold 3x15",
       "type": "WORKOUT",
       "sport_type": "Ride",
-      "planned_tss": 120,
-      "duration_hours": 1.75,
-      "duration_formatted": "1h45m",
-      "workout_summary": "5m @148W | 5m @193W | 3m @237W | 2m @267W | 3\u00d730s @326W / 30s rec | 2m @148W | 3\u00d715m @288W / 5m rec | 15m @193W | 10m @148W",
+      "planned_tss": 115,
+      "duration_hours": 1.58,
+      "duration_formatted": "1h35m",
+      "workout_summary": "5m @148W | 5m @178W | 3m @207W | 2m @237W | 2\u00d71m @282W / 1m rec | 3\u00d715m @297W / 4m rec | 10m @193W | 10m @148W",
       "has_terrain": false,
       "start_time": "19:15"
     },
@@ -5538,20 +5815,20 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 20,
-    "success": 13,
-    "patternA": 13,
+    "attempted": 21,
+    "success": 14,
+    "patternA": 14,
     "patternB": 0,
     "bail_no_workout_doc": 18,
     "bail_no_match": 7
   },
   "weekly_summary": {
-    "total_training_hours": 8.42,
-    "total_training_formatted": "8h25m",
-    "total_tss": 440,
-    "activities_count": 9,
+    "total_training_hours": 9.82,
+    "total_training_formatted": "9h49m",
+    "total_tss": 469,
+    "activities_count": 12,
     "avg_hrv": 92.4,
-    "avg_resting_hr": 42.7
+    "avg_resting_hr": 42.1
   },
   "race_calendar": {
     "next_race": null,
